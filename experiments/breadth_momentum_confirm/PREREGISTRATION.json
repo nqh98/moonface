@@ -1,0 +1,57 @@
+{
+  "asof": "2026-06-28T14:10:12.375232+00:00",
+  "block_len": 8,
+  "bonferroni_level": 0.025,
+  "btc_bars": 14178,
+  "btc_sha": "b3b004cb58258369",
+  "discovery_slice": [
+    0,
+    20
+  ],
+  "frozen_spec": {
+    "builder": "breadth_momentum",
+    "exit_name": "atr_trail",
+    "exit_params": {
+      "atr_period": 14,
+      "k_trail": 2.0,
+      "max_bars": 120
+    },
+    "h": 48,
+    "key": "breadth_momentum",
+    "params": {
+      "base_period": 50,
+      "n": 10,
+      "thr": 0.1
+    }
+  },
+  "gate": "per disjoint slice: same-sign + practical + 2x/3x cost + one-sided block-bootstrap p_le0 < 0.025; lane confirmed iff >=1 gated slice passes; top-20 reported not gated (x-checked against Lane 2 HF)",
+  "gated_slices": [
+    [
+      20,
+      40
+    ],
+    [
+      40,
+      60
+    ]
+  ],
+  "k_gated": 2,
+  "lane": "btc_breadth_momentum_confirm",
+  "lane_description": "Independent-realization confirmation of the frozen breadth_momentum signal (Lane 2 HF, #2 lead) on disjoint volume-rank universe slices. Top-20 is the discovery (x-checked against Lane 2, never gated).",
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

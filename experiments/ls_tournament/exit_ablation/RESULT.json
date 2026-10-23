@@ -1,0 +1,4025 @@
+{
+  "asof": "2026-06-27T13:40:56.781621+00:00",
+  "bars": 14178,
+  "baseline_sealed_total_r": -10.5996,
+  "data_sha": "b3b004cb58258369",
+  "rows": [
+    {
+      "cost_legs": 1.0,
+      "exit_name": "atr_trail",
+      "full_bar_pass": false,
+      "key": "atr_trail_2",
+      "label": "atr_trail k=2.0 (BASELINE)",
+      "params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "requested": "current atr_trail baseline",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.4165,
+              "passed": false,
+              "profit_factor": 0.5758
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5018,
+              "passed": false,
+              "profit_factor": 0.5204
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.3739,
+              "passed": false,
+              "profit_factor": 0.6063
+            },
+            "expectancy_r": -0.3312,
+            "max_drawdown_r": -13.0733,
+            "outlier": {
+              "base_exp": -0.3312,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.6224
+            },
+            "profit_factor": 0.6389,
+            "total_r": -10.5996,
+            "trade_count": 32,
+            "win_rate": 0.25
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.6374,
+              "passed": false,
+              "profit_factor": 0.2993
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7326,
+              "passed": false,
+              "profit_factor": 0.252
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.5898,
+              "passed": false,
+              "profit_factor": 0.3257
+            },
+            "expectancy_r": -0.5422,
+            "max_drawdown_r": -8.6744,
+            "outlier": {
+              "base_exp": -0.5422,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.7097
+            },
+            "profit_factor": 0.3544,
+            "total_r": -8.6744,
+            "trade_count": 16,
+            "win_rate": 0.25
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.1957,
+              "passed": false,
+              "profit_factor": 0.8143
+            },
+            "cost_3x": {
+              "expectancy_r": -0.2711,
+              "passed": false,
+              "profit_factor": 0.7565
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.158,
+              "passed": false,
+              "profit_factor": 0.8458
+            },
+            "expectancy_r": -0.1203,
+            "max_drawdown_r": -6.7298,
+            "outlier": {
+              "base_exp": -0.1203,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.3979
+            },
+            "profit_factor": 0.8791,
+            "total_r": -1.9252,
+            "trade_count": 16,
+            "win_rate": 0.25
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.8671,
+              "passed": true,
+              "profit_factor": 2.1385
+            },
+            "cost_3x": {
+              "expectancy_r": 0.8027,
+              "passed": true,
+              "profit_factor": 2.0076
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8993,
+              "passed": true,
+              "profit_factor": 2.2074
+            },
+            "expectancy_r": 0.9315,
+            "max_drawdown_r": -13.0286,
+            "outlier": {
+              "base_exp": 0.9315,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.2684
+            },
+            "profit_factor": 2.2795,
+            "total_r": 74.5175,
+            "trade_count": 80,
+            "win_rate": 0.4375
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.1227,
+              "passed": true,
+              "profit_factor": 2.5434
+            },
+            "cost_3x": {
+              "expectancy_r": 1.0545,
+              "passed": true,
+              "profit_factor": 2.3844
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.1568,
+              "passed": true,
+              "profit_factor": 2.6265
+            },
+            "expectancy_r": 1.1909,
+            "max_drawdown_r": -8.4985,
+            "outlier": {
+              "base_exp": 1.1909,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.3796
+            },
+            "profit_factor": 2.7134,
+            "total_r": 60.7353,
+            "trade_count": 51,
+            "win_rate": 0.4706
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.4176,
+              "passed": true,
+              "profit_factor": 1.5083
+            },
+            "cost_3x": {
+              "expectancy_r": 0.36,
+              "passed": true,
+              "profit_factor": 1.4195
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4464,
+              "passed": true,
+              "profit_factor": 1.5554
+            },
+            "expectancy_r": 0.4752,
+            "max_drawdown_r": -8.5769,
+            "outlier": {
+              "base_exp": 0.4752,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.1755
+            },
+            "profit_factor": 1.6047,
+            "total_r": 13.7822,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.2942,
+              "passed": true,
+              "profit_factor": 1.3065
+            },
+            "cost_3x": {
+              "expectancy_r": 0.218,
+              "passed": true,
+              "profit_factor": 1.2161
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.3322,
+              "passed": true,
+              "profit_factor": 1.3553
+            },
+            "expectancy_r": 0.3703,
+            "max_drawdown_r": -7.3644,
+            "outlier": {
+              "base_exp": 0.3703,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.1561
+            },
+            "profit_factor": 1.4068,
+            "total_r": 10.7385,
+            "trade_count": 29,
+            "win_rate": 0.3448
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.3964,
+              "passed": true,
+              "profit_factor": 1.426
+            },
+            "cost_3x": {
+              "expectancy_r": 0.318,
+              "passed": true,
+              "profit_factor": 1.3229
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4356,
+              "passed": true,
+              "profit_factor": 1.4822
+            },
+            "expectancy_r": 0.4748,
+            "max_drawdown_r": -10.8435,
+            "outlier": {
+              "base_exp": 0.4748,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.0237
+            },
+            "profit_factor": 1.5419,
+            "total_r": 8.0714,
+            "trade_count": 17,
+            "win_rate": 0.2941
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.1493,
+              "passed": true,
+              "profit_factor": 1.1492
+            },
+            "cost_3x": {
+              "expectancy_r": 0.0764,
+              "passed": true,
+              "profit_factor": 1.0732
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.1858,
+              "passed": true,
+              "profit_factor": 1.1896
+            },
+            "expectancy_r": 0.2223,
+            "max_drawdown_r": -8.835,
+            "outlier": {
+              "base_exp": 0.2223,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.2858
+            },
+            "profit_factor": 1.2318,
+            "total_r": 2.6671,
+            "trade_count": 12,
+            "win_rate": 0.4167
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "horizon_wide_stop",
+      "full_bar_pass": false,
+      "key": "hard_stop_2",
+      "label": "hard stop k=2.0, no trail/TP",
+      "params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "n_bars": 120
+      },
+      "requested": "no ATR trail, hard stop only",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.0785,
+              "passed": true,
+              "profit_factor": 1.0445
+            },
+            "cost_3x": {
+              "expectancy_r": -0.0068,
+              "passed": false,
+              "profit_factor": 0.9963
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.1211,
+              "passed": true,
+              "profit_factor": 1.07
+            },
+            "expectancy_r": 0.1638,
+            "max_drawdown_r": -24.0513,
+            "outlier": {
+              "base_exp": 0.1638,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.2233
+            },
+            "profit_factor": 1.0966,
+            "total_r": 5.2406,
+            "trade_count": 32,
+            "win_rate": 0.1875
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.1469,
+              "passed": false,
+              "profit_factor": 0.9231
+            },
+            "cost_3x": {
+              "expectancy_r": -0.2421,
+              "passed": false,
+              "profit_factor": 0.8784
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0993,
+              "passed": false,
+              "profit_factor": 0.9469
+            },
+            "expectancy_r": -0.0517,
+            "max_drawdown_r": -26.1187,
+            "outlier": {
+              "base_exp": -0.0517,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.7412
+            },
+            "profit_factor": 0.9717,
+            "total_r": -0.8274,
+            "trade_count": 16,
+            "win_rate": 0.125
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.3039,
+              "passed": true,
+              "profit_factor": 1.1879
+            },
+            "cost_3x": {
+              "expectancy_r": 0.2285,
+              "passed": true,
+              "profit_factor": 1.1364
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.3416,
+              "passed": true,
+              "profit_factor": 1.2151
+            },
+            "expectancy_r": 0.3792,
+            "max_drawdown_r": -12.5086,
+            "outlier": {
+              "base_exp": 0.3792,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.7054
+            },
+            "profit_factor": 1.2433,
+            "total_r": 6.068,
+            "trade_count": 16,
+            "win_rate": 0.25
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 3.5075,
+              "passed": true,
+              "profit_factor": 3.399
+            },
+            "cost_3x": {
+              "expectancy_r": 3.4431,
+              "passed": true,
+              "profit_factor": 3.2869
+            },
+            "cost_5bps": {
+              "expectancy_r": 3.5397,
+              "passed": true,
+              "profit_factor": 3.4576
+            },
+            "expectancy_r": 3.5719,
+            "max_drawdown_r": -23.3279,
+            "outlier": {
+              "base_exp": 3.5719,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 1.5661
+            },
+            "profit_factor": 3.518,
+            "total_r": 285.75,
+            "trade_count": 80,
+            "win_rate": 0.3125
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 4.4055,
+              "passed": true,
+              "profit_factor": 3.9303
+            },
+            "cost_3x": {
+              "expectancy_r": 4.3373,
+              "passed": true,
+              "profit_factor": 3.7996
+            },
+            "cost_5bps": {
+              "expectancy_r": 4.4396,
+              "passed": true,
+              "profit_factor": 3.9987
+            },
+            "expectancy_r": 4.4737,
+            "max_drawdown_r": -20.6817,
+            "outlier": {
+              "base_exp": 4.4737,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 1.7734
+            },
+            "profit_factor": 4.0693,
+            "total_r": 228.1601,
+            "trade_count": 51,
+            "win_rate": 0.2941
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 1.9283,
+              "passed": true,
+              "profit_factor": 2.3879
+            },
+            "cost_3x": {
+              "expectancy_r": 1.8706,
+              "passed": true,
+              "profit_factor": 2.3092
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.9571,
+              "passed": true,
+              "profit_factor": 2.4289
+            },
+            "expectancy_r": 1.9859,
+            "max_drawdown_r": -18.6346,
+            "outlier": {
+              "base_exp": 1.9859,
+              "dropped": 2,
+              "passed": true,
+              "trimmed_exp": 0.7719
+            },
+            "profit_factor": 2.4712,
+            "total_r": 57.5899,
+            "trade_count": 29,
+            "win_rate": 0.3448
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.8558,
+              "passed": true,
+              "profit_factor": 1.4808
+            },
+            "cost_3x": {
+              "expectancy_r": 0.7797,
+              "passed": true,
+              "profit_factor": 1.4232
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8939,
+              "passed": true,
+              "profit_factor": 1.5112
+            },
+            "expectancy_r": 0.932,
+            "max_drawdown_r": -22.838,
+            "outlier": {
+              "base_exp": 0.932,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.9136
+            },
+            "profit_factor": 1.5426,
+            "total_r": 27.0276,
+            "trade_count": 29,
+            "win_rate": 0.1724
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.4428,
+              "passed": true,
+              "profit_factor": 2.4805
+            },
+            "cost_3x": {
+              "expectancy_r": 2.3644,
+              "passed": true,
+              "profit_factor": 2.3825
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.482,
+              "passed": true,
+              "profit_factor": 2.5323
+            },
+            "expectancy_r": 2.5212,
+            "max_drawdown_r": -14.622,
+            "outlier": {
+              "base_exp": 2.5212,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 0.93
+            },
+            "profit_factor": 2.586,
+            "total_r": 42.8605,
+            "trade_count": 17,
+            "win_rate": 0.2353
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -1.3924,
+              "passed": false,
+              "profit_factor": 0.2911
+            },
+            "cost_3x": {
+              "expectancy_r": -1.4653,
+              "passed": false,
+              "profit_factor": 0.2781
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.3559,
+              "passed": false,
+              "profit_factor": 0.298
+            },
+            "expectancy_r": -1.3194,
+            "max_drawdown_r": -16.5482,
+            "outlier": {
+              "base_exp": -1.3194,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -2.0714
+            },
+            "profit_factor": 0.3051,
+            "total_r": -15.8329,
+            "trade_count": 12,
+            "win_rate": 0.0833
+          }
+        }
+      },
+      "verdict": "improves: +raw R but fails risk/cost/outlier bar -> no edge"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "fixed_bracket",
+      "full_bar_pass": false,
+      "key": "fixed_bracket_2_4",
+      "label": "fixed bracket stop=2.0 / TP=4.0",
+      "params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "requested": "fixed bracket stop/target",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.6706,
+              "passed": false,
+              "profit_factor": 0.5881
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7559,
+              "passed": false,
+              "profit_factor": 0.5533
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.628,
+              "passed": false,
+              "profit_factor": 0.6066
+            },
+            "expectancy_r": -0.5853,
+            "max_drawdown_r": -28.4098,
+            "outlier": {
+              "base_exp": -0.5853,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.8878
+            },
+            "profit_factor": 0.6258,
+            "total_r": -18.7297,
+            "trade_count": 32,
+            "win_rate": 0.25
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -1.0654,
+              "passed": false,
+              "profit_factor": 0.3991
+            },
+            "cost_3x": {
+              "expectancy_r": -1.1606,
+              "passed": false,
+              "profit_factor": 0.3717
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.0178,
+              "passed": false,
+              "profit_factor": 0.4137
+            },
+            "expectancy_r": -0.9702,
+            "max_drawdown_r": -19.3914,
+            "outlier": {
+              "base_exp": -0.9702,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.2947
+            },
+            "profit_factor": 0.429,
+            "total_r": -15.5234,
+            "trade_count": 16,
+            "win_rate": 0.1875
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.2758,
+              "passed": false,
+              "profit_factor": 0.8141
+            },
+            "cost_3x": {
+              "expectancy_r": -0.3512,
+              "passed": false,
+              "profit_factor": 0.7716
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.2381,
+              "passed": false,
+              "profit_factor": 0.8365
+            },
+            "expectancy_r": -0.2004,
+            "max_drawdown_r": -10.4379,
+            "outlier": {
+              "base_exp": -0.2004,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.4779
+            },
+            "profit_factor": 0.8598,
+            "total_r": -3.2063,
+            "trade_count": 16,
+            "win_rate": 0.3125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.7054,
+              "passed": true,
+              "profit_factor": 1.6364
+            },
+            "cost_3x": {
+              "expectancy_r": 0.6411,
+              "passed": true,
+              "profit_factor": 1.5622
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.7376,
+              "passed": true,
+              "profit_factor": 1.6752
+            },
+            "expectancy_r": 0.7698,
+            "max_drawdown_r": -14.9137,
+            "outlier": {
+              "base_exp": 0.7698,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.6015
+            },
+            "profit_factor": 1.715,
+            "total_r": 61.5834,
+            "trade_count": 80,
+            "win_rate": 0.475
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.8893,
+              "passed": true,
+              "profit_factor": 1.8541
+            },
+            "cost_3x": {
+              "expectancy_r": 0.8211,
+              "passed": true,
+              "profit_factor": 1.7662
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.9234,
+              "passed": true,
+              "profit_factor": 1.9
+            },
+            "expectancy_r": 0.9575,
+            "max_drawdown_r": -8.38,
+            "outlier": {
+              "base_exp": 0.9575,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.7696
+            },
+            "profit_factor": 1.9473,
+            "total_r": 48.8319,
+            "trade_count": 51,
+            "win_rate": 0.5098
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.3821,
+              "passed": true,
+              "profit_factor": 1.3115
+            },
+            "cost_3x": {
+              "expectancy_r": 0.3245,
+              "passed": true,
+              "profit_factor": 1.2573
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4109,
+              "passed": true,
+              "profit_factor": 1.3397
+            },
+            "expectancy_r": 0.4397,
+            "max_drawdown_r": -12.6346,
+            "outlier": {
+              "base_exp": 0.4397,
+              "dropped": 2,
+              "passed": true,
+              "trimmed_exp": 0.1783
+            },
+            "profit_factor": 1.3688,
+            "total_r": 12.7515,
+            "trade_count": 29,
+            "win_rate": 0.4138
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.2902,
+              "passed": false,
+              "profit_factor": 0.8043
+            },
+            "cost_3x": {
+              "expectancy_r": -0.3663,
+              "passed": false,
+              "profit_factor": 0.7613
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.2521,
+              "passed": false,
+              "profit_factor": 0.827
+            },
+            "expectancy_r": -0.2141,
+            "max_drawdown_r": -11.7019,
+            "outlier": {
+              "base_exp": -0.2141,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.5227
+            },
+            "profit_factor": 0.8504,
+            "total_r": -6.208,
+            "trade_count": 29,
+            "win_rate": 0.3103
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.3921,
+              "passed": false,
+              "profit_factor": 0.742
+            },
+            "cost_3x": {
+              "expectancy_r": -0.4705,
+              "passed": false,
+              "profit_factor": 0.701
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.3529,
+              "passed": false,
+              "profit_factor": 0.7636
+            },
+            "expectancy_r": -0.3137,
+            "max_drawdown_r": -12.7306,
+            "outlier": {
+              "base_exp": -0.3137,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.5801
+            },
+            "profit_factor": 0.786,
+            "total_r": -5.3326,
+            "trade_count": 17,
+            "win_rate": 0.2941
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.1459,
+              "passed": false,
+              "profit_factor": 0.8981
+            },
+            "cost_3x": {
+              "expectancy_r": -0.2189,
+              "passed": false,
+              "profit_factor": 0.8522
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.1094,
+              "passed": false,
+              "profit_factor": 0.9222
+            },
+            "expectancy_r": -0.073,
+            "max_drawdown_r": -8.3139,
+            "outlier": {
+              "base_exp": -0.073,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.4391
+            },
+            "profit_factor": 0.9472,
+            "total_r": -0.8754,
+            "trade_count": 12,
+            "win_rate": 0.3333
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "donchian_trail",
+      "full_bar_pass": false,
+      "key": "donchian_exit",
+      "label": "donchian channel trail (k=2.0,n=20)",
+      "params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "requested": "Donchian channel exit",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.5007,
+              "passed": false,
+              "profit_factor": 0.6717
+            },
+            "cost_3x": {
+              "expectancy_r": -0.586,
+              "passed": false,
+              "profit_factor": 0.632
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.458,
+              "passed": false,
+              "profit_factor": 0.6929
+            },
+            "expectancy_r": -0.4154,
+            "max_drawdown_r": -31.3938,
+            "outlier": {
+              "base_exp": -0.4154,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1834
+            },
+            "profit_factor": 0.715,
+            "total_r": -13.292,
+            "trade_count": 32,
+            "win_rate": 0.1875
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.5024,
+              "passed": false,
+              "profit_factor": 0.6591
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5976,
+              "passed": false,
+              "profit_factor": 0.6139
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.4548,
+              "passed": false,
+              "profit_factor": 0.6835
+            },
+            "expectancy_r": -0.4072,
+            "max_drawdown_r": -18.5115,
+            "outlier": {
+              "base_exp": -0.4072,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.2341
+            },
+            "profit_factor": 0.7091,
+            "total_r": -6.5148,
+            "trade_count": 16,
+            "win_rate": 0.1875
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.499,
+              "passed": false,
+              "profit_factor": 0.6834
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5744,
+              "passed": false,
+              "profit_factor": 0.6491
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.4613,
+              "passed": false,
+              "profit_factor": 0.7016
+            },
+            "expectancy_r": -0.4236,
+            "max_drawdown_r": -14.953,
+            "outlier": {
+              "base_exp": -0.4236,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.1326
+            },
+            "profit_factor": 0.7205,
+            "total_r": -6.7772,
+            "trade_count": 16,
+            "win_rate": 0.1875
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.7038,
+              "passed": true,
+              "profit_factor": 2.4306
+            },
+            "cost_3x": {
+              "expectancy_r": 1.6394,
+              "passed": true,
+              "profit_factor": 2.3316
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.736,
+              "passed": true,
+              "profit_factor": 2.4826
+            },
+            "expectancy_r": 1.7682,
+            "max_drawdown_r": -16.6134,
+            "outlier": {
+              "base_exp": 1.7682,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.3188
+            },
+            "profit_factor": 2.5365,
+            "total_r": 141.4521,
+            "trade_count": 80,
+            "win_rate": 0.35
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.1859,
+              "passed": true,
+              "profit_factor": 2.757
+            },
+            "cost_3x": {
+              "expectancy_r": 2.1177,
+              "passed": true,
+              "profit_factor": 2.6465
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.22,
+              "passed": true,
+              "profit_factor": 2.8151
+            },
+            "expectancy_r": 2.2541,
+            "max_drawdown_r": -12.6559,
+            "outlier": {
+              "base_exp": 2.2541,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.4039
+            },
+            "profit_factor": 2.8753,
+            "total_r": 114.9612,
+            "trade_count": 51,
+            "win_rate": 0.3333
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.8559,
+              "passed": true,
+              "profit_factor": 1.7798
+            },
+            "cost_3x": {
+              "expectancy_r": 0.7983,
+              "passed": true,
+              "profit_factor": 1.7037
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8847,
+              "passed": true,
+              "profit_factor": 1.8198
+            },
+            "expectancy_r": 0.9135,
+            "max_drawdown_r": -13.1627,
+            "outlier": {
+              "base_exp": 0.9135,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.2328
+            },
+            "profit_factor": 1.8612,
+            "total_r": 26.4909,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.295,
+              "passed": true,
+              "profit_factor": 1.2169
+            },
+            "cost_3x": {
+              "expectancy_r": 0.2189,
+              "passed": true,
+              "profit_factor": 1.1546
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.3331,
+              "passed": true,
+              "profit_factor": 1.25
+            },
+            "expectancy_r": 0.3712,
+            "max_drawdown_r": -21.169,
+            "outlier": {
+              "base_exp": 0.3712,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.6637
+            },
+            "profit_factor": 1.2845,
+            "total_r": 10.764,
+            "trade_count": 29,
+            "win_rate": 0.2759
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.1143,
+              "passed": true,
+              "profit_factor": 1.8567
+            },
+            "cost_3x": {
+              "expectancy_r": 1.036,
+              "passed": true,
+              "profit_factor": 1.763
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.1535,
+              "passed": true,
+              "profit_factor": 1.9067
+            },
+            "expectancy_r": 1.1927,
+            "max_drawdown_r": -15.3182,
+            "outlier": {
+              "base_exp": 1.1927,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 0.3579
+            },
+            "profit_factor": 1.9589,
+            "total_r": 20.2764,
+            "trade_count": 17,
+            "win_rate": 0.2941
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.8657,
+              "passed": false,
+              "profit_factor": 0.4007
+            },
+            "cost_3x": {
+              "expectancy_r": -0.9386,
+              "passed": false,
+              "profit_factor": 0.3737
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.8292,
+              "passed": false,
+              "profit_factor": 0.415
+            },
+            "expectancy_r": -0.7927,
+            "max_drawdown_r": -13.8359,
+            "outlier": {
+              "base_exp": -0.7927,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.2578
+            },
+            "profit_factor": 0.4299,
+            "total_r": -9.5124,
+            "trade_count": 12,
+            "win_rate": 0.25
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "atr_trail",
+      "full_bar_pass": false,
+      "key": "atr_trail_3",
+      "label": "atr_trail k=3.0 (wider)",
+      "params": {
+        "atr_period": 14,
+        "k_trail": 3.0,
+        "max_bars": 120
+      },
+      "requested": "wider ATR trail",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.5763,
+              "passed": false,
+              "profit_factor": 0.6335
+            },
+            "cost_3x": {
+              "expectancy_r": -0.6616,
+              "passed": false,
+              "profit_factor": 0.5959
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.5337,
+              "passed": false,
+              "profit_factor": 0.6534
+            },
+            "expectancy_r": -0.491,
+            "max_drawdown_r": -24.9966,
+            "outlier": {
+              "base_exp": -0.491,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1008
+            },
+            "profit_factor": 0.6743,
+            "total_r": -15.7126,
+            "trade_count": 32,
+            "win_rate": 0.25
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -1.1856,
+              "passed": false,
+              "profit_factor": 0.2794
+            },
+            "cost_3x": {
+              "expectancy_r": -1.2808,
+              "passed": false,
+              "profit_factor": 0.2558
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.138,
+              "passed": false,
+              "profit_factor": 0.2921
+            },
+            "expectancy_r": -1.0904,
+            "max_drawdown_r": -17.4458,
+            "outlier": {
+              "base_exp": -1.0904,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.5623
+            },
+            "profit_factor": 0.3054,
+            "total_r": -17.4458,
+            "trade_count": 16,
+            "win_rate": 0.1875
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.0329,
+              "passed": true,
+              "profit_factor": 1.022
+            },
+            "cost_3x": {
+              "expectancy_r": -0.0425,
+              "passed": false,
+              "profit_factor": 0.9727
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.0706,
+              "passed": true,
+              "profit_factor": 1.048
+            },
+            "expectancy_r": 0.1083,
+            "max_drawdown_r": -11.7298,
+            "outlier": {
+              "base_exp": 0.1083,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.5547
+            },
+            "profit_factor": 1.075,
+            "total_r": 1.7332,
+            "trade_count": 16,
+            "win_rate": 0.3125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.6482,
+              "passed": true,
+              "profit_factor": 1.5962
+            },
+            "cost_3x": {
+              "expectancy_r": 0.5838,
+              "passed": true,
+              "profit_factor": 1.519
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.6804,
+              "passed": true,
+              "profit_factor": 1.6366
+            },
+            "expectancy_r": 0.7126,
+            "max_drawdown_r": -21.8557,
+            "outlier": {
+              "base_exp": 0.7126,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.0461
+            },
+            "profit_factor": 1.6777,
+            "total_r": 57.0064,
+            "trade_count": 80,
+            "win_rate": 0.425
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.7767,
+              "passed": true,
+              "profit_factor": 1.7423
+            },
+            "cost_3x": {
+              "expectancy_r": 0.7085,
+              "passed": true,
+              "profit_factor": 1.6521
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8108,
+              "passed": true,
+              "profit_factor": 1.7898
+            },
+            "expectancy_r": 0.8449,
+            "max_drawdown_r": -18.3171,
+            "outlier": {
+              "base_exp": 0.8449,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.004
+            },
+            "profit_factor": 1.8377,
+            "total_r": 43.0919,
+            "trade_count": 51,
+            "win_rate": 0.4118
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.4222,
+              "passed": true,
+              "profit_factor": 1.3642
+            },
+            "cost_3x": {
+              "expectancy_r": 0.3646,
+              "passed": true,
+              "profit_factor": 1.3057
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.451,
+              "passed": true,
+              "profit_factor": 1.3946
+            },
+            "expectancy_r": 0.4798,
+            "max_drawdown_r": -11.1726,
+            "outlier": {
+              "base_exp": 0.4798,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.196
+            },
+            "profit_factor": 1.4258,
+            "total_r": 13.9145,
+            "trade_count": 29,
+            "win_rate": 0.4483
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.1454,
+              "passed": true,
+              "profit_factor": 1.1276
+            },
+            "cost_3x": {
+              "expectancy_r": 0.0693,
+              "passed": true,
+              "profit_factor": 1.0583
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.1835,
+              "passed": true,
+              "profit_factor": 1.1644
+            },
+            "expectancy_r": 0.2216,
+            "max_drawdown_r": -9.0742,
+            "outlier": {
+              "base_exp": 0.2216,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.2486
+            },
+            "profit_factor": 1.2028,
+            "total_r": 6.4253,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.3888,
+              "passed": true,
+              "profit_factor": 1.3701
+            },
+            "cost_3x": {
+              "expectancy_r": 0.3104,
+              "passed": true,
+              "profit_factor": 1.2831
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.428,
+              "passed": true,
+              "profit_factor": 1.4166
+            },
+            "expectancy_r": 0.4672,
+            "max_drawdown_r": -4.0228,
+            "outlier": {
+              "base_exp": 0.4672,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 0.0192
+            },
+            "profit_factor": 1.4652,
+            "total_r": 7.9428,
+            "trade_count": 17,
+            "win_rate": 0.4118
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.1994,
+              "passed": false,
+              "profit_factor": 0.8426
+            },
+            "cost_3x": {
+              "expectancy_r": -0.2724,
+              "passed": false,
+              "profit_factor": 0.7931
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.1629,
+              "passed": false,
+              "profit_factor": 0.8689
+            },
+            "expectancy_r": -0.1265,
+            "max_drawdown_r": -9.1135,
+            "outlier": {
+              "base_exp": -0.1265,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.5753
+            },
+            "profit_factor": 0.8962,
+            "total_r": -1.5175,
+            "trade_count": 12,
+            "win_rate": 0.3333
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "atr_trail",
+      "full_bar_pass": false,
+      "key": "atr_trail_4",
+      "label": "atr_trail k=4.0 (widest)",
+      "params": {
+        "atr_period": 14,
+        "k_trail": 4.0,
+        "max_bars": 120
+      },
+      "requested": "wider ATR trail",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.5085,
+              "passed": false,
+              "profit_factor": 0.7348
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5938,
+              "passed": false,
+              "profit_factor": 0.6999
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.4659,
+              "passed": false,
+              "profit_factor": 0.7531
+            },
+            "expectancy_r": -0.4232,
+            "max_drawdown_r": -29.9217,
+            "outlier": {
+              "base_exp": -0.4232,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1614
+            },
+            "profit_factor": 0.772,
+            "total_r": -13.543,
+            "trade_count": 32,
+            "win_rate": 0.2812
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.2065,
+              "passed": false,
+              "profit_factor": 0.8747
+            },
+            "cost_3x": {
+              "expectancy_r": -0.3017,
+              "passed": false,
+              "profit_factor": 0.8243
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.1589,
+              "passed": false,
+              "profit_factor": 0.9016
+            },
+            "expectancy_r": -0.1113,
+            "max_drawdown_r": -15.0853,
+            "outlier": {
+              "base_exp": -0.1113,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.7681
+            },
+            "profit_factor": 0.9296,
+            "total_r": -1.7804,
+            "trade_count": 16,
+            "win_rate": 0.25
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.8106,
+              "passed": false,
+              "profit_factor": 0.6293
+            },
+            "cost_3x": {
+              "expectancy_r": -0.886,
+              "passed": false,
+              "profit_factor": 0.6046
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7729,
+              "passed": false,
+              "profit_factor": 0.6422
+            },
+            "expectancy_r": -0.7352,
+            "max_drawdown_r": -20.5508,
+            "outlier": {
+              "base_exp": -0.7352,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.5547
+            },
+            "profit_factor": 0.6553,
+            "total_r": -11.7626,
+            "trade_count": 16,
+            "win_rate": 0.3125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.8334,
+              "passed": true,
+              "profit_factor": 1.6026
+            },
+            "cost_3x": {
+              "expectancy_r": 0.7691,
+              "passed": true,
+              "profit_factor": 1.5424
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8656,
+              "passed": true,
+              "profit_factor": 1.6338
+            },
+            "expectancy_r": 0.8978,
+            "max_drawdown_r": -17.6979,
+            "outlier": {
+              "base_exp": 0.8978,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.126
+            },
+            "profit_factor": 1.6657,
+            "total_r": 71.8231,
+            "trade_count": 80,
+            "win_rate": 0.45
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.6967,
+              "passed": true,
+              "profit_factor": 1.511
+            },
+            "cost_3x": {
+              "expectancy_r": 0.6285,
+              "passed": true,
+              "profit_factor": 1.4499
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.7308,
+              "passed": true,
+              "profit_factor": 1.5427
+            },
+            "expectancy_r": 0.7649,
+            "max_drawdown_r": -16.4621,
+            "outlier": {
+              "base_exp": 0.7649,
+              "dropped": 3,
+              "passed": false,
+              "trimmed_exp": -0.0643
+            },
+            "profit_factor": 1.5749,
+            "total_r": 39.0109,
+            "trade_count": 51,
+            "win_rate": 0.4902
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 1.0738,
+              "passed": true,
+              "profit_factor": 1.7575
+            },
+            "cost_3x": {
+              "expectancy_r": 1.0162,
+              "passed": true,
+              "profit_factor": 1.6986
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.1027,
+              "passed": true,
+              "profit_factor": 1.788
+            },
+            "expectancy_r": 1.1315,
+            "max_drawdown_r": -15.5963,
+            "outlier": {
+              "base_exp": 1.1315,
+              "dropped": 2,
+              "passed": true,
+              "trimmed_exp": 0.1132
+            },
+            "profit_factor": 1.8194,
+            "total_r": 32.8122,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.2652,
+              "passed": false,
+              "profit_factor": 0.8504
+            },
+            "cost_3x": {
+              "expectancy_r": -0.3414,
+              "passed": false,
+              "profit_factor": 0.8127
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.2272,
+              "passed": false,
+              "profit_factor": 0.8701
+            },
+            "expectancy_r": -0.1891,
+            "max_drawdown_r": -20.2649,
+            "outlier": {
+              "base_exp": -0.1891,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.8793
+            },
+            "profit_factor": 0.8903,
+            "total_r": -5.4834,
+            "trade_count": 29,
+            "win_rate": 0.3448
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.1725,
+              "passed": true,
+              "profit_factor": 1.1039
+            },
+            "cost_3x": {
+              "expectancy_r": 0.0941,
+              "passed": true,
+              "profit_factor": 1.055
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.2117,
+              "passed": true,
+              "profit_factor": 1.1295
+            },
+            "expectancy_r": 0.2509,
+            "max_drawdown_r": -12.4698,
+            "outlier": {
+              "base_exp": 0.2509,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.3174
+            },
+            "profit_factor": 1.1558,
+            "total_r": 4.2649,
+            "trade_count": 17,
+            "win_rate": 0.3529
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.8853,
+              "passed": false,
+              "profit_factor": 0.5422
+            },
+            "cost_3x": {
+              "expectancy_r": -0.9583,
+              "passed": false,
+              "profit_factor": 0.5167
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.8488,
+              "passed": false,
+              "profit_factor": 0.5554
+            },
+            "expectancy_r": -0.8124,
+            "max_drawdown_r": -14.8785,
+            "outlier": {
+              "base_exp": -0.8124,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.3526
+            },
+            "profit_factor": 0.5689,
+            "total_r": -9.7483,
+            "trade_count": 12,
+            "win_rate": 0.3333
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "chandelier",
+      "full_bar_pass": false,
+      "key": "chandelier_3",
+      "label": "chandelier atr_mult=3.0",
+      "params": {
+        "atr_mult": 3.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "requested": "Chandelier exit",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.613,
+              "passed": false,
+              "profit_factor": 0.5812
+            },
+            "cost_3x": {
+              "expectancy_r": -0.6983,
+              "passed": false,
+              "profit_factor": 0.5427
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.5704,
+              "passed": false,
+              "profit_factor": 0.6017
+            },
+            "expectancy_r": -0.5277,
+            "max_drawdown_r": -26.9659,
+            "outlier": {
+              "base_exp": -0.5277,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1072
+            },
+            "profit_factor": 0.6232,
+            "total_r": -16.8866,
+            "trade_count": 32,
+            "win_rate": 0.25
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.443,
+              "passed": false,
+              "profit_factor": 0.7032
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5382,
+              "passed": false,
+              "profit_factor": 0.6549
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.3954,
+              "passed": false,
+              "profit_factor": 0.7289
+            },
+            "expectancy_r": -0.3478,
+            "max_drawdown_r": -15.1373,
+            "outlier": {
+              "base_exp": -0.3478,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.0092
+            },
+            "profit_factor": 0.7559,
+            "total_r": -5.5646,
+            "trade_count": 16,
+            "win_rate": 0.25
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.783,
+              "passed": false,
+              "profit_factor": 0.4544
+            },
+            "cost_3x": {
+              "expectancy_r": -0.8584,
+              "passed": false,
+              "profit_factor": 0.4255
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7453,
+              "passed": false,
+              "profit_factor": 0.4697
+            },
+            "expectancy_r": -0.7076,
+            "max_drawdown_r": -11.8286,
+            "outlier": {
+              "base_exp": -0.7076,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.2053
+            },
+            "profit_factor": 0.4857,
+            "total_r": -11.322,
+            "trade_count": 16,
+            "win_rate": 0.25
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.3456,
+              "passed": true,
+              "profit_factor": 2.295
+            },
+            "cost_3x": {
+              "expectancy_r": 1.2812,
+              "passed": true,
+              "profit_factor": 2.1942
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3778,
+              "passed": true,
+              "profit_factor": 2.3472
+            },
+            "expectancy_r": 1.41,
+            "max_drawdown_r": -15.4704,
+            "outlier": {
+              "base_exp": 1.41,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.2772
+            },
+            "profit_factor": 2.4011,
+            "total_r": 112.7984,
+            "trade_count": 80,
+            "win_rate": 0.4625
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.3394,
+              "passed": true,
+              "profit_factor": 2.2633
+            },
+            "cost_3x": {
+              "expectancy_r": 1.2712,
+              "passed": true,
+              "profit_factor": 2.1606
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3735,
+              "passed": true,
+              "profit_factor": 2.3166
+            },
+            "expectancy_r": 1.4076,
+            "max_drawdown_r": -10.3451,
+            "outlier": {
+              "base_exp": 1.4076,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.0743
+            },
+            "profit_factor": 2.3718,
+            "total_r": 71.7863,
+            "trade_count": 51,
+            "win_rate": 0.451
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 1.3566,
+              "passed": true,
+              "profit_factor": 2.3542
+            },
+            "cost_3x": {
+              "expectancy_r": 1.299,
+              "passed": true,
+              "profit_factor": 2.2568
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3854,
+              "passed": true,
+              "profit_factor": 2.4041
+            },
+            "expectancy_r": 1.4142,
+            "max_drawdown_r": -9.5905,
+            "outlier": {
+              "base_exp": 1.4142,
+              "dropped": 2,
+              "passed": true,
+              "trimmed_exp": 0.2693
+            },
+            "profit_factor": 2.4556,
+            "total_r": 41.0121,
+            "trade_count": 29,
+            "win_rate": 0.4828
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.6661,
+              "passed": true,
+              "profit_factor": 1.5249
+            },
+            "cost_3x": {
+              "expectancy_r": 0.5899,
+              "passed": true,
+              "profit_factor": 1.4481
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.7041,
+              "passed": true,
+              "profit_factor": 1.5656
+            },
+            "expectancy_r": 0.7422,
+            "max_drawdown_r": -12.0246,
+            "outlier": {
+              "base_exp": 0.7422,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.1825
+            },
+            "profit_factor": 1.6078,
+            "total_r": 21.5242,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.4327,
+              "passed": true,
+              "profit_factor": 2.4167
+            },
+            "cost_3x": {
+              "expectancy_r": 1.3543,
+              "passed": true,
+              "profit_factor": 2.2801
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.4719,
+              "passed": true,
+              "profit_factor": 2.4899
+            },
+            "expectancy_r": 1.5111,
+            "max_drawdown_r": -7.6307,
+            "outlier": {
+              "base_exp": 1.5111,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 0.7147
+            },
+            "profit_factor": 2.5666,
+            "total_r": 25.6883,
+            "trade_count": 17,
+            "win_rate": 0.4118
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.42,
+              "passed": false,
+              "profit_factor": 0.7429
+            },
+            "cost_3x": {
+              "expectancy_r": -0.4929,
+              "passed": false,
+              "profit_factor": 0.7071
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.3835,
+              "passed": false,
+              "profit_factor": 0.7617
+            },
+            "expectancy_r": -0.347,
+            "max_drawdown_r": -11.3913,
+            "outlier": {
+              "base_exp": -0.347,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.9189
+            },
+            "profit_factor": 0.781,
+            "total_r": -4.1641,
+            "trade_count": 12,
+            "win_rate": 0.3333
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "chandelier",
+      "full_bar_pass": false,
+      "key": "chandelier_4",
+      "label": "chandelier atr_mult=4.0",
+      "params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "requested": "Chandelier exit",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.8249,
+              "passed": false,
+              "profit_factor": 0.5523
+            },
+            "cost_3x": {
+              "expectancy_r": -0.9102,
+              "passed": false,
+              "profit_factor": 0.5222
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7822,
+              "passed": false,
+              "profit_factor": 0.5682
+            },
+            "expectancy_r": -0.7396,
+            "max_drawdown_r": -39.6846,
+            "outlier": {
+              "base_exp": -0.7396,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.4179
+            },
+            "profit_factor": 0.5846,
+            "total_r": -23.6663,
+            "trade_count": 32,
+            "win_rate": 0.25
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.8447,
+              "passed": false,
+              "profit_factor": 0.5136
+            },
+            "cost_3x": {
+              "expectancy_r": -0.94,
+              "passed": false,
+              "profit_factor": 0.4785
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7971,
+              "passed": false,
+              "profit_factor": 0.5321
+            },
+            "expectancy_r": -0.7495,
+            "max_drawdown_r": -21.1286,
+            "outlier": {
+              "base_exp": -0.7495,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.3637
+            },
+            "profit_factor": 0.5514,
+            "total_r": -11.9924,
+            "trade_count": 16,
+            "win_rate": 0.25
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.805,
+              "passed": false,
+              "profit_factor": 0.5869
+            },
+            "cost_3x": {
+              "expectancy_r": -0.8804,
+              "passed": false,
+              "profit_factor": 0.5615
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7673,
+              "passed": false,
+              "profit_factor": 0.6002
+            },
+            "expectancy_r": -0.7296,
+            "max_drawdown_r": -20.0448,
+            "outlier": {
+              "base_exp": -0.7296,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.4722
+            },
+            "profit_factor": 0.614,
+            "total_r": -11.6739,
+            "trade_count": 16,
+            "win_rate": 0.25
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.6282,
+              "passed": true,
+              "profit_factor": 2.0461
+            },
+            "cost_3x": {
+              "expectancy_r": 1.5638,
+              "passed": true,
+              "profit_factor": 1.9797
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.6604,
+              "passed": true,
+              "profit_factor": 2.0805
+            },
+            "expectancy_r": 1.6925,
+            "max_drawdown_r": -20.4923,
+            "outlier": {
+              "base_exp": 1.6925,
+              "dropped": 4,
+              "passed": false,
+              "trimmed_exp": -0.0399
+            },
+            "profit_factor": 2.1157,
+            "total_r": 135.4033,
+            "trade_count": 80,
+            "win_rate": 0.375
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.2015,
+              "passed": true,
+              "profit_factor": 2.3685
+            },
+            "cost_3x": {
+              "expectancy_r": 2.1333,
+              "passed": true,
+              "profit_factor": 2.2925
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.2356,
+              "passed": true,
+              "profit_factor": 2.408
+            },
+            "expectancy_r": 2.2697,
+            "max_drawdown_r": -15.1472,
+            "outlier": {
+              "base_exp": 2.2697,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.0037
+            },
+            "profit_factor": 2.4485,
+            "total_r": 115.7557,
+            "trade_count": 51,
+            "win_rate": 0.3529
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.6199,
+              "passed": true,
+              "profit_factor": 1.4233
+            },
+            "cost_3x": {
+              "expectancy_r": 0.5623,
+              "passed": true,
+              "profit_factor": 1.3747
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.6487,
+              "passed": true,
+              "profit_factor": 1.4485
+            },
+            "expectancy_r": 0.6775,
+            "max_drawdown_r": -17.0047,
+            "outlier": {
+              "base_exp": 0.6775,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.5261
+            },
+            "profit_factor": 1.474,
+            "total_r": 19.6476,
+            "trade_count": 29,
+            "win_rate": 0.4138
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.2341,
+              "passed": true,
+              "profit_factor": 1.1222
+            },
+            "cost_3x": {
+              "expectancy_r": 0.1579,
+              "passed": true,
+              "profit_factor": 1.0803
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.2722,
+              "passed": true,
+              "profit_factor": 1.144
+            },
+            "expectancy_r": 0.3102,
+            "max_drawdown_r": -17.8094,
+            "outlier": {
+              "base_exp": 0.3102,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.751
+            },
+            "profit_factor": 1.1664,
+            "total_r": 8.9964,
+            "trade_count": 29,
+            "win_rate": 0.3448
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.3446,
+              "passed": true,
+              "profit_factor": 1.8491
+            },
+            "cost_3x": {
+              "expectancy_r": 1.2663,
+              "passed": true,
+              "profit_factor": 1.7736
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3838,
+              "passed": true,
+              "profit_factor": 1.8887
+            },
+            "expectancy_r": 1.423,
+            "max_drawdown_r": -9.5506,
+            "outlier": {
+              "base_exp": 1.423,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 0.5824
+            },
+            "profit_factor": 1.9297,
+            "total_r": 24.1916,
+            "trade_count": 17,
+            "win_rate": 0.3529
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -1.3392,
+              "passed": false,
+              "profit_factor": 0.4386
+            },
+            "cost_3x": {
+              "expectancy_r": -1.4122,
+              "passed": false,
+              "profit_factor": 0.42
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.3027,
+              "passed": false,
+              "profit_factor": 0.4482
+            },
+            "expectancy_r": -1.2663,
+            "max_drawdown_r": -20.3669,
+            "outlier": {
+              "base_exp": -1.2663,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.8515
+            },
+            "profit_factor": 0.458,
+            "total_r": -15.1952,
+            "trade_count": 12,
+            "win_rate": 0.3333
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "breakeven_r",
+      "full_bar_pass": false,
+      "key": "breakeven_1r",
+      "label": "breakeven after +1R",
+      "params": {
+        "atr_period": 14,
+        "be_trigger": 1.0,
+        "k_stop": 2.0,
+        "n_bars": 120
+      },
+      "requested": "breakeven after +1R",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.6491,
+              "passed": false,
+              "profit_factor": 0.4062
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7344,
+              "passed": false,
+              "profit_factor": 0.3728
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.6064,
+              "passed": false,
+              "profit_factor": 0.4248
+            },
+            "expectancy_r": -0.5638,
+            "max_drawdown_r": -24.112,
+            "outlier": {
+              "base_exp": -0.5638,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.9773
+            },
+            "profit_factor": 0.4447,
+            "total_r": -18.0407,
+            "trade_count": 32,
+            "win_rate": 0.0938
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.8609,
+              "passed": false,
+              "profit_factor": 0.1822
+            },
+            "cost_3x": {
+              "expectancy_r": -0.9561,
+              "passed": false,
+              "profit_factor": 0.1624
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.8133,
+              "passed": false,
+              "profit_factor": 0.1934
+            },
+            "expectancy_r": -0.7657,
+            "max_drawdown_r": -12.2507,
+            "outlier": {
+              "base_exp": -0.7657,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.0281
+            },
+            "profit_factor": 0.2056,
+            "total_r": -12.2507,
+            "trade_count": 16,
+            "win_rate": 0.0625
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.4373,
+              "passed": false,
+              "profit_factor": 0.6143
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5127,
+              "passed": false,
+              "profit_factor": 0.5729
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.3996,
+              "passed": false,
+              "profit_factor": 0.6368
+            },
+            "expectancy_r": -0.3619,
+            "max_drawdown_r": -11.8613,
+            "outlier": {
+              "base_exp": -0.3619,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.9265
+            },
+            "profit_factor": 0.6608,
+            "total_r": -5.79,
+            "trade_count": 16,
+            "win_rate": 0.125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.4336,
+              "passed": true,
+              "profit_factor": 2.8186
+            },
+            "cost_3x": {
+              "expectancy_r": 1.3692,
+              "passed": true,
+              "profit_factor": 2.6205
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.4658,
+              "passed": true,
+              "profit_factor": 2.9288
+            },
+            "expectancy_r": 1.498,
+            "max_drawdown_r": -24.3295,
+            "outlier": {
+              "base_exp": 1.498,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.2857
+            },
+            "profit_factor": 3.0474,
+            "total_r": 119.8386,
+            "trade_count": 80,
+            "win_rate": 0.125
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.0822,
+              "passed": true,
+              "profit_factor": 3.7919
+            },
+            "cost_3x": {
+              "expectancy_r": 2.014,
+              "passed": true,
+              "profit_factor": 3.5019
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.1164,
+              "passed": true,
+              "profit_factor": 3.9548
+            },
+            "expectancy_r": 2.1505,
+            "max_drawdown_r": -15.5935,
+            "outlier": {
+              "base_exp": 2.1505,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.6277
+            },
+            "profit_factor": 4.1319,
+            "total_r": 109.6734,
+            "trade_count": 51,
+            "win_rate": 0.1373
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.2929,
+              "passed": true,
+              "profit_factor": 1.3394
+            },
+            "cost_3x": {
+              "expectancy_r": 0.2353,
+              "passed": true,
+              "profit_factor": 1.2571
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.3217,
+              "passed": true,
+              "profit_factor": 1.3844
+            },
+            "expectancy_r": 0.3505,
+            "max_drawdown_r": -10.2573,
+            "outlier": {
+              "base_exp": 0.3505,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.5695
+            },
+            "profit_factor": 1.4323,
+            "total_r": 10.1652,
+            "trade_count": 29,
+            "win_rate": 0.1034
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.3515,
+              "passed": true,
+              "profit_factor": 2.5113
+            },
+            "cost_3x": {
+              "expectancy_r": 1.2754,
+              "passed": true,
+              "profit_factor": 2.3256
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3896,
+              "passed": true,
+              "profit_factor": 2.6151
+            },
+            "expectancy_r": 1.4277,
+            "max_drawdown_r": -13.2957,
+            "outlier": {
+              "base_exp": 1.4277,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.3812
+            },
+            "profit_factor": 2.7274,
+            "total_r": 41.4019,
+            "trade_count": 29,
+            "win_rate": 0.1034
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.9967,
+              "passed": true,
+              "profit_factor": 4.5917
+            },
+            "cost_3x": {
+              "expectancy_r": 2.9184,
+              "passed": true,
+              "profit_factor": 4.2478
+            },
+            "cost_5bps": {
+              "expectancy_r": 3.0359,
+              "passed": true,
+              "profit_factor": 4.7844
+            },
+            "expectancy_r": 3.0751,
+            "max_drawdown_r": -8.8406,
+            "outlier": {
+              "base_exp": 3.0751,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 1.5185
+            },
+            "profit_factor": 4.9931,
+            "total_r": 52.2773,
+            "trade_count": 17,
+            "win_rate": 0.1765
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.9792,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "cost_3x": {
+              "expectancy_r": -1.0522,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.9428,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "expectancy_r": -0.9063,
+            "max_drawdown_r": -10.8754,
+            "outlier": {
+              "base_exp": -0.9063,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.9851
+            },
+            "profit_factor": 0.0,
+            "total_r": -10.8754,
+            "trade_count": 12,
+            "win_rate": 0.0
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "breakeven_r",
+      "full_bar_pass": false,
+      "key": "breakeven_1_5r",
+      "label": "breakeven after +1.5R",
+      "params": {
+        "atr_period": 14,
+        "be_trigger": 1.5,
+        "k_stop": 2.0,
+        "n_bars": 120
+      },
+      "requested": "breakeven after +1.5R",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.8366,
+              "passed": false,
+              "profit_factor": 0.3467
+            },
+            "cost_3x": {
+              "expectancy_r": -0.9219,
+              "passed": false,
+              "profit_factor": 0.3214
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7939,
+              "passed": false,
+              "profit_factor": 0.3606
+            },
+            "expectancy_r": -0.7513,
+            "max_drawdown_r": -30.112,
+            "outlier": {
+              "base_exp": -0.7513,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1773
+            },
+            "profit_factor": 0.3754,
+            "total_r": -24.0407,
+            "trade_count": 32,
+            "win_rate": 0.0938
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.9859,
+              "passed": false,
+              "profit_factor": 0.1628
+            },
+            "cost_3x": {
+              "expectancy_r": -1.0811,
+              "passed": false,
+              "profit_factor": 0.1463
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.9383,
+              "passed": false,
+              "profit_factor": 0.172
+            },
+            "expectancy_r": -0.8907,
+            "max_drawdown_r": -14.2507,
+            "outlier": {
+              "base_exp": -0.8907,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.1614
+            },
+            "profit_factor": 0.182,
+            "total_r": -14.2507,
+            "trade_count": 16,
+            "win_rate": 0.0625
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.6873,
+              "passed": false,
+              "profit_factor": 0.5033
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7627,
+              "passed": false,
+              "profit_factor": 0.4742
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.6496,
+              "passed": false,
+              "profit_factor": 0.5189
+            },
+            "expectancy_r": -0.6119,
+            "max_drawdown_r": -15.8613,
+            "outlier": {
+              "base_exp": -0.6119,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.1932
+            },
+            "profit_factor": 0.5353,
+            "total_r": -9.79,
+            "trade_count": 16,
+            "win_rate": 0.125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 2.147,
+              "passed": true,
+              "profit_factor": 3.3069
+            },
+            "cost_3x": {
+              "expectancy_r": 2.0826,
+              "passed": true,
+              "profit_factor": 3.1175
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.1791,
+              "passed": true,
+              "profit_factor": 3.4099
+            },
+            "expectancy_r": 2.2113,
+            "max_drawdown_r": -30.22,
+            "outlier": {
+              "base_exp": 2.2113,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.8324
+            },
+            "profit_factor": 3.519,
+            "total_r": 176.9064,
+            "trade_count": 80,
+            "win_rate": 0.1875
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.9933,
+              "passed": true,
+              "profit_factor": 4.3533
+            },
+            "cost_3x": {
+              "expectancy_r": 2.925,
+              "passed": true,
+              "profit_factor": 4.0894
+            },
+            "cost_5bps": {
+              "expectancy_r": 3.0274,
+              "passed": true,
+              "profit_factor": 4.4976
+            },
+            "expectancy_r": 3.0615,
+            "max_drawdown_r": -19.5935,
+            "outlier": {
+              "base_exp": 3.0615,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 1.3504
+            },
+            "profit_factor": 4.6512,
+            "total_r": 156.135,
+            "trade_count": 51,
+            "win_rate": 0.2157
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.6586,
+              "passed": true,
+              "profit_factor": 1.6602
+            },
+            "cost_3x": {
+              "expectancy_r": 0.601,
+              "passed": true,
+              "profit_factor": 1.5734
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.6875,
+              "passed": true,
+              "profit_factor": 1.707
+            },
+            "expectancy_r": 0.7163,
+            "max_drawdown_r": -12.9227,
+            "outlier": {
+              "base_exp": 0.7163,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.3817
+            },
+            "profit_factor": 1.7563,
+            "total_r": 20.7714,
+            "trade_count": 29,
+            "win_rate": 0.1379
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.0757,
+              "passed": true,
+              "profit_factor": 1.9192
+            },
+            "cost_3x": {
+              "expectancy_r": 0.9995,
+              "passed": true,
+              "profit_factor": 1.8074
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.1137,
+              "passed": true,
+              "profit_factor": 1.9802
+            },
+            "expectancy_r": 1.1518,
+            "max_drawdown_r": -19.2957,
+            "outlier": {
+              "base_exp": 1.1518,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.6775
+            },
+            "profit_factor": 2.0449,
+            "total_r": 33.4019,
+            "trade_count": 29,
+            "win_rate": 0.1034
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.6438,
+              "passed": true,
+              "profit_factor": 3.2268
+            },
+            "cost_3x": {
+              "expectancy_r": 2.5654,
+              "passed": true,
+              "profit_factor": 3.0498
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.683,
+              "passed": true,
+              "profit_factor": 3.3226
+            },
+            "expectancy_r": 2.7222,
+            "max_drawdown_r": -12.8406,
+            "outlier": {
+              "base_exp": 2.7222,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 1.1435
+            },
+            "profit_factor": 3.4239,
+            "total_r": 46.2773,
+            "trade_count": 17,
+            "win_rate": 0.1765
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -1.1459,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "cost_3x": {
+              "expectancy_r": -1.2189,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.1094,
+              "passed": false,
+              "profit_factor": 0.0
+            },
+            "expectancy_r": -1.073,
+            "max_drawdown_r": -12.8754,
+            "outlier": {
+              "base_exp": -1.073,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.1663
+            },
+            "profit_factor": 0.0,
+            "total_r": -12.8754,
+            "trade_count": 12,
+            "win_rate": 0.0
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "lock_profit",
+      "full_bar_pass": false,
+      "key": "lock_profit_2r",
+      "label": "lock +1R after +2R reached",
+      "params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "lock_level": 1.0,
+        "lock_trigger": 2.0,
+        "n_bars": 120
+      },
+      "requested": "lock-profit after +2R",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.0805,
+              "passed": false,
+              "profit_factor": 0.9435
+            },
+            "cost_3x": {
+              "expectancy_r": -0.1658,
+              "passed": false,
+              "profit_factor": 0.8879
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0378,
+              "passed": false,
+              "profit_factor": 0.9729
+            },
+            "expectancy_r": 0.0048,
+            "max_drawdown_r": -32.1371,
+            "outlier": {
+              "base_exp": 0.0048,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.1081
+            },
+            "profit_factor": 1.0035,
+            "total_r": 0.1548,
+            "trade_count": 32,
+            "win_rate": 0.3438
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.6031,
+              "passed": true,
+              "profit_factor": 1.4422
+            },
+            "cost_3x": {
+              "expectancy_r": 0.5079,
+              "passed": true,
+              "profit_factor": 1.3575
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.6507,
+              "passed": true,
+              "profit_factor": 1.4873
+            },
+            "expectancy_r": 0.6983,
+            "max_drawdown_r": -14.1187,
+            "outlier": {
+              "base_exp": 0.6983,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.9412
+            },
+            "profit_factor": 1.5343,
+            "total_r": 11.1726,
+            "trade_count": 16,
+            "win_rate": 0.375
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.764,
+              "passed": false,
+              "profit_factor": 0.4849
+            },
+            "cost_3x": {
+              "expectancy_r": -0.8394,
+              "passed": false,
+              "profit_factor": 0.454
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.7263,
+              "passed": false,
+              "profit_factor": 0.5012
+            },
+            "expectancy_r": -0.6886,
+            "max_drawdown_r": -18.0184,
+            "outlier": {
+              "base_exp": -0.6886,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.275
+            },
+            "profit_factor": 0.5181,
+            "total_r": -11.0178,
+            "trade_count": 16,
+            "win_rate": 0.3125
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.4343,
+              "passed": true,
+              "profit_factor": 2.5056
+            },
+            "cost_3x": {
+              "expectancy_r": 1.37,
+              "passed": true,
+              "profit_factor": 2.3993
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.4665,
+              "passed": true,
+              "profit_factor": 2.5609
+            },
+            "expectancy_r": 1.4987,
+            "max_drawdown_r": -21.0907,
+            "outlier": {
+              "base_exp": 1.4987,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.2865
+            },
+            "profit_factor": 2.6179,
+            "total_r": 119.8963,
+            "trade_count": 80,
+            "win_rate": 0.55
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.3036,
+              "passed": true,
+              "profit_factor": 3.517
+            },
+            "cost_3x": {
+              "expectancy_r": 2.2354,
+              "passed": true,
+              "profit_factor": 3.3744
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.3377,
+              "passed": true,
+              "profit_factor": 3.5914
+            },
+            "expectancy_r": 2.3718,
+            "max_drawdown_r": -13.2297,
+            "outlier": {
+              "base_exp": 2.3718,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.8628
+            },
+            "profit_factor": 3.668,
+            "total_r": 120.9607,
+            "trade_count": 51,
+            "win_rate": 0.5686
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.0943,
+              "passed": false,
+              "profit_factor": 0.9074
+            },
+            "cost_3x": {
+              "expectancy_r": -0.1519,
+              "passed": false,
+              "profit_factor": 0.8546
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0655,
+              "passed": false,
+              "profit_factor": 0.9348
+            },
+            "expectancy_r": -0.0367,
+            "max_drawdown_r": -10.8695,
+            "outlier": {
+              "base_exp": -0.0367,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.6147
+            },
+            "profit_factor": 0.963,
+            "total_r": -1.0644,
+            "trade_count": 29,
+            "win_rate": 0.5172
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 1.3515,
+              "passed": true,
+              "profit_factor": 2.1372
+            },
+            "cost_3x": {
+              "expectancy_r": 1.2754,
+              "passed": true,
+              "profit_factor": 2.0361
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.3896,
+              "passed": true,
+              "profit_factor": 2.1906
+            },
+            "expectancy_r": 1.4277,
+            "max_drawdown_r": -16.111,
+            "outlier": {
+              "base_exp": 1.4277,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.3812
+            },
+            "profit_factor": 2.2458,
+            "total_r": 41.4019,
+            "trade_count": 29,
+            "win_rate": 0.4483
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 2.7615,
+              "passed": true,
+              "profit_factor": 3.1766
+            },
+            "cost_3x": {
+              "expectancy_r": 2.6831,
+              "passed": true,
+              "profit_factor": 3.0407
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.8006,
+              "passed": true,
+              "profit_factor": 3.2484
+            },
+            "expectancy_r": 2.8398,
+            "max_drawdown_r": -13.6559,
+            "outlier": {
+              "base_exp": 2.8398,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 1.2685
+            },
+            "profit_factor": 3.3228,
+            "total_r": 48.2773,
+            "trade_count": 17,
+            "win_rate": 0.4118
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.6459,
+              "passed": false,
+              "profit_factor": 0.399
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7189,
+              "passed": false,
+              "profit_factor": 0.3535
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.6094,
+              "passed": false,
+              "profit_factor": 0.4229
+            },
+            "expectancy_r": -0.573,
+            "max_drawdown_r": -9.6422,
+            "outlier": {
+              "base_exp": -0.573,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.7118
+            },
+            "profit_factor": 0.4477,
+            "total_r": -6.8754,
+            "trade_count": 12,
+            "win_rate": 0.5
+          }
+        }
+      },
+      "verdict": "improves: +raw R but fails risk/cost/outlier bar -> no edge"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "horizon_hold",
+      "full_bar_pass": false,
+      "key": "time_stop_48",
+      "label": "time stop @48 bars (no stop)",
+      "params": {
+        "atr_period": 14,
+        "n_bars": 48
+      },
+      "requested": "time stop",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.1978,
+              "passed": true,
+              "profit_factor": 1.096
+            },
+            "cost_3x": {
+              "expectancy_r": 0.1125,
+              "passed": true,
+              "profit_factor": 1.0536
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.2404,
+              "passed": true,
+              "profit_factor": 1.1178
+            },
+            "expectancy_r": 0.2831,
+            "max_drawdown_r": -24.551,
+            "outlier": {
+              "base_exp": 0.2831,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.4543
+            },
+            "profit_factor": 1.1399,
+            "total_r": 9.058,
+            "trade_count": 32,
+            "win_rate": 0.5
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.3739,
+              "passed": true,
+              "profit_factor": 1.2115
+            },
+            "cost_3x": {
+              "expectancy_r": 0.2787,
+              "passed": true,
+              "profit_factor": 1.1551
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4216,
+              "passed": true,
+              "profit_factor": 1.2405
+            },
+            "expectancy_r": 0.4692,
+            "max_drawdown_r": -22.5123,
+            "outlier": {
+              "base_exp": 0.4692,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.2415
+            },
+            "profit_factor": 1.2699,
+            "total_r": 7.5066,
+            "trade_count": 16,
+            "win_rate": 0.625
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.0216,
+              "passed": true,
+              "profit_factor": 1.0092
+            },
+            "cost_3x": {
+              "expectancy_r": -0.0538,
+              "passed": false,
+              "profit_factor": 0.9775
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.0593,
+              "passed": true,
+              "profit_factor": 1.0254
+            },
+            "expectancy_r": 0.097,
+            "max_drawdown_r": -24.4939,
+            "outlier": {
+              "base_exp": 0.097,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.667
+            },
+            "profit_factor": 1.042,
+            "total_r": 1.5514,
+            "trade_count": 16,
+            "win_rate": 0.375
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.9866,
+              "passed": true,
+              "profit_factor": 1.4258
+            },
+            "cost_3x": {
+              "expectancy_r": 0.9222,
+              "passed": true,
+              "profit_factor": 1.3925
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.0187,
+              "passed": true,
+              "profit_factor": 1.4427
+            },
+            "expectancy_r": 1.0509,
+            "max_drawdown_r": -57.7936,
+            "outlier": {
+              "base_exp": 1.0509,
+              "dropped": 4,
+              "passed": false,
+              "trimmed_exp": -0.3847
+            },
+            "profit_factor": 1.4598,
+            "total_r": 84.0736,
+            "trade_count": 80,
+            "win_rate": 0.5125
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 1.8212,
+              "passed": true,
+              "profit_factor": 1.9334
+            },
+            "cost_3x": {
+              "expectancy_r": 1.753,
+              "passed": true,
+              "profit_factor": 1.8836
+            },
+            "cost_5bps": {
+              "expectancy_r": 1.8553,
+              "passed": true,
+              "profit_factor": 1.9588
+            },
+            "expectancy_r": 1.8894,
+            "max_drawdown_r": -37.5796,
+            "outlier": {
+              "base_exp": 1.8894,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.1588
+            },
+            "profit_factor": 1.9844,
+            "total_r": 96.36,
+            "trade_count": 51,
+            "win_rate": 0.549
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.4813,
+              "passed": false,
+              "profit_factor": 0.8375
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5389,
+              "passed": false,
+              "profit_factor": 0.8199
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.4525,
+              "passed": false,
+              "profit_factor": 0.8464
+            },
+            "expectancy_r": -0.4237,
+            "max_drawdown_r": -50.7728,
+            "outlier": {
+              "base_exp": -0.4237,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.85
+            },
+            "profit_factor": 0.8554,
+            "total_r": -12.2864,
+            "trade_count": 29,
+            "win_rate": 0.4483
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -1.1403,
+              "passed": false,
+              "profit_factor": 0.6282
+            },
+            "cost_3x": {
+              "expectancy_r": -1.2164,
+              "passed": false,
+              "profit_factor": 0.6086
+            },
+            "cost_5bps": {
+              "expectancy_r": -1.1022,
+              "passed": false,
+              "profit_factor": 0.6382
+            },
+            "expectancy_r": -1.0641,
+            "max_drawdown_r": -54.7878,
+            "outlier": {
+              "base_exp": -1.0641,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -2.1917
+            },
+            "profit_factor": 0.6484,
+            "total_r": -30.8596,
+            "trade_count": 29,
+            "win_rate": 0.4138
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.3254,
+              "passed": true,
+              "profit_factor": 1.135
+            },
+            "cost_3x": {
+              "expectancy_r": 0.247,
+              "passed": true,
+              "profit_factor": 1.101
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.3646,
+              "passed": true,
+              "profit_factor": 1.1523
+            },
+            "expectancy_r": 0.4038,
+            "max_drawdown_r": -31.0425,
+            "outlier": {
+              "base_exp": 0.4038,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.6072
+            },
+            "profit_factor": 1.1699,
+            "total_r": 6.8648,
+            "trade_count": 17,
+            "win_rate": 0.5294
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -3.2167,
+              "passed": false,
+              "profit_factor": 0.1953
+            },
+            "cost_3x": {
+              "expectancy_r": -3.2896,
+              "passed": false,
+              "profit_factor": 0.1872
+            },
+            "cost_5bps": {
+              "expectancy_r": -3.1802,
+              "passed": false,
+              "profit_factor": 0.1994
+            },
+            "expectancy_r": -3.1437,
+            "max_drawdown_r": -41.8694,
+            "outlier": {
+              "base_exp": -3.1437,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -3.8063
+            },
+            "profit_factor": 0.2036,
+            "total_r": -37.7244,
+            "trade_count": 12,
+            "win_rate": 0.25
+          }
+        }
+      },
+      "verdict": "improves: +raw R but fails risk/cost/outlier bar -> no edge"
+    },
+    {
+      "cost_legs": 1.0,
+      "exit_name": "horizon_hold",
+      "full_bar_pass": false,
+      "key": "time_stop_120",
+      "label": "time stop @120 bars (no stop)",
+      "params": {
+        "atr_period": 14,
+        "n_bars": 120
+      },
+      "requested": "time stop",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.4827,
+              "passed": true,
+              "profit_factor": 1.1392
+            },
+            "cost_3x": {
+              "expectancy_r": 0.3974,
+              "passed": true,
+              "profit_factor": 1.113
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.5253,
+              "passed": true,
+              "profit_factor": 1.1526
+            },
+            "expectancy_r": 0.568,
+            "max_drawdown_r": -32.5002,
+            "outlier": {
+              "base_exp": 0.568,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.971
+            },
+            "profit_factor": 1.1662,
+            "total_r": 18.1756,
+            "trade_count": 32,
+            "win_rate": 0.4062
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.122,
+              "passed": true,
+              "profit_factor": 1.0376
+            },
+            "cost_3x": {
+              "expectancy_r": 0.0268,
+              "passed": true,
+              "profit_factor": 1.0081
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.1696,
+              "passed": true,
+              "profit_factor": 1.0527
+            },
+            "expectancy_r": 0.2172,
+            "max_drawdown_r": -43.3732,
+            "outlier": {
+              "base_exp": 0.2172,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -1.4544
+            },
+            "profit_factor": 1.0682,
+            "total_r": 3.4756,
+            "trade_count": 16,
+            "win_rate": 0.375
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.8434,
+              "passed": true,
+              "profit_factor": 1.2286
+            },
+            "cost_3x": {
+              "expectancy_r": 0.768,
+              "passed": true,
+              "profit_factor": 1.206
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.8811,
+              "passed": true,
+              "profit_factor": 1.2402
+            },
+            "expectancy_r": 0.9187,
+            "max_drawdown_r": -34.5649,
+            "outlier": {
+              "base_exp": 0.9187,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.4876
+            },
+            "profit_factor": 1.2518,
+            "total_r": 14.7,
+            "trade_count": 16,
+            "win_rate": 0.4375
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 2.6126,
+              "passed": true,
+              "profit_factor": 1.8037
+            },
+            "cost_3x": {
+              "expectancy_r": 2.5482,
+              "passed": true,
+              "profit_factor": 1.7766
+            },
+            "cost_5bps": {
+              "expectancy_r": 2.6447,
+              "passed": true,
+              "profit_factor": 1.8175
+            },
+            "expectancy_r": 2.6769,
+            "max_drawdown_r": -55.4931,
+            "outlier": {
+              "base_exp": 2.6769,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.624
+            },
+            "profit_factor": 1.8313,
+            "total_r": 214.1538,
+            "trade_count": 80,
+            "win_rate": 0.525
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 3.6658,
+              "passed": true,
+              "profit_factor": 2.1495
+            },
+            "cost_3x": {
+              "expectancy_r": 3.5976,
+              "passed": true,
+              "profit_factor": 2.1178
+            },
+            "cost_5bps": {
+              "expectancy_r": 3.6999,
+              "passed": true,
+              "profit_factor": 2.1656
+            },
+            "expectancy_r": 3.734,
+            "max_drawdown_r": -88.9673,
+            "outlier": {
+              "base_exp": 3.734,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.9874
+            },
+            "profit_factor": 2.1818,
+            "total_r": 190.4329,
+            "trade_count": 51,
+            "win_rate": 0.5686
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.7604,
+              "passed": true,
+              "profit_factor": 1.2264
+            },
+            "cost_3x": {
+              "expectancy_r": 0.7028,
+              "passed": true,
+              "profit_factor": 1.2072
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.7892,
+              "passed": true,
+              "profit_factor": 1.2361
+            },
+            "expectancy_r": 0.818,
+            "max_drawdown_r": -48.6045,
+            "outlier": {
+              "base_exp": 0.818,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.4981
+            },
+            "profit_factor": 1.2459,
+            "total_r": 23.7209,
+            "trade_count": 29,
+            "win_rate": 0.4483
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.3702,
+              "passed": true,
+              "profit_factor": 1.0829
+            },
+            "cost_3x": {
+              "expectancy_r": 0.2941,
+              "passed": true,
+              "profit_factor": 1.0653
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4083,
+              "passed": true,
+              "profit_factor": 1.0918
+            },
+            "expectancy_r": 0.4464,
+            "max_drawdown_r": -53.6804,
+            "outlier": {
+              "base_exp": 0.4464,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -1.7153
+            },
+            "profit_factor": 1.1009,
+            "total_r": 12.9443,
+            "trade_count": 29,
+            "win_rate": 0.4138
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 4.7043,
+              "passed": true,
+              "profit_factor": 2.7639
+            },
+            "cost_3x": {
+              "expectancy_r": 4.6259,
+              "passed": true,
+              "profit_factor": 2.714
+            },
+            "cost_5bps": {
+              "expectancy_r": 4.7435,
+              "passed": true,
+              "profit_factor": 2.7893
+            },
+            "expectancy_r": 4.7827,
+            "max_drawdown_r": -29.1465,
+            "outlier": {
+              "base_exp": 4.7827,
+              "dropped": 1,
+              "passed": true,
+              "trimmed_exp": 3.1267
+            },
+            "profit_factor": 2.815,
+            "total_r": 81.3053,
+            "trade_count": 17,
+            "win_rate": 0.5294
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -5.7697,
+              "passed": false,
+              "profit_factor": 0.1772
+            },
+            "cost_3x": {
+              "expectancy_r": -5.8427,
+              "passed": false,
+              "profit_factor": 0.1727
+            },
+            "cost_5bps": {
+              "expectancy_r": -5.7332,
+              "passed": false,
+              "profit_factor": 0.1795
+            },
+            "expectancy_r": -5.6968,
+            "max_drawdown_r": -72.1805,
+            "outlier": {
+              "base_exp": -5.6968,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -6.8467
+            },
+            "profit_factor": 0.1818,
+            "total_r": -68.361,
+            "trade_count": 12,
+            "win_rate": 0.25
+          }
+        }
+      },
+      "verdict": "improves: +raw R but fails risk/cost/outlier bar -> no edge"
+    },
+    {
+      "cost_legs": 1.5,
+      "exit_name": "partial_tp_trail",
+      "full_bar_pass": false,
+      "key": "partial_tp_2r",
+      "label": "partial 50% @+2R + trail remainder",
+      "params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "k_trail": 2.0,
+        "max_bars": 120,
+        "tp_frac": 0.5,
+        "tp_level": 2.0
+      },
+      "requested": "partial take-profit + trailing remainder",
+      "segments": {
+        "sealed": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.5247,
+              "passed": false,
+              "profit_factor": 0.4957
+            },
+            "cost_3x": {
+              "expectancy_r": -0.6526,
+              "passed": false,
+              "profit_factor": 0.4243
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.4607,
+              "passed": false,
+              "profit_factor": 0.5365
+            },
+            "expectancy_r": -0.3967,
+            "max_drawdown_r": -14.8611,
+            "outlier": {
+              "base_exp": -0.3967,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.6199
+            },
+            "profit_factor": 0.5812,
+            "total_r": -12.695,
+            "trade_count": 32,
+            "win_rate": 0.2812
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.5828,
+              "passed": false,
+              "profit_factor": 0.3977
+            },
+            "cost_3x": {
+              "expectancy_r": -0.7256,
+              "passed": false,
+              "profit_factor": 0.3188
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.5114,
+              "passed": false,
+              "profit_factor": 0.4434
+            },
+            "expectancy_r": -0.44,
+            "max_drawdown_r": -7.0397,
+            "outlier": {
+              "base_exp": -0.44,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.5947
+            },
+            "profit_factor": 0.4943,
+            "total_r": -7.0397,
+            "trade_count": 16,
+            "win_rate": 0.3125
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.4666,
+              "passed": false,
+              "profit_factor": 0.5809
+            },
+            "cost_3x": {
+              "expectancy_r": -0.5796,
+              "passed": false,
+              "profit_factor": 0.5178
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.41,
+              "passed": false,
+              "profit_factor": 0.6164
+            },
+            "expectancy_r": -0.3535,
+            "max_drawdown_r": -7.8214,
+            "outlier": {
+              "base_exp": -0.3535,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.576
+            },
+            "profit_factor": 0.655,
+            "total_r": -5.6554,
+            "trade_count": 16,
+            "win_rate": 0.25
+          }
+        },
+        "train": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": 0.4196,
+              "passed": true,
+              "profit_factor": 1.5315
+            },
+            "cost_3x": {
+              "expectancy_r": 0.323,
+              "passed": true,
+              "profit_factor": 1.3862
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.4679,
+              "passed": true,
+              "profit_factor": 1.6109
+            },
+            "expectancy_r": 0.5161,
+            "max_drawdown_r": -12.2668,
+            "outlier": {
+              "base_exp": 0.5161,
+              "dropped": 4,
+              "passed": true,
+              "trimmed_exp": 0.1396
+            },
+            "profit_factor": 1.6952,
+            "total_r": 41.2914,
+            "trade_count": 80,
+            "win_rate": 0.4625
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": 0.6025,
+              "passed": true,
+              "profit_factor": 1.8026
+            },
+            "cost_3x": {
+              "expectancy_r": 0.5002,
+              "passed": true,
+              "profit_factor": 1.6301
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.6537,
+              "passed": true,
+              "profit_factor": 1.8965
+            },
+            "expectancy_r": 0.7048,
+            "max_drawdown_r": -7.2051,
+            "outlier": {
+              "base_exp": 0.7048,
+              "dropped": 3,
+              "passed": true,
+              "trimmed_exp": 0.249
+            },
+            "profit_factor": 1.9962,
+            "total_r": 35.9465,
+            "trade_count": 51,
+            "win_rate": 0.5098
+          },
+          "practical_pass": true,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": 0.0979,
+              "passed": true,
+              "profit_factor": 1.1142
+            },
+            "cost_3x": {
+              "expectancy_r": 0.0115,
+              "passed": true,
+              "profit_factor": 1.0126
+            },
+            "cost_5bps": {
+              "expectancy_r": 0.1411,
+              "passed": true,
+              "profit_factor": 1.1699
+            },
+            "expectancy_r": 0.1843,
+            "max_drawdown_r": -7.7126,
+            "outlier": {
+              "base_exp": 0.1843,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.2131
+            },
+            "profit_factor": 1.2293,
+            "total_r": 5.3449,
+            "trade_count": 29,
+            "win_rate": 0.3793
+          }
+        },
+        "validate": {
+          "combined": {
+            "cost_2x": {
+              "expectancy_r": -0.0908,
+              "passed": false,
+              "profit_factor": 0.91
+            },
+            "cost_3x": {
+              "expectancy_r": -0.205,
+              "passed": false,
+              "profit_factor": 0.8107
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0337,
+              "passed": false,
+              "profit_factor": 0.9653
+            },
+            "expectancy_r": 0.0234,
+            "max_drawdown_r": -9.1757,
+            "outlier": {
+              "base_exp": 0.0234,
+              "dropped": 2,
+              "passed": false,
+              "trimmed_exp": -0.3203
+            },
+            "profit_factor": 1.025,
+            "total_r": 0.6787,
+            "trade_count": 29,
+            "win_rate": 0.3448
+          },
+          "long": {
+            "cost_2x": {
+              "expectancy_r": -0.0753,
+              "passed": false,
+              "profit_factor": 0.9236
+            },
+            "cost_3x": {
+              "expectancy_r": -0.1928,
+              "passed": false,
+              "profit_factor": 0.8192
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0165,
+              "passed": false,
+              "profit_factor": 0.9826
+            },
+            "expectancy_r": 0.0423,
+            "max_drawdown_r": -11.2089,
+            "outlier": {
+              "base_exp": 0.0423,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.2785
+            },
+            "profit_factor": 1.0469,
+            "total_r": 0.7195,
+            "trade_count": 17,
+            "win_rate": 0.2941
+          },
+          "practical_pass": false,
+          "short": {
+            "cost_2x": {
+              "expectancy_r": -0.1128,
+              "passed": false,
+              "profit_factor": 0.8918
+            },
+            "cost_3x": {
+              "expectancy_r": -0.2223,
+              "passed": false,
+              "profit_factor": 0.7991
+            },
+            "cost_5bps": {
+              "expectancy_r": -0.0581,
+              "passed": false,
+              "profit_factor": 0.9425
+            },
+            "expectancy_r": -0.0034,
+            "max_drawdown_r": -9.0213,
+            "outlier": {
+              "base_exp": -0.0034,
+              "dropped": 1,
+              "passed": false,
+              "trimmed_exp": -0.3546
+            },
+            "profit_factor": 0.9965,
+            "total_r": -0.0408,
+            "trade_count": 12,
+            "win_rate": 0.4167
+          }
+        }
+      },
+      "verdict": "no-improvement (no better than baseline)"
+    }
+  ],
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "window": [
+    1577836800000,
+    1782300000000
+  ],
+  "xcheck_ok": true
+}

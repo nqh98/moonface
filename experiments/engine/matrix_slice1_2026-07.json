@@ -1,0 +1,46 @@
+{
+  "data": {
+    "btc_candles": 14200,
+    "btc_fingerprint": "59383fd7244466ec99a255530f27cd7200c0fad02e6326e5c0cc05d5c6919428"
+  },
+  "fitted_governor": {
+    "dd_budget": 11.6455,
+    "size_max": 1.0,
+    "target_vol": 0.015
+  },
+  "frozen_constants": {
+    "ci_lo_q": 0.0020833333333333333,
+    "effective_trials": 12,
+    "funding": {
+      "horizon": 48,
+      "window": 60,
+      "z_thr": 1.5
+    },
+    "panel_floor": 200,
+    "purge_ms": 604800000,
+    "sealed_start_ts_ms": 1751328000000,
+    "span_end_ts_ms": 1782316800000,
+    "span_start_ts_ms": 1577836800000,
+    "train_end_ts_ms": 1704067200000,
+    "vol_lookback": 100
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": [
+      -16.0353,
+      1.2185
+    ],
+    "max_dd_r": -16.2388,
+    "n": 8,
+    "net_r": -10.1477,
+    "net_r_3x": -10.7058,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "label": "matrix slice-1 \u2014 pre-registered; read-only; human promotion",
+  "segments": {
+    "train": 266
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

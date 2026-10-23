@@ -1,0 +1,12 @@
+{
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "interval": "15m",
+  "start_ms": 1577836800000,
+  "end_ms": 1782000000000,
+  "recent_ms": 1717200000000,
+  "cell": "headline"
+}

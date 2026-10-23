@@ -1,0 +1,294 @@
+{
+  "assumptions": [
+    "deriv=None throughout: verdict covers the PRICE-STRUCTURE core only (trend book caps at 85/100 without m5_funding; revert book lacks m4_fund_ct and m5_oi_flush)",
+    "hypothetical trades below the frozen threshold are counterfactual: the live engine never takes them; they exist to measure score ordering",
+    "primary panels run the frozen exit discipline WITHOUT the opposite-SETUP reversal exit (undefined sub-threshold); reversal_sensitivity bounds the distortion on the actual-trigger subset",
+    "extreme-vol bars are excluded from entries: the frozen decide() stands flat there at any score (excluded counts reported)",
+    "net_r is per-unit R from the frozen cost model; sizing fractions do not affect it",
+    "halves split at the midpoint timestamp of the scored span (approximates the spec's calendar halves)"
+  ],
+  "books": {
+    "mean_revert": {
+      "calibration": {
+        "buckets": [
+          {
+            "bucket": "[0,40)",
+            "mean_net_r": -0.2419,
+            "n": 24485
+          },
+          {
+            "bucket": "[40,60)",
+            "mean_net_r": -0.1993,
+            "n": 5002
+          },
+          {
+            "bucket": "[60,75)",
+            "mean_net_r": -0.1706,
+            "n": 1354
+          },
+          {
+            "bucket": ">=75",
+            "mean_net_r": -0.2326,
+            "n": 960
+          }
+        ],
+        "buckets_weakly_increasing": false,
+        "events": 31801,
+        "events_score_ge_60": 2314,
+        "rho_ci_95": [
+          -0.0237,
+          0.0178
+        ],
+        "rho_first_half": -0.0036,
+        "rho_second_half": -0.0042,
+        "spearman_rho": -0.0029,
+        "stability_sign_agrees": true,
+        "status": "fail"
+      },
+      "nonoverlapping": {
+        "events": 4014,
+        "spearman_rho": -0.0079
+      },
+      "panel_counts": {
+        "events": 31801,
+        "incomplete": 3,
+        "skipped_extreme_vol": 266
+      },
+      "reversal_sensitivity": {
+        "net_r_gap": -27.7054,
+        "no_reversal": {
+          "n": 1714,
+          "net_r": -431.5739
+        },
+        "triggered_events": 1714,
+        "with_reversal": {
+          "n": 1714,
+          "net_r": -459.2793
+        }
+      },
+      "splits": {
+        "direction": {
+          "LONG": {
+            "mean_net_r": -0.2301,
+            "n": 14974
+          },
+          "SHORT": {
+            "mean_net_r": -0.2335,
+            "n": 16827
+          }
+        },
+        "policy": {
+          "ALLOW": {
+            "mean_net_r": -0.2402,
+            "n": 16679
+          },
+          "ALLOW_CT": {
+            "mean_net_r": -0.2226,
+            "n": 15122
+          }
+        },
+        "vol_state": {
+          "high": {
+            "mean_net_r": -0.1393,
+            "n": 3607
+          },
+          "normal": {
+            "mean_net_r": -0.2437,
+            "n": 28194
+          }
+        }
+      }
+    },
+    "trend": {
+      "calibration": {
+        "buckets": [
+          {
+            "bucket": "[0,40)",
+            "mean_net_r": -0.0625,
+            "n": 34671
+          },
+          {
+            "bucket": "[40,60)",
+            "mean_net_r": 0.0987,
+            "n": 9557
+          },
+          {
+            "bucket": "[60,75)",
+            "mean_net_r": 0.1283,
+            "n": 2265
+          },
+          {
+            "bucket": ">=75",
+            "mean_net_r": -0.1529,
+            "n": 36
+          }
+        ],
+        "buckets_weakly_increasing": false,
+        "events": 46529,
+        "events_score_ge_60": 2301,
+        "rho_ci_95": [
+          0.0223,
+          0.0805
+        ],
+        "rho_first_half": 0.0321,
+        "rho_second_half": 0.0605,
+        "spearman_rho": 0.052,
+        "stability_sign_agrees": true,
+        "status": "fail"
+      },
+      "nonoverlapping": {
+        "events": 1928,
+        "spearman_rho": 0.0498
+      },
+      "panel_counts": {
+        "events": 46529,
+        "incomplete": 31,
+        "skipped_extreme_vol": 402
+      },
+      "reversal_sensitivity": {
+        "net_r_gap": 116.0595,
+        "no_reversal": {
+          "n": 2301,
+          "net_r": 285.0896
+        },
+        "triggered_events": 2302,
+        "with_reversal": {
+          "n": 2301,
+          "net_r": 401.1491
+        }
+      },
+      "splits": {
+        "direction": {
+          "LONG": {
+            "mean_net_r": 0.0683,
+            "n": 26933
+          },
+          "SHORT": {
+            "mean_net_r": -0.1418,
+            "n": 19596
+          }
+        },
+        "policy": {
+          "ALLOW": {
+            "mean_net_r": -0.02,
+            "n": 40305
+          },
+          "REJECT": {
+            "mean_net_r": -0.0211,
+            "n": 6224
+          }
+        },
+        "vol_state": {
+          "high": {
+            "mean_net_r": 0.2102,
+            "n": 5511
+          },
+          "normal": {
+            "mean_net_r": -0.0511,
+            "n": 41018
+          }
+        }
+      }
+    }
+  },
+  "data": {
+    "candles": 56800,
+    "fingerprint_sha256": "fedf68d49ad3ac17682cd09a1bd5f4cdd410f468ecb87dfe6949aafdcc9518df",
+    "first_scored_ts_ms": 1599436800000,
+    "last_ts_ms": 1782313200000,
+    "lookback_bars": 6000,
+    "scored_bars": 50800,
+    "warmup": 6000
+  },
+  "engine_hash": "10bb5a442758e1c1387b0518c0dfb8f2a23f3954bbc262f9a4adc275b1fe16cf",
+  "frozen_analysis_constants": {
+    "block_bars": 168,
+    "bootstrap_draws": 1000,
+    "bootstrap_seed": 20260704,
+    "bucket_edges": [
+      40,
+      60,
+      75
+    ],
+    "ic_horizon_bars": 24,
+    "nw_lag": 24,
+    "panel_floor": 200,
+    "trigger_bucket_floor": 30
+  },
+  "label": "calibration diagnostic \u2014 read-only, no edge claim, no constant recommendation",
+  "module_ic_secondary": [
+    {
+      "module": "m1_macro",
+      "n": 50776,
+      "nw_t": 1.501,
+      "rank_ic": 0.0259
+    },
+    {
+      "module": "m2_breakout",
+      "n": 50776,
+      "nw_t": 0.569,
+      "rank_ic": 0.0064
+    },
+    {
+      "module": "m2_ma_align",
+      "n": 50776,
+      "nw_t": -0.714,
+      "rank_ic": -0.012
+    },
+    {
+      "module": "m3_roc",
+      "n": 50776,
+      "nw_t": -0.884,
+      "rank_ic": -0.0142
+    },
+    {
+      "module": "m4_pullback",
+      "n": 50776,
+      "nw_t": -0.94,
+      "rank_ic": -0.01
+    },
+    {
+      "module": "m5_funding",
+      "n": 50776,
+      "nw_t": null,
+      "rank_ic": null
+    },
+    {
+      "module": "m1_sweep",
+      "n": 50776,
+      "nw_t": 0.575,
+      "rank_ic": 0.0059
+    },
+    {
+      "module": "m2_reclaim",
+      "n": 50776,
+      "nw_t": -0.004,
+      "rank_ic": -0.0
+    },
+    {
+      "module": "m3_divergence",
+      "n": 50776,
+      "nw_t": -1.519,
+      "rank_ic": -0.0169
+    },
+    {
+      "module": "m4_fund_ct",
+      "n": 50776,
+      "nw_t": null,
+      "rank_ic": null
+    },
+    {
+      "module": "m5_oi_flush",
+      "n": 50776,
+      "nw_t": null,
+      "rank_ic": null
+    },
+    {
+      "module": "m6_stretch",
+      "n": 50776,
+      "nw_t": 0.664,
+      "rank_ic": 0.0098
+    }
+  ],
+  "verdict": "UNCALIBRATED"
+}

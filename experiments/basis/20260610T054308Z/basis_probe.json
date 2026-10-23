@@ -1,0 +1,78 @@
+[
+  {
+    "bracket_expectancy_r": -0.0965,
+    "bracket_net_r": -52.0254,
+    "bracket_oos_net_r": -16.4931,
+    "bracket_oos_trades": 102,
+    "bracket_trades": 539,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3562,
+    "horizon_expectancy_r": 0.1154,
+    "horizon_oos_expectancy_r": 0.324,
+    "horizon_oos_trades": 102,
+    "horizon_trades": 539,
+    "horizon_win_rate": 0.5195,
+    "params": {
+      "pct": 5,
+      "window": 60
+    },
+    "signal": "basis_discount"
+  },
+  {
+    "bracket_expectancy_r": -0.1222,
+    "bracket_net_r": -59.8685,
+    "bracket_oos_net_r": -18.9797,
+    "bracket_oos_trades": 97,
+    "bracket_trades": 490,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3469,
+    "horizon_expectancy_r": 0.3031,
+    "horizon_oos_expectancy_r": 0.3772,
+    "horizon_oos_trades": 97,
+    "horizon_trades": 490,
+    "horizon_win_rate": 0.5245,
+    "params": {
+      "pct": 5,
+      "window": 180
+    },
+    "signal": "basis_discount"
+  },
+  {
+    "bracket_expectancy_r": -0.1551,
+    "bracket_net_r": -135.3679,
+    "bracket_oos_net_r": -40.5621,
+    "bracket_oos_trades": 179,
+    "bracket_trades": 873,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3368,
+    "horizon_expectancy_r": 0.1129,
+    "horizon_oos_expectancy_r": -0.4359,
+    "horizon_oos_trades": 179,
+    "horizon_trades": 873,
+    "horizon_win_rate": 0.5132,
+    "params": {
+      "pct": 10,
+      "window": 60
+    },
+    "signal": "basis_discount"
+  },
+  {
+    "bracket_expectancy_r": -0.1554,
+    "bracket_net_r": -123.0975,
+    "bracket_oos_net_r": -25.8099,
+    "bracket_oos_trades": 185,
+    "bracket_trades": 792,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3371,
+    "horizon_expectancy_r": -0.042,
+    "horizon_oos_expectancy_r": -0.0472,
+    "horizon_oos_trades": 185,
+    "horizon_trades": 792,
+    "horizon_win_rate": 0.4899,
+    "params": {
+      "pct": 10,
+      "window": 180
+    },
+    "signal": "basis_discount"
+  }
+]

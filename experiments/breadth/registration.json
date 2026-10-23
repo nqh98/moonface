@@ -1,0 +1,11 @@
+{
+  "symbol": "BTCUSDT",
+  "interval": "4h",
+  "start_ms": 1577836800000,
+  "end_ms": 1782300000000,
+  "top_n": 20,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "rebalance_days": 30,
+  "frozen_cells": []
+}

@@ -1,0 +1,3630 @@
+{
+  "asof": "2026-06-27T06:17:31.784075+00:00",
+  "data_fingerprint": {
+    "2h": {
+      "bars": 28356,
+      "sha": "8de450095ac5cf18"
+    },
+    "4h": {
+      "bars": 14178,
+      "sha": "b3b004cb58258369"
+    }
+  },
+  "gate": "train practical bar (PF>=1.15, exp>0, n>=30, |maxDD|<=30R, +5bps cost-stress, 2x and 3x multiplicative cost gates, outlier, recent, island) + train twin beat -> freeze; validate/sealed practical bar + 2x/3x cost gates, same expectancy sign, twin beat on both",
+  "grid": [
+    {
+      "axis": 20.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "2h:core_donchian_break:n=20:long=donchian_break(n=20):short=donchian_break(n=20):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "2h:core_donchian_break:n=55:long=donchian_break(n=55):short=donchian_break(n=55):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "2h:core_donchian_break:n=100:long=donchian_break(n=100):short=donchian_break(n=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:core_atr_channel_break:k=1:long=atr_channel_break(atr_period=14,k=1):short=atr_channel_break(atr_period=14,k=1):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:core_atr_channel_break:k=1.5:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:core_atr_channel_break:k=2:long=atr_channel_break(atr_period=14,k=2):short=atr_channel_break(atr_period=14,k=2):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "2h:core_ma_cross:slow=50:long=ma_cross(fast=20,slow=50):short=ma_cross(fast=20,slow=50):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "2h:core_ma_cross:slow=100:long=ma_cross(fast=20,slow=100):short=ma_cross(fast=20,slow=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "2h:core_ma_cross:slow=200:long=ma_cross(fast=20,slow=200):short=ma_cross(fast=20,slow=200):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "2h:core_price_vs_ma:period=50:long=price_vs_ma(period=50):short=price_vs_ma(period=50):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "2h:core_price_vs_ma:period=100:long=price_vs_ma(period=100):short=price_vs_ma(period=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "2h:core_price_vs_ma:period=200:long=price_vs_ma(period=200):short=price_vs_ma(period=200):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 12.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "2h:core_roc_sign:period=12:long=roc_sign(period=12):short=roc_sign(period=12):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "2h:core_roc_sign:period=24:long=roc_sign(period=24):short=roc_sign(period=24):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 48.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "2h:core_roc_sign:period=48:long=roc_sign(period=48):short=roc_sign(period=48):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 10.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "2h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "2h:core_reversion_in_range:period=10:long=reversion_in_range(high=75,low=25,period=10):short=reversion_in_range(high=75,low=25,period=10):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 10
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 10
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 14.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "2h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "2h:core_reversion_in_range:period=14:long=reversion_in_range(high=75,low=25,period=14):short=reversion_in_range(high=75,low=25,period=14):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 21.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "2h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "2h:core_reversion_in_range:period=21:long=reversion_in_range(high=75,low=25,period=21):short=reversion_in_range(high=75,low=25,period=21):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 21
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 21
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "2h:core_vol_expansion:mult=1.5:long=vol_expansion(atr_period=14,lookback=24,mult=1.5):short=vol_expansion(atr_period=14,lookback=24,mult=1.5):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "2h:core_vol_expansion:mult=2:long=vol_expansion(atr_period=14,lookback=24,mult=2):short=vol_expansion(atr_period=14,lookback=24,mult=2):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "2h:core_vol_expansion:mult=2.5:long=vol_expansion(atr_period=14,lookback=24,mult=2.5):short=vol_expansion(atr_period=14,lookback=24,mult=2.5):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 16.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "2h:core_vol_compression_breakout:squeeze_n=16:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "2h:core_vol_compression_breakout:squeeze_n=24:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 32.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "2h:core_vol_compression_breakout:squeeze_n=32:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 20.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_donchian_reversion:n=20:long=donchian_break(n=20):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_donchian_reversion:n=55:long=donchian_break(n=55):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_donchian_reversion:n=100:long=donchian_break(n=100):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 20.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:pair_donchian_atr:n=20:long=donchian_break(n=20):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:pair_donchian_atr:n=55:long=donchian_break(n=55):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "2h:pair_donchian_atr:n=100:long=donchian_break(n=100):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_ma_price:slow=50:long=ma_cross(fast=20,slow=50):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_ma_price:slow=100:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_ma_price:slow=200:long=ma_cross(fast=20,slow=200):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "2h:pair_price_roc:period=50:long=price_vs_ma(period=50):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "2h:pair_price_roc:period=100:long=price_vs_ma(period=100):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "2h:pair_price_roc:period=200:long=price_vs_ma(period=200):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 12.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "2h:pair_roc_volexp:period=12:long=roc_sign(period=12):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "2h:pair_roc_volexp:period=24:long=roc_sign(period=24):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 48.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "2h:pair_roc_volexp:period=48:long=roc_sign(period=48):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_atr_reversion:k=1:long=atr_channel_break(atr_period=14,k=1):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_atr_reversion:k=1.5:long=atr_channel_break(atr_period=14,k=1.5):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "2h:pair_atr_reversion:k=2:long=atr_channel_break(atr_period=14,k=2):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "2h:pair_vexp_vcomp:mult=1.5:long=vol_expansion(atr_period=14,lookback=24,mult=1.5):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "2h:pair_vexp_vcomp:mult=2:long=vol_expansion(atr_period=14,lookback=24,mult=2):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "2h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "2h:pair_vexp_vcomp:mult=2.5:long=vol_expansion(atr_period=14,lookback=24,mult=2.5):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 16.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_vcomp_atr:squeeze_n=16:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_vcomp_atr:squeeze_n=24:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 32.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "2h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "2h:pair_vcomp_atr:squeeze_n=32:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 100
+          }
+        }
+      ],
+      "group": "2h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_slow_ma:period=100:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 150.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 150
+          }
+        }
+      ],
+      "group": "2h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_slow_ma:period=150:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=150):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 200
+          }
+        }
+      ],
+      "group": "2h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_slow_ma:period=200:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=200):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.2,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.8,
+            "low": 0.2,
+            "window": 96
+          }
+        }
+      ],
+      "group": "2h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "2h:filter_atr_band:q=0.2:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.8,low=0.2,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.3,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.7,
+            "low": 0.3,
+            "window": 96
+          }
+        }
+      ],
+      "group": "2h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "2h:filter_atr_band:q=0.3:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.7,low=0.3,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.4,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.6,
+            "low": 0.4,
+            "window": 96
+          }
+        }
+      ],
+      "group": "2h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "2h:filter_atr_band:q=0.4:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.6,low=0.4,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.0001,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0001
+          }
+        }
+      ],
+      "group": "2h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "2h:filter_funding_extreme:thr=0.0001:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0001):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.0002,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0002
+          }
+        }
+      ],
+      "group": "2h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "2h:filter_funding_extreme:thr=0.0002:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0002):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 0.0003,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0003
+          }
+        }
+      ],
+      "group": "2h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "2h:filter_funding_extreme:thr=0.0003:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0003):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 1.0
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "2h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_oi_macro:z_thr=1:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=1.0)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 1.5
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "2h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_oi_macro:z_thr=1.5:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=1.5)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 2.0
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "2h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "2h:filter_oi_macro:z_thr=2:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=2.0)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "2h"
+    },
+    {
+      "axis": 20.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "4h:core_donchian_break:n=20:long=donchian_break(n=20):short=donchian_break(n=20):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "4h:core_donchian_break:n=55:long=donchian_break(n=55):short=donchian_break(n=55):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "4h:core_donchian_break:n=100:long=donchian_break(n=100):short=donchian_break(n=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:core_atr_channel_break:k=1:long=atr_channel_break(atr_period=14,k=1):short=atr_channel_break(atr_period=14,k=1):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:core_atr_channel_break:k=1.5:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_atr_channel_break:long=atr_channel_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:core_atr_channel_break:k=2:long=atr_channel_break(atr_period=14,k=2):short=atr_channel_break(atr_period=14,k=2):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "4h:core_ma_cross:slow=50:long=ma_cross(fast=20,slow=50):short=ma_cross(fast=20,slow=50):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "4h:core_ma_cross:slow=100:long=ma_cross(fast=20,slow=100):short=ma_cross(fast=20,slow=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_ma_cross:long=ma_cross:short=ma_cross:donchian_trail",
+      "h": 48,
+      "label": "4h:core_ma_cross:slow=200:long=ma_cross(fast=20,slow=200):short=ma_cross(fast=20,slow=200):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "short_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "4h:core_price_vs_ma:period=50:long=price_vs_ma(period=50):short=price_vs_ma(period=50):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "4h:core_price_vs_ma:period=100:long=price_vs_ma(period=100):short=price_vs_ma(period=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_price_vs_ma:long=price_vs_ma:short=price_vs_ma:atr_trail",
+      "h": 48,
+      "label": "4h:core_price_vs_ma:period=200:long=price_vs_ma(period=200):short=price_vs_ma(period=200):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 12.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "4h:core_roc_sign:period=12:long=roc_sign(period=12):short=roc_sign(period=12):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "4h:core_roc_sign:period=24:long=roc_sign(period=24):short=roc_sign(period=24):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 48.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_roc_sign:long=roc_sign:short=roc_sign:chandelier",
+      "h": 24,
+      "label": "4h:core_roc_sign:period=48:long=roc_sign(period=48):short=roc_sign(period=48):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 10.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "4h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "4h:core_reversion_in_range:period=10:long=reversion_in_range(high=75,low=25,period=10):short=reversion_in_range(high=75,low=25,period=10):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 10
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 10
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 14.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "4h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "4h:core_reversion_in_range:period=14:long=reversion_in_range(high=75,low=25,period=14):short=reversion_in_range(high=75,low=25,period=14):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 21.0,
+      "exit_name": "fixed_bracket",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "m_tp": 4.0
+      },
+      "filters": [],
+      "group": "4h:core_reversion_in_range:long=reversion_in_range:short=reversion_in_range:fixed_bracket",
+      "h": 24,
+      "label": "4h:core_reversion_in_range:period=21:long=reversion_in_range(high=75,low=25,period=21):short=reversion_in_range(high=75,low=25,period=21):fixed_bracket:atr_period=14,k_stop=2.0,m_tp=4.0",
+      "long_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 21
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 21
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "4h:core_vol_expansion:mult=1.5:long=vol_expansion(atr_period=14,lookback=24,mult=1.5):short=vol_expansion(atr_period=14,lookback=24,mult=1.5):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "4h:core_vol_expansion:mult=2:long=vol_expansion(atr_period=14,lookback=24,mult=2):short=vol_expansion(atr_period=14,lookback=24,mult=2):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_vol_expansion:long=vol_expansion:short=vol_expansion:atr_trail",
+      "h": 24,
+      "label": "4h:core_vol_expansion:mult=2.5:long=vol_expansion(atr_period=14,lookback=24,mult=2.5):short=vol_expansion(atr_period=14,lookback=24,mult=2.5):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 16.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "4h:core_vol_compression_breakout:squeeze_n=16:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "4h:core_vol_compression_breakout:squeeze_n=24:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 32.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:core_vol_compression_breakout:long=vol_compression_breakout:short=vol_compression_breakout:donchian_trail",
+      "h": 48,
+      "label": "4h:core_vol_compression_breakout:squeeze_n=32:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 20.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_donchian_reversion:n=20:long=donchian_break(n=20):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_donchian_reversion:n=55:long=donchian_break(n=55):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_reversion:long=donchian_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_donchian_reversion:n=100:long=donchian_break(n=100):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 20.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:pair_donchian_atr:n=20:long=donchian_break(n=20):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 20
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 55.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:pair_donchian_atr:n=55:long=donchian_break(n=55):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_donchian_atr:long=donchian_break:short=atr_channel_break:chandelier",
+      "h": 48,
+      "label": "4h:pair_donchian_atr:n=100:long=donchian_break(n=100):short=atr_channel_break(atr_period=14,k=1.5):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_ma_price:slow=50:long=ma_cross(fast=20,slow=50):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 50
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_ma_price:slow=100:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_ma_price:long=ma_cross:short=price_vs_ma:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_ma_price:slow=200:long=ma_cross(fast=20,slow=200):short=price_vs_ma(period=100):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 200
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 50.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "4h:pair_price_roc:period=50:long=price_vs_ma(period=50):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 50
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "4h:pair_price_roc:period=100:long=price_vs_ma(period=100):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_price_roc:long=price_vs_ma:short=roc_sign:atr_trail",
+      "h": 48,
+      "label": "4h:pair_price_roc:period=200:long=price_vs_ma(period=200):short=roc_sign(period=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 200
+        }
+      },
+      "short_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 12.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "4h:pair_roc_volexp:period=12:long=roc_sign(period=12):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 12
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "4h:pair_roc_volexp:period=24:long=roc_sign(period=24):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 24
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 48.0,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_roc_volexp:long=roc_sign:short=vol_expansion:chandelier",
+      "h": 24,
+      "label": "4h:pair_roc_volexp:period=48:long=roc_sign(period=48):short=vol_expansion(atr_period=14,lookback=24,mult=2.0):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "roc_sign",
+        "params": {
+          "period": 48
+        }
+      },
+      "short_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.0
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_atr_reversion:k=1:long=atr_channel_break(atr_period=14,k=1):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_atr_reversion:k=1.5:long=atr_channel_break(atr_period=14,k=1.5):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_atr_reversion:long=atr_channel_break:short=reversion_in_range:atr_trail",
+      "h": 48,
+      "label": "4h:pair_atr_reversion:k=2:long=atr_channel_break(atr_period=14,k=2):short=reversion_in_range(high=75,low=25,period=14):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 2
+        }
+      },
+      "short_rule": {
+        "family": "reversion_in_range",
+        "params": {
+          "high": 75,
+          "low": 25,
+          "period": 14
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "4h:pair_vexp_vcomp:mult=1.5:long=vol_expansion(atr_period=14,lookback=24,mult=1.5):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "4h:pair_vexp_vcomp:mult=2:long=vol_expansion(atr_period=14,lookback=24,mult=2):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:pair_vexp_vcomp:long=vol_expansion:short=vol_compression_breakout:atr_trail",
+      "h": 24,
+      "label": "4h:pair_vexp_vcomp:mult=2.5:long=vol_expansion(atr_period=14,lookback=24,mult=2.5):short=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "vol_expansion",
+        "params": {
+          "atr_period": 14,
+          "lookback": 24,
+          "mult": 2.5
+        }
+      },
+      "short_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 16.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_vcomp_atr:squeeze_n=16:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=16):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 16
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 24.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_vcomp_atr:squeeze_n=24:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=24):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 24
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 32.0,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [],
+      "group": "4h:pair_vcomp_atr:long=vol_compression_breakout:short=atr_channel_break:donchian_trail",
+      "h": 48,
+      "label": "4h:pair_vcomp_atr:squeeze_n=32:long=vol_compression_breakout(atr_period=14,k=1.0,squeeze_n=32):short=atr_channel_break(atr_period=14,k=1.5):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "vol_compression_breakout",
+        "params": {
+          "atr_period": 14,
+          "k": 1.0,
+          "squeeze_n": 32
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 100
+          }
+        }
+      ],
+      "group": "4h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_slow_ma:period=100:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 150.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 150
+          }
+        }
+      ],
+      "group": "4h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_slow_ma:period=150:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=150):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 200.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "slow_ma_regime",
+          "params": {
+            "period": 200
+          }
+        }
+      ],
+      "group": "4h:filter_slow_ma:long=donchian_break:short=donchian_break:filters=slow_ma_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_slow_ma:period=200:long=donchian_break(n=55):short=donchian_break(n=55):filters=slow_ma_regime(period=200):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.2,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.8,
+            "low": 0.2,
+            "window": 96
+          }
+        }
+      ],
+      "group": "4h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "4h:filter_atr_band:q=0.2:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.8,low=0.2,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.3,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.7,
+            "low": 0.3,
+            "window": 96
+          }
+        }
+      ],
+      "group": "4h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "4h:filter_atr_band:q=0.3:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.7,low=0.3,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.4,
+      "exit_name": "chandelier",
+      "exit_params": {
+        "atr_mult": 4.0,
+        "atr_period": 14,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "atr_band",
+          "params": {
+            "atr_period": 14,
+            "high": 0.6,
+            "low": 0.4,
+            "window": 96
+          }
+        }
+      ],
+      "group": "4h:filter_atr_band:long=atr_channel_break:short=atr_channel_break:filters=atr_band:chandelier",
+      "h": 48,
+      "label": "4h:filter_atr_band:q=0.4:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.6,low=0.4,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "long_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "short_rule": {
+        "family": "atr_channel_break",
+        "params": {
+          "atr_period": 14,
+          "k": 1.5
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.0001,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0001
+          }
+        }
+      ],
+      "group": "4h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "4h:filter_funding_extreme:thr=0.0001:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0001):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.0002,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0002
+          }
+        }
+      ],
+      "group": "4h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "4h:filter_funding_extreme:thr=0.0002:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0002):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 0.0003,
+      "exit_name": "donchian_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_stop": 2.0,
+        "max_bars": 120,
+        "trail_n": 20
+      },
+      "filters": [
+        {
+          "name": "funding_extreme",
+          "params": {
+            "thr": 0.0003
+          }
+        }
+      ],
+      "group": "4h:filter_funding_extreme:long=ma_cross:short=price_vs_ma:filters=funding_extreme:donchian_trail",
+      "h": 48,
+      "label": "4h:filter_funding_extreme:thr=0.0003:long=ma_cross(fast=20,slow=100):short=price_vs_ma(period=100):filters=funding_extreme(thr=0.0003):donchian_trail:atr_period=14,k_stop=2.0,max_bars=120,trail_n=20",
+      "long_rule": {
+        "family": "ma_cross",
+        "params": {
+          "fast": 20,
+          "slow": 100
+        }
+      },
+      "short_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 1.0
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "4h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_oi_macro:z_thr=1:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=1.0)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 1.5,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 1.5
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "4h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_oi_macro:z_thr=1.5:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=1.5)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    },
+    {
+      "axis": 2.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [
+        {
+          "name": "oi_momentum",
+          "params": {
+            "lookback": 6,
+            "window": 180,
+            "z_thr": 2.0
+          }
+        },
+        {
+          "name": "macro_regime",
+          "params": {
+            "regime": "R1"
+          }
+        }
+      ],
+      "group": "4h:filter_oi_macro:long=price_vs_ma:short=donchian_break:filters=oi_momentum|macro_regime:atr_trail",
+      "h": 48,
+      "label": "4h:filter_oi_macro:z_thr=2:long=price_vs_ma(period=100):short=donchian_break(n=55):filters=oi_momentum(lookback=6,window=180,z_thr=2.0)|macro_regime(regime=R1):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "price_vs_ma",
+        "params": {
+          "period": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 55
+        }
+      },
+      "timeframe": "4h"
+    }
+  ],
+  "lane": "btc_long_short_tournament",
+  "n_trials": 120,
+  "timeframes": [
+    "2h",
+    "4h"
+  ],
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

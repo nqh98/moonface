@@ -1,0 +1,8 @@
+{
+  "symbol": "BTC/USDT:USDT",
+  "tf": "4h",
+  "start_ms": 1577836800000,
+  "end_ms": 2000000000000,
+  "from_1h": true,
+  "holdout_bars": 2190
+}

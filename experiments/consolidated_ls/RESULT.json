@@ -1,0 +1,354 @@
+{
+  "evidence_class": "diagnostic_rerank",
+  "sealed_holdouts": "conceptually_reopened",
+  "asof": "2026-06-29",
+  "window": {
+    "start_ms": 1577836800000,
+    "end_ms": 1782300000000
+  },
+  "btc_bars": 14199,
+  "btc_sha": "d3163358136570f1",
+  "rows": [
+    {
+      "key": "btcspec:4h:atr_channel_break:k=3.0:donchian_trail:mb=120:atr_period=14,k_stop=2.0,trail_n=20:ap=14",
+      "lane": "btcspec",
+      "config": {
+        "k": 3.0,
+        "atr_period": 14
+      },
+      "config_source": "top_explore",
+      "exit_name": "donchian_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 3.9396,
+      "pf": 4.4673,
+      "max_dd_r": -10.4246,
+      "n": 30,
+      "total_r": 118.1892,
+      "mar": 17.9949
+    },
+    {
+      "key": "ls_tournament:4h:filter_atr_band:q=0.4:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.6,low=0.4,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+      "lane": "ls_tournament",
+      "config": {
+        "label": "4h:filter_atr_band:q=0.4:long=atr_channel_break(atr_period=14,k=1.5):short=atr_channel_break(atr_period=14,k=1.5):filters=atr_band(atr_period=14,high=0.6,low=0.4,window=96):chandelier:atr_mult=4.0,atr_period=14,max_bars=120",
+        "exit_name": "chandelier",
+        "h": 48,
+        "oi_momentum": "inactive (OI not in shared load)"
+      },
+      "config_source": "top_explore",
+      "exit_name": "chandelier",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 1.6232,
+      "pf": 2.2548,
+      "max_dd_r": -20.7706,
+      "n": 75,
+      "total_r": 121.739,
+      "mar": 8.6415
+    },
+    {
+      "key": "playbook:slope20:don55:donchian_trail",
+      "lane": "playbook",
+      "config": {
+        "label": "slope20:don55:donchian_trail",
+        "exit_name": "donchian_trail"
+      },
+      "config_source": "top_explore",
+      "exit_name": "donchian_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 1.1249,
+      "pf": 2.0651,
+      "max_dd_r": -13.4447,
+      "n": 44,
+      "total_r": 49.4936,
+      "mar": 4.2917
+    },
+    {
+      "key": "breadth_internal:breadth_thrust",
+      "lane": "breadth_internal",
+      "config": {
+        "base_period": 50,
+        "low_band": 0.4,
+        "high_band": 0.6,
+        "window": 6
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.6982,
+      "pf": 1.9536,
+      "max_dd_r": -6.7963,
+      "n": 44,
+      "total_r": 30.7221,
+      "mar": 5.0387
+    },
+    {
+      "key": "donchian:deploy_base",
+      "lane": "donchian",
+      "config": {
+        "entry_n": 40,
+        "trail_n": 20
+      },
+      "config_source": "deployed",
+      "exit_name": "donchian_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.6466,
+      "pf": 2.0923,
+      "max_dd_r": -14.749,
+      "n": 133,
+      "total_r": 86.002,
+      "mar": 8.2974
+    },
+    {
+      "key": "regime_overlay:R2-size",
+      "lane": "regime_overlay",
+      "config": {
+        "regime": "R2",
+        "mode": "size"
+      },
+      "config_source": "top_explore",
+      "exit_name": "donchian_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.5754,
+      "pf": 2.0967,
+      "max_dd_r": -12.4387,
+      "n": 133,
+      "total_r": 76.5326,
+      "mar": 8.3527
+    },
+    {
+      "key": "regime_selector:R1-wait",
+      "lane": "regime_selector",
+      "config": {
+        "regime": "R1",
+        "riskoff_action": "wait"
+      },
+      "config_source": "top_explore",
+      "exit_name": "donchian_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.4698,
+      "pf": 1.6921,
+      "max_dd_r": -9.9981,
+      "n": 139,
+      "total_r": 65.2986,
+      "mar": 8.4619
+    },
+    {
+      "key": "btc_classic:trend",
+      "lane": "btc_classic",
+      "config": {
+        "fast": 20,
+        "slow": 100
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.4486,
+      "pf": 1.672,
+      "max_dd_r": -11.9897,
+      "n": 181,
+      "total_r": 81.188,
+      "mar": 9.4986
+    },
+    {
+      "key": "practical:4h:atr_channel_break:k=2.0:atr_trail:mb=60:atr_period=14,k_trail=3.0",
+      "lane": "practical",
+      "config": {
+        "atr_period": 14,
+        "k": 2.0
+      },
+      "config_source": "top_explore",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.4205,
+      "pf": 1.3752,
+      "max_dd_r": -17.4188,
+      "n": 133,
+      "total_r": 55.9256,
+      "mar": 3.6533
+    },
+    {
+      "key": "btc_classic:breakout",
+      "lane": "btc_classic",
+      "config": {
+        "n": 55
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.4065,
+      "pf": 1.5694,
+      "max_dd_r": -49.3183,
+      "n": 684,
+      "total_r": 278.0178,
+      "mar": 27.5908
+    },
+    {
+      "key": "breadth_internal:dispersion_regime",
+      "lane": "breadth_internal",
+      "config": {
+        "d": 10,
+        "m_ma": 20,
+        "window": 180,
+        "p": 0.7
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.3673,
+      "pf": 1.5722,
+      "max_dd_r": -11.0856,
+      "n": 86,
+      "total_r": 31.5861,
+      "mar": 3.1523
+    },
+    {
+      "key": "btc_classic:channel",
+      "lane": "btc_classic",
+      "config": {
+        "k": 1.5,
+        "atr_period": 14
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.3639,
+      "pf": 1.5257,
+      "max_dd_r": -19.8666,
+      "n": 577,
+      "total_r": 209.9939,
+      "mar": 31.2509
+    },
+    {
+      "key": "engine:confluence",
+      "lane": "engine",
+      "config": {
+        "config": "promotion/engine.json",
+        "lookback_bars": 1500
+      },
+      "config_source": "deployed",
+      "exit_name": "engine",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.3034,
+      "pf": 1.2949,
+      "max_dd_r": -30.0265,
+      "n": 235,
+      "total_r": 71.2924,
+      "mar": 2.502
+    },
+    {
+      "key": "breadth_internal:breadth_divergence",
+      "lane": "breadth_internal",
+      "config": {
+        "n": 20,
+        "base_period": 50
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.2503,
+      "pf": 1.3492,
+      "max_dd_r": -20.2074,
+      "n": 108,
+      "total_r": 27.037,
+      "mar": 1.3824
+    },
+    {
+      "key": "breadth_internal:net_new_highs",
+      "lane": "breadth_internal",
+      "config": {
+        "n": 20,
+        "long_thr": 0.3,
+        "short_thr": -0.3
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.1172,
+      "pf": 1.1613,
+      "max_dd_r": -18.3943,
+      "n": 148,
+      "total_r": 17.3493,
+      "mar": 0.9009
+    },
+    {
+      "key": "btc_classic:funding_fade",
+      "lane": "btc_classic",
+      "config": {
+        "window": 180,
+        "z_thr": 2.0
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.0906,
+      "pf": 1.1156,
+      "max_dd_r": -32.582,
+      "n": 308,
+      "total_r": 27.9022,
+      "mar": 0.7899
+    },
+    {
+      "key": "btc_classic:momentum",
+      "lane": "btc_classic",
+      "config": {
+        "period": 24
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": 0.0513,
+      "pf": 1.0642,
+      "max_dd_r": -51.6507,
+      "n": 1391,
+      "total_r": 71.2921,
+      "mar": 0.9831
+    },
+    {
+      "key": "btc_classic:meanrev",
+      "lane": "btc_classic",
+      "config": {
+        "period": 14,
+        "low": 30,
+        "high": 70
+      },
+      "config_source": "frozen_family",
+      "exit_name": "atr_trail",
+      "current_signal": "FLAT",
+      "status": "ok",
+      "expectancy_r": -0.1357,
+      "pf": 0.8445,
+      "max_dd_r": -339.7912,
+      "n": 1680,
+      "total_r": -227.9583,
+      "mar": -0.9551
+    }
+  ],
+  "excluded": [
+    {
+      "lane": "portfolio",
+      "reason": "bar-return position stream; no per-trade R, not comparable on expectancy_r"
+    },
+    {
+      "lane": "pathsig",
+      "reason": "requires aux series (OI/taker/bpos) outside the shared candles+funding load"
+    }
+  ],
+  "errors": []
+}

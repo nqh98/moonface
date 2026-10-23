@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+**/.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets
+.env
+
+# Market data & caches (re-downloadable; never commit exchange data)
+.backtest_cache/
+.backtest_cache_fwd/
+cache/
+experiments/newdata/**/*.csv
+experiments/newdata/**/manifest.json
+
+# Runtime state / local output
+journal/
+promotion/engine.json
+experiments/autopilot/
+experiments/autopilot-selfopt/
+experiments/research/
+experiments/runs/
+experiments/state.json
+*.log
+paper signal*
+
+# Large reproducible dumps
+**/explore_leaderboard.json
+experiments/smc_decompose/results_*.json
+experiments/diagnostics/*/master.csv
+experiments/optimization/*/diagnostics/master.csv
+
+# Local tooling
+.worktrees/
+.claude/
+.agents/
+.gitnexus/
+.superpowers/
+CLAUDE.md
+AGENTS.md

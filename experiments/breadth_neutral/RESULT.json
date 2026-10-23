@@ -1,0 +1,103 @@
+{
+  "anchor_ok": true,
+  "anchor_raw_expected": {
+    "ETHUSDT/breadth_momentum": 0.193,
+    "ETHUSDT/net_new_highs": 0.474,
+    "SOLUSDT/breadth_momentum": 0.093,
+    "SOLUSDT/net_new_highs": 0.407
+  },
+  "anchor_raw_got": {
+    "ETHUSDT/breadth_momentum": 0.1929,
+    "ETHUSDT/net_new_highs": 0.4737,
+    "SOLUSDT/breadth_momentum": 0.0926,
+    "SOLUSDT/net_new_highs": 0.4071
+  },
+  "asof": "2026-06-28T17:17:59.891650+00:00",
+  "assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "beta_window": 500,
+  "bonferroni_alpha": 0.0125,
+  "lane": "breadth_neutral",
+  "market": "BTCUSDT",
+  "rows": [
+    {
+      "asset": "ETHUSDT",
+      "beta_contribution": 0.523,
+      "boot_lo": -0.4540563987875523,
+      "cost": false,
+      "hedged_pooled_dd": -13.2562,
+      "hedged_pooled_exp": -0.0493,
+      "hedged_pooled_pf": 0.9192,
+      "lead": "net_new_highs",
+      "mean_beta": 1.152,
+      "p_le_zero": 0.6068,
+      "pooled_n": 66,
+      "practical": false,
+      "raw_pooled_exp": 0.4737,
+      "same_sign": false,
+      "significant": false,
+      "status": "beta_explained",
+      "verdict": "negative"
+    },
+    {
+      "asset": "ETHUSDT",
+      "beta_contribution": 0.1498,
+      "boot_lo": -0.12944791473209924,
+      "cost": false,
+      "hedged_pooled_dd": -52.9726,
+      "hedged_pooled_exp": 0.0431,
+      "hedged_pooled_pf": 1.0837,
+      "lead": "breadth_momentum",
+      "mean_beta": 1.158,
+      "p_le_zero": 0.29222,
+      "pooled_n": 653,
+      "practical": false,
+      "raw_pooled_exp": 0.1929,
+      "same_sign": true,
+      "significant": false,
+      "status": "residual_positive",
+      "verdict": "forward_candidate"
+    },
+    {
+      "asset": "SOLUSDT",
+      "beta_contribution": 0.4273,
+      "boot_lo": -0.4736604563408812,
+      "cost": false,
+      "hedged_pooled_dd": -16.4663,
+      "hedged_pooled_exp": -0.0202,
+      "hedged_pooled_pf": 0.9668,
+      "lead": "net_new_highs",
+      "mean_beta": 1.351,
+      "p_le_zero": 0.53766,
+      "pooled_n": 60,
+      "practical": false,
+      "raw_pooled_exp": 0.4071,
+      "same_sign": false,
+      "significant": false,
+      "status": "beta_explained",
+      "verdict": "negative"
+    },
+    {
+      "asset": "SOLUSDT",
+      "beta_contribution": 0.1362,
+      "boot_lo": -0.21588460019470665,
+      "cost": false,
+      "hedged_pooled_dd": -62.8852,
+      "hedged_pooled_exp": -0.0436,
+      "hedged_pooled_pf": 0.9198,
+      "lead": "breadth_momentum",
+      "mean_beta": 1.355,
+      "p_le_zero": 0.71702,
+      "pooled_n": 587,
+      "practical": false,
+      "raw_pooled_exp": 0.0926,
+      "same_sign": true,
+      "significant": false,
+      "status": "beta_explained",
+      "verdict": "negative"
+    }
+  ],
+  "verdict": "residual_survives"
+}

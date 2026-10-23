@@ -1,0 +1,67 @@
+{
+  "controls": [
+    "always_trend",
+    "always_mr",
+    "swap"
+  ],
+  "gate": "practical_pass(validate) AND beats_both_controls(validate) AND sealed practical_pass+beats_net AND swap-control fails",
+  "grid": [
+    "R1-switch",
+    "R1-wait",
+    "R3-switch",
+    "R3-wait"
+  ],
+  "lane": "macro_regime_strategy_selector",
+  "mr_base": {
+    "exit": "fixed_bracket",
+    "exit_params": {
+      "atr_period": 14,
+      "k_stop": 2.0,
+      "m_tp": 4.0
+    },
+    "family": "reversion_in_range",
+    "h": 24,
+    "params": {
+      "high": 75,
+      "low": 25,
+      "period": 14
+    }
+  },
+  "n_trials": 4,
+  "regimes": [
+    "R1",
+    "R3"
+  ],
+  "riskoff_actions": [
+    "switch",
+    "wait"
+  ],
+  "trend_base": {
+    "exit": "atr_trail",
+    "exit_params": {
+      "atr_period": 14,
+      "k_trail": 2.0,
+      "max_bars": 120
+    },
+    "family": "atr_channel_break",
+    "h": 48,
+    "params": {
+      "atr_period": 14,
+      "k": 1.5
+    }
+  },
+  "windows": {
+    "sealed": [
+      1740787200000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1698796800000
+    ],
+    "validate": [
+      1698796800000,
+      1740787200000
+    ]
+  }
+}

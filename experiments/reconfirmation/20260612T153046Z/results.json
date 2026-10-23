@@ -1,0 +1,73 @@
+{
+  "anchor_breached": false,
+  "asset": {
+    "exchange": "binance",
+    "symbol": "BTC/USDT:USDT"
+  },
+  "generated_utc": "2026-06-12T15:30:46Z",
+  "recommendation": "HUMAN REVIEW \u2014 do not bump reconfirm_by; see the pre-committed actions in REGISTRATION.md",
+  "registration": "v1",
+  "timeframes": {
+    "1d": {
+      "bars": 1095,
+      "fresh_mean_r": null,
+      "last_bar_ts": 1781136000000,
+      "max_drawdown_r": 13.5194,
+      "n_fresh": null,
+      "n_oos": 0,
+      "n_research": 31,
+      "n_total": 31,
+      "net_r": 64.9764,
+      "oos_mean_r": 0.0,
+      "research_mean_r": 2.096,
+      "timeframe": "1d",
+      "verdict": "INSUFFICIENT"
+    },
+    "1h": {
+      "bars": 26280,
+      "fresh_mean_r": null,
+      "last_bar_ts": 1781272800000,
+      "max_drawdown_r": 121.6002,
+      "n_fresh": null,
+      "n_oos": 70,
+      "n_research": 381,
+      "n_total": 451,
+      "net_r": 71.2648,
+      "oos_mean_r": -1.2967,
+      "research_mean_r": 0.4253,
+      "timeframe": "1h",
+      "verdict": "DEGRADED"
+    },
+    "1w": {
+      "bars": 157,
+      "fresh_mean_r": null,
+      "last_bar_ts": 1780876800000,
+      "max_drawdown_r": 3.7046,
+      "n_fresh": null,
+      "n_oos": 0,
+      "n_research": 1,
+      "n_total": 1,
+      "net_r": -3.7046,
+      "oos_mean_r": 0.0,
+      "research_mean_r": -3.7046,
+      "timeframe": "1w",
+      "verdict": "INSUFFICIENT"
+    },
+    "4h": {
+      "bars": 6570,
+      "fresh_mean_r": null,
+      "last_bar_ts": 1781251200000,
+      "max_drawdown_r": 35.1717,
+      "n_fresh": null,
+      "n_oos": 19,
+      "n_research": 124,
+      "n_total": 143,
+      "net_r": 136.6459,
+      "oos_mean_r": -1.5487,
+      "research_mean_r": 1.3393,
+      "timeframe": "4h",
+      "verdict": "DEGRADED"
+    }
+  },
+  "window_days": 1095
+}

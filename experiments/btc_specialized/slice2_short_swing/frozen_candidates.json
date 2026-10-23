@@ -1,0 +1,171 @@
+[
+  {
+    "label": "1h:ma_cross:slow=96.0:chandelier:mb=96:atr_mult=4.0,atr_period=14",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 24,
+      "slow": 96
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 96,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:ma_cross::chandelier:mb=96:atr_mult=4.0,atr_period=14",
+    "axis": 96.0
+  },
+  {
+    "label": "1h:ma_cross:slow=144.0:chandelier:mb=24:atr_mult=3.0,atr_period=14",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 36,
+      "slow": 144
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 3.0,
+      "max_bars": 24,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:ma_cross::chandelier:mb=24:atr_mult=3.0,atr_period=14",
+    "axis": 144.0
+  },
+  {
+    "label": "1h:ma_cross:slow=144.0:donchian_trail:mb=24:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 36,
+      "slow": 144
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 24,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:ma_cross::donchian_trail:mb=24:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 144.0
+  },
+  {
+    "label": "1h:trend_pullback:ma=48.0:chandelier:mb=96:atr_mult=4.0,atr_period=14:pull=1.0",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "params": {
+      "ma": 48,
+      "pull_atr": 1.0,
+      "atr_period": 14
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 96,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:trend_pullback:pull=1.0:chandelier:mb=96:atr_mult=4.0,atr_period=14",
+    "axis": 48.0
+  },
+  {
+    "label": "1h:trend_pullback:ma=48.0:atr_trail:mb=24:atr_period=14,k_trail=3.0:pull=1.0",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "params": {
+      "ma": 48,
+      "pull_atr": 1.0,
+      "atr_period": 14
+    },
+    "exit_name": "atr_trail",
+    "exit_params": {
+      "k_trail": 3.0,
+      "max_bars": 24,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:trend_pullback:pull=1.0:atr_trail:mb=24:atr_period=14,k_trail=3.0",
+    "axis": 48.0
+  },
+  {
+    "label": "1h:trend_pullback:ma=144.0:chandelier:mb=48:atr_mult=4.0,atr_period=14:pull=1.5",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "params": {
+      "ma": 144,
+      "pull_atr": 1.5,
+      "atr_period": 14
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 48,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:trend_pullback:pull=1.5:chandelier:mb=48:atr_mult=4.0,atr_period=14",
+    "axis": 144.0
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0:lb=24",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "params": {
+      "atr_period": 14,
+      "lookback": 24,
+      "mult": 3.0
+    },
+    "exit_name": "fixed_bracket",
+    "exit_params": {
+      "k_stop": 1.0,
+      "m_tp": 3.0,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:vol_expansion:lb=24:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0",
+    "axis": 3.0
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0:lb=48",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "params": {
+      "atr_period": 14,
+      "lookback": 48,
+      "mult": 3.0
+    },
+    "exit_name": "fixed_bracket",
+    "exit_params": {
+      "k_stop": 1.0,
+      "m_tp": 3.0,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:vol_expansion:lb=48:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0",
+    "axis": 3.0
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=4.0:lb=24",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "params": {
+      "atr_period": 14,
+      "lookback": 24,
+      "mult": 3.0
+    },
+    "exit_name": "fixed_bracket",
+    "exit_params": {
+      "k_stop": 1.0,
+      "m_tp": 4.0,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "1h:vol_expansion:lb=24:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=4.0",
+    "axis": 3.0
+  }
+]

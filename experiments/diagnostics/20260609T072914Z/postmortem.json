@@ -1,0 +1,171 @@
+{
+  "edges": [
+    {
+      "count": 24,
+      "expectancy_r": 0.7272,
+      "key": "side_x_vol:BUY|high_vol",
+      "net_r": 17.4536,
+      "win_rate": 0.5833
+    },
+    {
+      "count": 417,
+      "expectancy_r": -0.243,
+      "key": "session:off_hours",
+      "net_r": -101.0746,
+      "win_rate": 0.3077
+    },
+    {
+      "count": 569,
+      "expectancy_r": -0.2141,
+      "key": "weekday:2",
+      "net_r": -121.8287,
+      "win_rate": 0.3111
+    },
+    {
+      "count": 553,
+      "expectancy_r": -0.3234,
+      "key": "weekday:4",
+      "net_r": -178.5112,
+      "win_rate": 0.2935
+    },
+    {
+      "count": 490,
+      "expectancy_r": -0.3795,
+      "key": "weekday:1",
+      "net_r": -185.5576,
+      "win_rate": 0.2761
+    }
+  ],
+  "excursion": {
+    "loser_avg_mfe_r": 0.8051,
+    "loser_count": 2580,
+    "no_fill_count": 3,
+    "no_fill_would_win": 2,
+    "winner_avg_mae_r": 0.489,
+    "winner_avg_mfe_r": 2.9985,
+    "winner_count": 1019
+  },
+  "gates": [
+    {
+      "delta_expectancy_r": -0.0106,
+      "delta_net_r": 511.4442,
+      "expectancy_r": -0.3941,
+      "gate": "htf_bias",
+      "kind": "structural",
+      "max_drawdown_r": -891.7582,
+      "net_r": -868.6942,
+      "trades": 2204,
+      "verdict": "neutral",
+      "win_rate": 0.2727
+    },
+    {
+      "delta_expectancy_r": 0.0996,
+      "delta_net_r": 1220.0182,
+      "expectancy_r": -0.2839,
+      "gate": "choch_displacement",
+      "kind": "structural",
+      "max_drawdown_r": -180.3819,
+      "net_r": -160.1202,
+      "trades": 564,
+      "verdict": "value-adding",
+      "win_rate": 0.328
+    },
+    {
+      "delta_expectancy_r": 0.0,
+      "delta_net_r": 0.0,
+      "expectancy_r": -0.3835,
+      "gate": "premium_discount",
+      "kind": "soft",
+      "max_drawdown_r": -1398.0604,
+      "net_r": -1380.1384,
+      "trades": 3599,
+      "verdict": "neutral",
+      "win_rate": 0.2831
+    },
+    {
+      "delta_expectancy_r": -0.1542,
+      "delta_net_r": 669.8833,
+      "expectancy_r": -0.5377,
+      "gate": "poi_mitigation",
+      "kind": "soft",
+      "max_drawdown_r": -714.7017,
+      "net_r": -710.2551,
+      "trades": 1321,
+      "verdict": "edge-destroying",
+      "win_rate": 0.2589
+    },
+    {
+      "delta_expectancy_r": 0.0385,
+      "delta_net_r": 1301.1431,
+      "expectancy_r": -0.345,
+      "gate": "fib_zone",
+      "kind": "soft",
+      "max_drawdown_r": -80.2581,
+      "net_r": -78.9953,
+      "trades": 229,
+      "verdict": "value-adding",
+      "win_rate": 0.3493
+    },
+    {
+      "delta_expectancy_r": 0.1685,
+      "delta_net_r": 1343.803,
+      "expectancy_r": -0.215,
+      "gate": "pinbar",
+      "kind": "soft",
+      "max_drawdown_r": -50.4726,
+      "net_r": -36.3354,
+      "trades": 169,
+      "verdict": "value-adding",
+      "win_rate": 0.3432
+    }
+  ],
+  "generated_at": "2026-06-09T07:29:14.635547+00:00",
+  "leaks": [
+    {
+      "count": 3602,
+      "expectancy_r": -0.3835,
+      "key": "poi_type:OB",
+      "net_r": -1380.1384,
+      "win_rate": 0.2831
+    },
+    {
+      "count": 2683,
+      "expectancy_r": -0.3878,
+      "key": "regime:trend",
+      "net_r": -1039.6437,
+      "win_rate": 0.2768
+    },
+    {
+      "count": 1488,
+      "expectancy_r": -0.4893,
+      "key": "rr2:rr2_ge_3",
+      "net_r": -727.6043,
+      "win_rate": 0.197
+    },
+    {
+      "count": 2029,
+      "expectancy_r": -0.3481,
+      "key": "market:bull",
+      "net_r": -706.0027,
+      "win_rate": 0.2944
+    },
+    {
+      "count": 1911,
+      "expectancy_r": -0.3646,
+      "key": "side:BUY",
+      "net_r": -696.8029,
+      "win_rate": 0.2977
+    }
+  ],
+  "overall_net_r": -1380.1384,
+  "rationale": "Segment 'side_x_vol:BUY|high_vol' earns 17.45R over 24 trades while the whole is -1380.14R.",
+  "recommendation": "regime filter",
+  "setup_count": 3602,
+  "verdict": {
+    "loser_count": 2580,
+    "loser_high_mfe_share": 0.3019,
+    "loser_median_mfe_r": 0.5787,
+    "verdict": "mixed",
+    "winner_median_mae_r": 0.4178
+  }
+}

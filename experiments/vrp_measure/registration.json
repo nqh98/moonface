@@ -1,0 +1,7 @@
+{
+  "dvol_path": "cache/exogenous/dvol_BTC_43200_full.csv",
+  "spot_path": ".backtest_cache/BTC_USDT_1h.csv",
+  "start_ms": 1616544000000,
+  "end_ms": 1780228800000,
+  "null_seeds": 500
+}

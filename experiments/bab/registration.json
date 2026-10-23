@@ -1,0 +1,19 @@
+{
+  "top_n": 20,
+  "quintile": 5,
+  "rebalance_days": 7,
+  "fee": 0.0005,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "n_trials": 1,
+  "constructions": [
+    {
+      "name": "bab_60",
+      "lookback_days": 60
+    }
+  ],
+  "start_ms": 1687070670212,
+  "end_ms": 1781678670212,
+  "fence_ts": 1762757070212,
+  "registered_utc": "2026-06-17T06:44:30.212000+00:00"
+}

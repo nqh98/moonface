@@ -1,0 +1,172 @@
+[
+  {
+    "bracket_expectancy_r": -0.04,
+    "bracket_net_r": -5.6419,
+    "bracket_oos_net_r": -11.6051,
+    "bracket_oos_trades": 27,
+    "bracket_trades": 141,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3759,
+    "horizon_expectancy_r": -0.4813,
+    "horizon_oos_expectancy_r": -0.1884,
+    "horizon_oos_trades": 27,
+    "horizon_trades": 141,
+    "horizon_win_rate": 0.5319,
+    "params": {
+      "window": 60,
+      "z_thr": 2.0
+    },
+    "signal": "funding_fade"
+  },
+  {
+    "bracket_expectancy_r": -0.1213,
+    "bracket_net_r": -30.6979,
+    "bracket_oos_net_r": 3.107,
+    "bracket_oos_trades": 68,
+    "bracket_trades": 253,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3478,
+    "horizon_expectancy_r": 0.0555,
+    "horizon_oos_expectancy_r": 0.8157,
+    "horizon_oos_trades": 68,
+    "horizon_trades": 253,
+    "horizon_win_rate": 0.5534,
+    "params": {
+      "window": 60,
+      "z_thr": 1.5
+    },
+    "signal": "funding_fade"
+  },
+  {
+    "bracket_expectancy_r": -0.1219,
+    "bracket_net_r": -15.1183,
+    "bracket_oos_net_r": -0.3369,
+    "bracket_oos_trades": 13,
+    "bracket_trades": 124,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3548,
+    "horizon_expectancy_r": -0.0903,
+    "horizon_oos_expectancy_r": -1.8161,
+    "horizon_oos_trades": 13,
+    "horizon_trades": 124,
+    "horizon_win_rate": 0.4677,
+    "params": {
+      "lvl": 0.0001,
+      "persist": 12
+    },
+    "signal": "funding_confirm"
+  },
+  {
+    "bracket_expectancy_r": -0.1319,
+    "bracket_net_r": -31.7829,
+    "bracket_oos_net_r": -18.65,
+    "bracket_oos_trades": 70,
+    "bracket_trades": 241,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3444,
+    "horizon_expectancy_r": -0.2862,
+    "horizon_oos_expectancy_r": 0.3776,
+    "horizon_oos_trades": 70,
+    "horizon_trades": 241,
+    "horizon_win_rate": 0.5145,
+    "params": {
+      "window": 180,
+      "z_thr": 1.5
+    },
+    "signal": "funding_fade"
+  },
+  {
+    "bracket_expectancy_r": -0.1408,
+    "bracket_net_r": -17.7361,
+    "bracket_oos_net_r": -7.9389,
+    "bracket_oos_trades": 20,
+    "bracket_trades": 126,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3413,
+    "horizon_expectancy_r": -0.5633,
+    "horizon_oos_expectancy_r": 0.2852,
+    "horizon_oos_trades": 20,
+    "horizon_trades": 126,
+    "horizon_win_rate": 0.4921,
+    "params": {
+      "window": 180,
+      "z_thr": 2.0
+    },
+    "signal": "funding_fade"
+  },
+  {
+    "bracket_expectancy_r": -0.1712,
+    "bracket_net_r": -23.2875,
+    "bracket_oos_net_r": 1.0177,
+    "bracket_oos_trades": 17,
+    "bracket_trades": 136,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3382,
+    "horizon_expectancy_r": -0.1941,
+    "horizon_oos_expectancy_r": -1.4689,
+    "horizon_oos_trades": 17,
+    "horizon_trades": 136,
+    "horizon_win_rate": 0.4706,
+    "params": {
+      "lvl": 0.0001,
+      "persist": 6
+    },
+    "signal": "funding_confirm"
+  },
+  {
+    "bracket_expectancy_r": -0.2162,
+    "bracket_net_r": -5.6201,
+    "bracket_oos_net_r": 0.0,
+    "bracket_oos_trades": 0,
+    "bracket_trades": 26,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3077,
+    "horizon_expectancy_r": 0.2979,
+    "horizon_oos_expectancy_r": 0.0,
+    "horizon_oos_trades": 0,
+    "horizon_trades": 26,
+    "horizon_win_rate": 0.5,
+    "params": {
+      "lvl": 0.0003,
+      "persist": 6
+    },
+    "signal": "funding_confirm"
+  },
+  {
+    "bracket_expectancy_r": -0.2162,
+    "bracket_net_r": -5.6201,
+    "bracket_oos_net_r": 0.0,
+    "bracket_oos_trades": 0,
+    "bracket_trades": 26,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3077,
+    "horizon_expectancy_r": 0.2979,
+    "horizon_oos_expectancy_r": 0.0,
+    "horizon_oos_trades": 0,
+    "horizon_trades": 26,
+    "horizon_win_rate": 0.5,
+    "params": {
+      "lvl": 0.0003,
+      "persist": 12
+    },
+    "signal": "funding_confirm"
+  },
+  {
+    "bracket_expectancy_r": -0.2379,
+    "bracket_net_r": -40.2113,
+    "bracket_oos_net_r": -3.1719,
+    "bracket_oos_trades": 69,
+    "bracket_trades": 169,
+    "bracket_valid": false,
+    "bracket_win_rate": 0.3136,
+    "horizon_expectancy_r": -0.2729,
+    "horizon_oos_expectancy_r": 0.5844,
+    "horizon_oos_trades": 69,
+    "horizon_trades": 169,
+    "horizon_win_rate": 0.497,
+    "params": {
+      "debounce": 6
+    },
+    "signal": "funding_flip"
+  }
+]

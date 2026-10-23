@@ -1,0 +1,53 @@
+{
+  "symbol": "BTCUSDT",
+  "funding_symbol": "BTC/USDT:USDT",
+  "exchange": "binanceusdm",
+  "metrics_field": "sum_open_interest",
+  "window_start_ms": 1640995200000,
+  "era_split_ms": 1704844800000,
+  "cells": [
+    "price_4h",
+    "price_1d",
+    "funding_8h",
+    "oi_4h"
+  ],
+  "price_features": [
+    "abs_ret_z",
+    "close_loc",
+    "log_ret",
+    "range_frac",
+    "up_frac_30",
+    "vol_z"
+  ],
+  "funding_features": [
+    "abs_rate_z",
+    "pos_frac_30",
+    "rate",
+    "rate_chg",
+    "rate_z"
+  ],
+  "oi_features": [
+    "abs_chg_z",
+    "oi_chg",
+    "oi_chg30",
+    "oi_chg_z"
+  ],
+  "z_window": 90,
+  "gbt": {
+    "rounds": 200,
+    "lr": 0.1,
+    "min_leaf": 20
+  },
+  "cv": {
+    "n_folds": 5,
+    "embargo": 90
+  },
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 20260706
+  },
+  "kill_rule": "kill unless rho > 0 AND ci_low > 0 (90% percentile CI)",
+  "window_end_ms": 1783307774019,
+  "n_studies": 18,
+  "registered_utc": "2026-07-06T03:16:14.019000+00:00"
+}

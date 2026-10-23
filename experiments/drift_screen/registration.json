@@ -1,0 +1,79 @@
+{
+  "timeframe": "4h",
+  "h": 24,
+  "atr_period": 14,
+  "min_events": 10,
+  "min_assets": 8,
+  "universe": [
+    "1000PEPEUSDT",
+    "PEOPLEUSDT",
+    "DOGEUSDT",
+    "BNBUSDT",
+    "1000SHIBUSDT",
+    "1000FLOKIUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "HIGHUSDT",
+    "NEARUSDT",
+    "JASMYUSDT",
+    "TRBUSDT",
+    "FILUSDT",
+    "ARBUSDT",
+    "AVAXUSDT",
+    "ETCUSDT"
+  ],
+  "discovery": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "signals": [
+    {
+      "name": "donchian_break",
+      "params": {
+        "n": 100
+      }
+    },
+    {
+      "name": "donchian_break",
+      "params": {
+        "n": 55
+      }
+    },
+    {
+      "name": "atr_channel_break",
+      "params": {
+        "k": 1.5,
+        "atr_period": 14
+      }
+    },
+    {
+      "name": "atr_channel_break",
+      "params": {
+        "k": 2.0,
+        "atr_period": 14
+      }
+    },
+    {
+      "name": "ma_cross",
+      "params": {
+        "fast": 50,
+        "slow": 200
+      }
+    },
+    {
+      "name": "roc_sign",
+      "params": {
+        "period": 24
+      }
+    },
+    {
+      "name": "price_vs_ma",
+      "params": {
+        "period": 100
+      }
+    }
+  ],
+  "floor": 0.1319,
+  "registered_utc": "2026-06-16T02:25:37.286384+00:00"
+}

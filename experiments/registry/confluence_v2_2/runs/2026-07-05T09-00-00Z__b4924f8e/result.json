@@ -1,0 +1,36 @@
+{
+  "lane": "confluence_v2_2",
+  "run_id": "2026-07-05T09-00-00Z__b4924f8e",
+  "code_hash": "b4924f8eadd603db8dc8a7c63a35971f56ac0b46a81c07674f45555686ec85b5",
+  "registration_hash": null,
+  "data_fingerprint": null,
+  "provenance_note": "registration_hash and data_fingerprint are wired into every write at G3 (spec.spec_hash / series_fingerprint, per docs/research-log/specs/2026-08-22-repo-restructure-design.md section 3.2). code_hash above is the pre-existing engine_hash constant -- the only identity primitive this run has today.",
+  "window_observed": {
+    "start_utc": "2026-07-05T09:00:00Z",
+    "end_utc": "2026-07-29T04:00:00Z"
+  },
+  "journal_rows": {"total": 572, "live": 69, "reconstructed": 503},
+  "decisions": {"WAIT": 572, "non_WAIT": 0},
+  "completed_setups": 0,
+  "veto_events": {"total": 20, "family": "no_ct (v2.1 no counter-trend entries)"},
+  "outage": {
+    "start_utc": "2026-07-08T07:00:00Z",
+    "end_utc": "2026-07-29T02:00:00Z",
+    "duration": "20d19h, 501 hourly candles",
+    "cause": "moonface-signal --watch was hand-started with nohup and died unsupervised; no cron entry, no flock guard",
+    "resolution": "backfilled via engine_backtest replay + historical fetch_deriv_snapshot: 503 rows reconstructed and appended (501 for the gap plus 2 pre-existing 1h holes the live daemon had also skipped); journal re-sorted chronologically",
+    "record": "experiments/engine/V22_DOWNTIME_RULING_2026-07-29.md"
+  },
+  "ruling": {
+    "date_utc": "2026-08-22",
+    "source": "docs/research-log/specs/2026-08-22-repo-restructure-design.md",
+    "statement": "the v2.2 forward run is halted",
+    "context": "the daemon was never restarted after the 2026-07-29 backfill (journal/signals.jsonl last written 2026-07-29T04:00:00Z); this restructure spec records that decision rather than treating the silence as a further outage to backfill"
+  },
+  "promotion_config_state": {
+    "path": "promotion/engine.json",
+    "enabled": true,
+    "note": "the kill rule's DOWNGRADE (enabled=false) was never formally invoked in config; the run halted at the daemon/journal-accrual level, not at the config level"
+  },
+  "generated_utc": "2026-08-24T03:52:29Z"
+}

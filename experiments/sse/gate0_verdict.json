@@ -1,0 +1,56 @@
+{
+  "chosen_cell": null,
+  "points": {
+    "attribution_pass": true,
+    "circular_shift": {
+      "observed": 0.007804626863363641,
+      "pass": false,
+      "threshold": 0.017265629961852682
+    },
+    "control_nulls": {
+      "circular_shift_pass": false,
+      "label_shuffle_pass": false
+    },
+    "era_stability": {
+      "bottom": 0,
+      "pass": false,
+      "reason": "era2_sign_flip",
+      "top": 3
+    },
+    "label_shuffle": {
+      "observed": 0.007804626863363641,
+      "pass": false,
+      "threshold": 0.01406939090440289
+    },
+    "track_l_spread": 0.0036295294633484714,
+    "track_n_spread": 0.007804626863363641,
+    "verdict": "FAIL"
+  },
+  "trajectories": {
+    "attribution_pass": true,
+    "circular_shift": {
+      "observed": 0.017567208678272054,
+      "pass": false,
+      "threshold": 0.021414170092470618
+    },
+    "control_nulls": {
+      "circular_shift_pass": false,
+      "label_shuffle_pass": false
+    },
+    "era_stability": {
+      "bottom": 1,
+      "pass": false,
+      "reason": "era3_sign_flip",
+      "top": 0
+    },
+    "label_shuffle": {
+      "observed": 0.017567208678272054,
+      "pass": false,
+      "threshold": 0.018388182074854566
+    },
+    "track_l_spread": 0.0036295294633484714,
+    "track_n_spread": 0.017567208678272054,
+    "verdict": "FAIL"
+  },
+  "verdict": "CLOSED"
+}

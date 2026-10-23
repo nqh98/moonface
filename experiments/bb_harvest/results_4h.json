@@ -1,0 +1,194 @@
+[
+  {
+    "label": "bb_breakout p50m2.0:horizon_hold",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 226,
+      "mean_ret_r": 0.37219949993760637,
+      "z": 1.2285321198432242,
+      "sign_rate": 0.4823008849557522,
+      "passed": false,
+      "reason": "n=226 z=1.23 mean_ret_r=0.3722 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.0:atr_trail",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 226,
+      "mean_ret_r": 0.37219949993760637,
+      "z": 1.2285321198432242,
+      "sign_rate": 0.4823008849557522,
+      "passed": false,
+      "reason": "n=226 z=1.23 mean_ret_r=0.3722 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.0:breakeven_horizon",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 226,
+      "mean_ret_r": 0.37219949993760637,
+      "z": 1.2285321198432242,
+      "sign_rate": 0.4823008849557522,
+      "passed": false,
+      "reason": "n=226 z=1.23 mean_ret_r=0.3722 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.0:horizon_wide_stop",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 226,
+      "mean_ret_r": 0.37219949993760637,
+      "z": 1.2285321198432242,
+      "sign_rate": 0.4823008849557522,
+      "passed": false,
+      "reason": "n=226 z=1.23 mean_ret_r=0.3722 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.5:horizon_hold",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 166,
+      "mean_ret_r": 0.38459804387641716,
+      "z": 1.059853315406364,
+      "sign_rate": 0.4939759036144578,
+      "passed": false,
+      "reason": "n=166 z=1.06 mean_ret_r=0.3846 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.5:atr_trail",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 166,
+      "mean_ret_r": 0.38459804387641716,
+      "z": 1.059853315406364,
+      "sign_rate": 0.4939759036144578,
+      "passed": false,
+      "reason": "n=166 z=1.06 mean_ret_r=0.3846 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.5:breakeven_horizon",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 166,
+      "mean_ret_r": 0.38459804387641716,
+      "z": 1.059853315406364,
+      "sign_rate": 0.4939759036144578,
+      "passed": false,
+      "reason": "n=166 z=1.06 mean_ret_r=0.3846 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p50m2.5:horizon_wide_stop",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 166,
+      "mean_ret_r": 0.38459804387641716,
+      "z": 1.059853315406364,
+      "sign_rate": 0.4939759036144578,
+      "passed": false,
+      "reason": "n=166 z=1.06 mean_ret_r=0.3846 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p20m2.0:horizon_hold",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 319,
+      "mean_ret_r": 0.5012054244582667,
+      "z": 1.7253914080246946,
+      "sign_rate": 0.49843260188087773,
+      "passed": false,
+      "reason": "n=319 z=1.73 mean_ret_r=0.5012 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p20m2.0:atr_trail",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 319,
+      "mean_ret_r": 0.5012054244582667,
+      "z": 1.7253914080246946,
+      "sign_rate": 0.49843260188087773,
+      "passed": false,
+      "reason": "n=319 z=1.73 mean_ret_r=0.5012 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p20m2.0:breakeven_horizon",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 319,
+      "mean_ret_r": 0.5012054244582667,
+      "z": 1.7253914080246946,
+      "sign_rate": 0.49843260188087773,
+      "passed": false,
+      "reason": "n=319 z=1.73 mean_ret_r=0.5012 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "bb_breakout p20m2.0:horizon_wide_stop",
+    "family": "bb_breakout",
+    "is_retest": false,
+    "stage1": {
+      "n": 319,
+      "mean_ret_r": 0.5012054244582667,
+      "z": 1.7253914080246946,
+      "sign_rate": 0.49843260188087773,
+      "passed": false,
+      "reason": "n=319 z=1.73 mean_ret_r=0.5012 (need n>=30, |z|>=2.0)"
+    },
+    "stage2": null,
+    "stage3": null,
+    "verdict": "negative"
+  }
+]

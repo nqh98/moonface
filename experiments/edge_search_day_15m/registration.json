@@ -1,0 +1,8 @@
+{
+  "symbol": "BTCUSDT",
+  "interval": "15m",
+  "timeframe": "15m",
+  "start_ms": 1749686400000,
+  "end_ms": 1781222400000,
+  "holdout_bars": 2880
+}

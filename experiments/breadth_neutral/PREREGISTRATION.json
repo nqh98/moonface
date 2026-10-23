@@ -1,0 +1,34 @@
+{
+  "asof": "2026-06-28T17:15:47.467484+00:00",
+  "assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "beta_window": 500,
+  "bonferroni_level": 0.0125,
+  "btc_anchor_sha": "b3b004cb58258369",
+  "gate": "per (lead x asset) cell on BTC-hedged residual: neutral_confirmed iff judge==paper_candidate (same-sign+practical+2x/3x cost+p<0.0125); residual_positive iff hedged exp>0 & same-sign; else beta_explained. raw (beta=0) anchor-x-checked against the cross-asset lane.",
+  "k": 4,
+  "lane": "breadth_neutral",
+  "lane_description": "Market-neutral falsification: beta-hedge each ETH/SOL breadth-lead trade against BTC over its holding window; re-judge the residual. Tests whether the leads predict the beta-residual or just ride crypto beta. beta=0 reproduces the cross-asset raw result (anchor).",
+  "leads": [
+    "net_new_highs",
+    "breadth_momentum"
+  ],
+  "market": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

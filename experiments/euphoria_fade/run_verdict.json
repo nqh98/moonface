@@ -1,0 +1,35 @@
+{
+  "verdict": "CLOSED_NEGATIVE",
+  "pending_cells": [],
+  "cells": {
+    "1": {
+      "stage1": false,
+      "stage2": false,
+      "stage3": false,
+      "stage4": false,
+      "dsr": 0.0006,
+      "n_is": 658,
+      "n_oos": 408,
+      "exp_is": -0.0195,
+      "exp_oos": -0.1078,
+      "exp_ctrl_oos": -0.0898,
+      "null_pass_rate": 0.0,
+      "pass_1_4": false
+    },
+    "2": {
+      "stage1": true,
+      "stage2": false,
+      "stage3": false,
+      "stage4": false,
+      "dsr": 0.2173,
+      "n_is": 344,
+      "n_oos": 219,
+      "exp_is": 0.0515,
+      "exp_oos": -0.0973,
+      "exp_ctrl_oos": -0.0633,
+      "null_pass_rate": 0.0,
+      "pass_1_4": false
+    }
+  },
+  "seed": 1
+}

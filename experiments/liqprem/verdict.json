@@ -1,0 +1,20 @@
+{
+  "status": "closed_negative",
+  "generated_utc": "2026-07-28T17:34:00.645960+00:00",
+  "universe_symbols": 772,
+  "viability_members": 434,
+  "funding_symbols": 434,
+  "constructions": [
+    {
+      "name": "liqprem_1",
+      "amihud_days": 30,
+      "gross_mean": -0.00010666,
+      "gross_z": -0.2802,
+      "net_mean": -0.00015442,
+      "net_z": -0.4055,
+      "cost_first_pass": false,
+      "kill_branch": "no_premium",
+      "dsr": null
+    }
+  ]
+}

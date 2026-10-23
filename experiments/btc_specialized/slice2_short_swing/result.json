@@ -1,0 +1,101 @@
+[
+  {
+    "label": "1h:ma_cross:slow=96.0:chandelier:mb=96:atr_mult=4.0,atr_period=14",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.4615,
+    "val_total_r": 11.7429,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:ma_cross:slow=144.0:chandelier:mb=24:atr_mult=3.0,atr_period=14",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6154,
+    "val_total_r": 18.3341,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:ma_cross:slow=144.0:donchian_trail:mb=24:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "1h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6154,
+    "val_total_r": 5.7266,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:trend_pullback:ma=48.0:chandelier:mb=96:atr_mult=4.0,atr_period=14:pull=1.0",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6154,
+    "val_total_r": 40.9566,
+    "seal_pf": 0.5553,
+    "seal_exp": -0.7046
+  },
+  {
+    "label": "1h:trend_pullback:ma=48.0:atr_trail:mb=24:atr_period=14,k_trail=3.0:pull=1.0",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3846,
+    "val_total_r": -44.1002,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:trend_pullback:ma=144.0:chandelier:mb=48:atr_mult=4.0,atr_period=14:pull=1.5",
+    "timeframe": "1h",
+    "family": "trend_pullback",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.2308,
+    "val_total_r": -49.7622,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0:lb=24",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3077,
+    "val_total_r": -8.8472,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=3.0:lb=48",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3077,
+    "val_total_r": -8.4683,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "1h:vol_expansion:mult=3.0:fixed_bracket:atr_period=14,k_stop=1.0,m_tp=4.0:lb=24",
+    "timeframe": "1h",
+    "family": "vol_expansion",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3846,
+    "val_total_r": -0.9851,
+    "seal_pf": null,
+    "seal_exp": null
+  }
+]

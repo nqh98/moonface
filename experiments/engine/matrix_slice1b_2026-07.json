@@ -1,0 +1,48 @@
+{
+  "data": {
+    "btc_candles": 14200,
+    "btc_fingerprint": "59383fd7244466ec99a255530f27cd7200c0fad02e6326e5c0cc05d5c6919428"
+  },
+  "fitted_governor": {
+    "dd_budget": 11.6455,
+    "size_max": 1.0,
+    "target_vol": 0.015
+  },
+  "frozen_constants": {
+    "ci_lo_q": 0.0020833333333333333,
+    "effective_trials": 12,
+    "funding": {
+      "horizon": 48,
+      "window": 60,
+      "z_thr": 1.5
+    },
+    "govern_scope": "per_segment_reset",
+    "min_val_trades": 40,
+    "purge_ms": 604800000,
+    "retain_zero_size": true,
+    "sealed_start_ts_ms": 1751328000000,
+    "span_end_ts_ms": 1782316800000,
+    "span_start_ts_ms": 1577836800000,
+    "train_end_ts_ms": 1704067200000,
+    "vol_lookback": 100
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": [
+      -0.8642,
+      0.7335
+    ],
+    "max_dd_r": -22.1729,
+    "n": 106,
+    "net_r": -1.8225,
+    "net_r_3x": -3.0807,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "label": "matrix slice-1b \u2014 per-segment govern, retain-zeros, recalibrated floor; pre-registered; read-only; human promotion",
+  "segments": {
+    "train": 266
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

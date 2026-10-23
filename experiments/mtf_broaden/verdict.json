@@ -1,0 +1,2867 @@
+{
+  "verdict": "NEGATIVE (no cell clears the deployable ECON_BAR)",
+  "rows": [
+    {
+      "label": "4h:trend_strength|rsi_reversion|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 583,
+        "mean_ret_r": 1.1932346731626802,
+        "z": 2.158685098954806,
+        "sign_rate": 0.5231560891938251,
+        "passed": true,
+        "reason": "n=583 z=2.16 mean_ret_r=1.1932"
+      },
+      "stage2": {
+        "n": 583,
+        "sharpe": 0.067479,
+        "dsr": 0.3758090668337925,
+        "passed": false,
+        "reason": "n=583 sharpe=0.067 dsr=0.376 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1882 < 1.2",
+          "drawdown -294.6606R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.7113,
+          "profit_factor": 1.1882,
+          "mar": 4.6853,
+          "max_dd_r": -294.6606,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|rsi_reversion|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 774,
+        "mean_ret_r": 1.5605727698706735,
+        "z": 2.8152381256104158,
+        "sign_rate": 0.5542635658914729,
+        "passed": true,
+        "reason": "n=774 z=2.82 mean_ret_r=1.5606"
+      },
+      "stage2": {
+        "n": 775,
+        "sharpe": 0.079687,
+        "dsr": 0.493825726517086,
+        "passed": false,
+        "reason": "n=775 sharpe=0.080 dsr=0.494 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -294.6641R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.9388,
+          "profit_factor": 1.2204,
+          "mar": 4.1642,
+          "max_dd_r": -294.6641,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 774,
+        "mean_ret_r": 1.5605727698706735,
+        "z": 2.8152381256104158,
+        "sign_rate": 0.5542635658914729,
+        "passed": true,
+        "reason": "n=774 z=2.82 mean_ret_r=1.5606"
+      },
+      "stage2": {
+        "n": 775,
+        "sharpe": 0.059922,
+        "dsr": 0.2534455746814675,
+        "passed": false,
+        "reason": "n=775 sharpe=0.060 dsr=0.253 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -203.4695R exceeds 30.0R tol",
+          "robust in 53% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.6215,
+          "profit_factor": 1.2546,
+          "mar": 3.9922,
+          "max_dd_r": -203.4695,
+          "robust_frac": 0.5263
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|donchian_break|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 646,
+        "mean_ret_r": 1.5381441585996,
+        "z": 2.5782223832031517,
+        "sign_rate": 0.5139318885448917,
+        "passed": true,
+        "reason": "n=646 z=2.58 mean_ret_r=1.5381"
+      },
+      "stage2": {
+        "n": 646,
+        "sharpe": 0.080798,
+        "dsr": 0.5065785309484373,
+        "passed": false,
+        "reason": "n=646 sharpe=0.081 dsr=0.507 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -268.365R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.9793,
+          "profit_factor": 1.2392,
+          "mar": 3.9667,
+          "max_dd_r": -268.365,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 777,
+        "mean_ret_r": 0.46347067616633497,
+        "z": 0.8798175320496202,
+        "sign_rate": 0.5328185328185329,
+        "passed": false,
+        "reason": "n=777 z=0.88 mean_ret_r=0.4635 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 778,
+        "sharpe": 0.026794,
+        "dsr": 0.05435178966218174,
+        "passed": false,
+        "reason": "n=778 sharpe=0.027 dsr=0.054 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1665 < 1.2",
+          "drawdown -178.9042R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4034,
+          "profit_factor": 1.1665,
+          "mar": 2.8861,
+          "max_dd_r": -178.9042,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 793,
+        "mean_ret_r": 1.3084690837401334,
+        "z": 2.469999675728204,
+        "sign_rate": 0.5359394703656999,
+        "passed": true,
+        "reason": "n=793 z=2.47 mean_ret_r=1.3085"
+      },
+      "stage2": {
+        "n": 794,
+        "sharpe": 0.021084,
+        "dsr": 0.04043136532727598,
+        "passed": false,
+        "reason": "n=794 sharpe=0.021 dsr=0.040 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -244.425R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.5259,
+          "profit_factor": 1.207,
+          "mar": 2.8679,
+          "max_dd_r": -244.425,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 796,
+        "mean_ret_r": 0.6001069269555912,
+        "z": 1.1560984535110534,
+        "sign_rate": 0.5301507537688442,
+        "passed": false,
+        "reason": "n=796 z=1.16 mean_ret_r=0.6001 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 797,
+        "sharpe": 0.040624,
+        "dsr": 0.10773618632086646,
+        "passed": false,
+        "reason": "n=797 sharpe=0.041 dsr=0.108 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1646 < 1.2",
+          "drawdown -416.6701R exceeds 30.0R tol",
+          "robust in 58% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3981,
+          "profit_factor": 1.1646,
+          "mar": 2.5329,
+          "max_dd_r": -416.6701,
+          "robust_frac": 0.5789
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 492,
+        "mean_ret_r": 1.0496613997080149,
+        "z": 1.5039775699297007,
+        "sign_rate": 0.5264227642276422,
+        "passed": false,
+        "reason": "n=492 z=1.50 mean_ret_r=1.0497 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 493,
+        "sharpe": 0.036017,
+        "dsr": 0.14676415590828473,
+        "passed": false,
+        "reason": "n=493 sharpe=0.036 dsr=0.147 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -204.4156R exceeds 30.0R tol",
+          "robust in 41% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.626,
+          "profit_factor": 1.2462,
+          "mar": 2.5234,
+          "max_dd_r": -204.4156,
+          "robust_frac": 0.4079
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|ma_reclaim|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 793,
+        "mean_ret_r": 1.3084690837401334,
+        "z": 2.469999675728204,
+        "sign_rate": 0.5359394703656999,
+        "passed": true,
+        "reason": "n=793 z=2.47 mean_ret_r=1.3085"
+      },
+      "stage2": {
+        "n": 794,
+        "sharpe": 0.06469,
+        "dsr": 0.33076712089118265,
+        "passed": false,
+        "reason": "n=794 sharpe=0.065 dsr=0.331 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.156 < 1.2",
+          "drawdown -389.2606R exceeds 30.0R tol",
+          "robust in 59% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.7056,
+          "profit_factor": 1.156,
+          "mar": 2.4163,
+          "max_dd_r": -389.2606,
+          "robust_frac": 0.5921
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|donchian_break|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 718,
+        "mean_ret_r": 0.6105272659813039,
+        "z": 1.8265165957957064,
+        "sign_rate": 0.4206128133704735,
+        "passed": false,
+        "reason": "n=718 z=1.83 mean_ret_r=0.6105 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 718,
+        "sharpe": 0.035468,
+        "dsr": 0.10284699406201414,
+        "passed": false,
+        "reason": "n=718 sharpe=0.035 dsr=0.103 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1106 < 1.2",
+          "drawdown -245.2881R exceeds 30.0R tol",
+          "robust in 58% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.2415,
+          "profit_factor": 1.1106,
+          "mar": 2.3259,
+          "max_dd_r": -245.2881,
+          "robust_frac": 0.5789
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|donchian_break|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 507,
+        "mean_ret_r": 1.0382621608711282,
+        "z": 1.7849546368794564,
+        "sign_rate": 0.45956607495069035,
+        "passed": false,
+        "reason": "n=507 z=1.78 mean_ret_r=1.0383 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 507,
+        "sharpe": 0.059601,
+        "dsr": 0.31247875564828953,
+        "passed": false,
+        "reason": "n=507 sharpe=0.060 dsr=0.312 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1899 < 1.2",
+          "drawdown -526.0484R exceeds 30.0R tol"
+        ],
+        "metrics": {
+          "expectancy_r": 0.6965,
+          "profit_factor": 1.1899,
+          "mar": 2.2308,
+          "max_dd_r": -526.0484,
+          "robust_frac": 0.6184
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|donchian_break|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 577,
+        "mean_ret_r": 0.919073903061112,
+        "z": 2.308904354930535,
+        "sign_rate": 0.4748700173310225,
+        "passed": true,
+        "reason": "n=577 z=2.31 mean_ret_r=0.9191"
+      },
+      "stage2": {
+        "n": 577,
+        "sharpe": 0.065979,
+        "dsr": 0.35322133454390986,
+        "passed": false,
+        "reason": "n=577 sharpe=0.066 dsr=0.353 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.182 < 1.2",
+          "drawdown -172.6344R exceeds 30.0R tol",
+          "robust in 50% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3998,
+          "profit_factor": 1.182,
+          "mar": 2.2276,
+          "max_dd_r": -172.6344,
+          "robust_frac": 0.5
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|donchian_break|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 635,
+        "mean_ret_r": 1.0174596087113303,
+        "z": 1.765805662689601,
+        "sign_rate": 0.5133858267716536,
+        "passed": false,
+        "reason": "n=635 z=1.77 mean_ret_r=1.0175 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 635,
+        "sharpe": 0.049009,
+        "dsr": 0.20016811182944233,
+        "passed": false,
+        "reason": "n=635 sharpe=0.049 dsr=0.200 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1904 < 1.2",
+          "drawdown -402.9388R exceeds 30.0R tol",
+          "robust in 58% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.7516,
+          "profit_factor": 1.1904,
+          "mar": 1.9585,
+          "max_dd_r": -402.9388,
+          "robust_frac": 0.5789
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 583,
+        "mean_ret_r": 1.1932346731626802,
+        "z": 2.158685098954806,
+        "sign_rate": 0.5231560891938251,
+        "passed": true,
+        "reason": "n=583 z=2.16 mean_ret_r=1.1932"
+      },
+      "stage2": {
+        "n": 583,
+        "sharpe": 0.070426,
+        "dsr": 0.39290998631538887,
+        "passed": false,
+        "reason": "n=583 sharpe=0.070 dsr=0.393 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1755 < 1.2",
+          "drawdown -422.5291R exceeds 30.0R tol",
+          "robust in 53% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4138,
+          "profit_factor": 1.1755,
+          "mar": 1.901,
+          "max_dd_r": -422.5291,
+          "robust_frac": 0.5263
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|donchian_break|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 989,
+        "mean_ret_r": 0.5740773027017482,
+        "z": 1.7655934556247617,
+        "sign_rate": 0.4570273003033367,
+        "passed": false,
+        "reason": "n=989 z=1.77 mean_ret_r=0.5741 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 989,
+        "sharpe": 0.046063,
+        "dsr": 0.12518958179496592,
+        "passed": false,
+        "reason": "n=989 sharpe=0.046 dsr=0.125 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0953 < 1.2",
+          "drawdown -187.9074R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.2111,
+          "profit_factor": 1.0953,
+          "mar": 1.8642,
+          "max_dd_r": -187.9074,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 502,
+        "mean_ret_r": 0.74419503240074,
+        "z": 1.1685913286589276,
+        "sign_rate": 0.549800796812749,
+        "passed": false,
+        "reason": "n=502 z=1.17 mean_ret_r=0.7442 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 503,
+        "sharpe": 0.037633,
+        "dsr": 0.14541621287012685,
+        "passed": false,
+        "reason": "n=503 sharpe=0.038 dsr=0.145 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1982 < 1.2",
+          "drawdown -230.7459R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4678,
+          "profit_factor": 1.1982,
+          "mar": 1.7049,
+          "max_dd_r": -230.7459,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|donchian_break|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 718,
+        "mean_ret_r": 0.6105272659813039,
+        "z": 1.8265165957957064,
+        "sign_rate": 0.4206128133704735,
+        "passed": false,
+        "reason": "n=718 z=1.83 mean_ret_r=0.6105 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 718,
+        "sharpe": 0.038692,
+        "dsr": 0.12540886575670573,
+        "passed": false,
+        "reason": "n=718 sharpe=0.039 dsr=0.125 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1218 < 1.2",
+          "drawdown -484.4733R exceeds 30.0R tol",
+          "robust in 53% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3457,
+          "profit_factor": 1.1218,
+          "mar": 1.6854,
+          "max_dd_r": -484.4733,
+          "robust_frac": 0.5263
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|rsi_reversion|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 796,
+        "mean_ret_r": 0.6001069269555912,
+        "z": 1.1560984535110534,
+        "sign_rate": 0.5301507537688442,
+        "passed": false,
+        "reason": "n=796 z=1.16 mean_ret_r=0.6001 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 797,
+        "sharpe": 0.018614,
+        "dsr": 0.04047176345188508,
+        "passed": false,
+        "reason": "n=797 sharpe=0.019 dsr=0.040 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.1121 < 1.2",
+          "drawdown -791.3205R exceeds 30.0R tol"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4789,
+          "profit_factor": 1.1121,
+          "mar": 1.6045,
+          "max_dd_r": -791.3205,
+          "robust_frac": 0.6579
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|ma_reclaim|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 553,
+        "mean_ret_r": 1.0284014033850648,
+        "z": 1.5384131243858825,
+        "sign_rate": 0.5099457504520796,
+        "passed": false,
+        "reason": "n=553 z=1.54 mean_ret_r=1.0284 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 553,
+        "sharpe": 0.044576,
+        "dsr": 0.1979118724375294,
+        "passed": false,
+        "reason": "n=553 sharpe=0.045 dsr=0.198 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.108 < 1.2",
+          "drawdown -548.6955R exceeds 30.0R tol",
+          "robust in 51% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4755,
+          "profit_factor": 1.108,
+          "mar": 1.5625,
+          "max_dd_r": -548.6955,
+          "robust_frac": 0.5132
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|donchian_break|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 398,
+        "mean_ret_r": 1.2095351865856359,
+        "z": 1.8223847019652792,
+        "sign_rate": 0.5276381909547738,
+        "passed": false,
+        "reason": "n=398 z=1.82 mean_ret_r=1.2095 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 398,
+        "sharpe": 0.070319,
+        "dsr": 0.4200862373986671,
+        "passed": false,
+        "reason": "n=398 sharpe=0.070 dsr=0.420 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "drawdown -378.0751R exceeds 30.0R tol",
+          "robust in 49% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.8554,
+          "profit_factor": 1.2109,
+          "mar": 1.5068,
+          "max_dd_r": -378.0751,
+          "robust_frac": 0.4868
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|rsi_reversion|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 794,
+        "mean_ret_r": -0.0623044336147772,
+        "z": -0.12595029151666734,
+        "sign_rate": 0.5088161209068011,
+        "passed": false,
+        "reason": "n=794 z=-0.13 mean_ret_r=-0.0623 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 795,
+        "sharpe": 0.00957,
+        "dsr": 0.02077791944449192,
+        "passed": false,
+        "reason": "n=795 sharpe=0.010 dsr=0.021 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0847 < 1.2",
+          "drawdown -363.523R exceeds 30.0R tol",
+          "robust in 51% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.2061,
+          "profit_factor": 1.0847,
+          "mar": 1.5047,
+          "max_dd_r": -363.523,
+          "robust_frac": 0.5132
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|donchian_break|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 679,
+        "mean_ret_r": 0.7461845172450617,
+        "z": 1.4373376549389614,
+        "sign_rate": 0.4786450662739323,
+        "passed": false,
+        "reason": "n=679 z=1.44 mean_ret_r=0.7462 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 679,
+        "sharpe": 0.03267,
+        "dsr": 0.1043162275439849,
+        "passed": false,
+        "reason": "n=679 sharpe=0.033 dsr=0.104 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0791 < 1.2",
+          "drawdown -574.8471R exceeds 30.0R tol",
+          "robust in 59% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3466,
+          "profit_factor": 1.0791,
+          "mar": 1.3631,
+          "max_dd_r": -574.8471,
+          "robust_frac": 0.5921
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|donchian_break|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 707,
+        "mean_ret_r": 0.526605683408527,
+        "z": 1.0066910271677565,
+        "sign_rate": 0.4526166902404526,
+        "passed": false,
+        "reason": "n=707 z=1.01 mean_ret_r=0.5266 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 707,
+        "sharpe": 0.016457,
+        "dsr": 0.04328118212647597,
+        "passed": false,
+        "reason": "n=707 sharpe=0.016 dsr=0.043 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0669 < 1.2",
+          "drawdown -600.3581R exceeds 30.0R tol",
+          "robust in 59% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.296,
+          "profit_factor": 1.0669,
+          "mar": 1.1613,
+          "max_dd_r": -600.3581,
+          "robust_frac": 0.5921
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|ma_reclaim|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1416,
+        "mean_ret_r": 0.8220923133272624,
+        "z": 3.1177986860850804,
+        "sign_rate": 0.5035310734463276,
+        "passed": true,
+        "reason": "n=1416 z=3.12 mean_ret_r=0.8221"
+      },
+      "stage2": {
+        "n": 1417,
+        "sharpe": 0.046127,
+        "dsr": 0.09508492918227412,
+        "passed": false,
+        "reason": "n=1417 sharpe=0.046 dsr=0.095 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.086 < 1.2",
+          "drawdown -550.2352R exceeds 30.0R tol",
+          "robust in 58% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.268,
+          "profit_factor": 1.086,
+          "mar": 1.1409,
+          "max_dd_r": -550.2352,
+          "robust_frac": 0.5789
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|donchian_break|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 707,
+        "mean_ret_r": 0.526605683408527,
+        "z": 1.0066910271677565,
+        "sign_rate": 0.4526166902404526,
+        "passed": false,
+        "reason": "n=707 z=1.01 mean_ret_r=0.5266 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 707,
+        "sharpe": 0.032242,
+        "dsr": 0.0861575318443249,
+        "passed": false,
+        "reason": "n=707 sharpe=0.032 dsr=0.086 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0775 < 1.2",
+          "drawdown -425.3373R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1961,
+          "profit_factor": 1.0775,
+          "mar": 1.0859,
+          "max_dd_r": -425.3373,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|rsi_reversion|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 777,
+        "mean_ret_r": 0.46347067616633497,
+        "z": 0.8798175320496202,
+        "sign_rate": 0.5328185328185329,
+        "passed": false,
+        "reason": "n=777 z=0.88 mean_ret_r=0.4635 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 778,
+        "sharpe": 0.008627,
+        "dsr": 0.02256780313648432,
+        "passed": false,
+        "reason": "n=778 sharpe=0.009 dsr=0.023 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0725 < 1.2",
+          "drawdown -410.9932R exceeds 30.0R tol",
+          "robust in 50% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3304,
+          "profit_factor": 1.0725,
+          "mar": 1.0289,
+          "max_dd_r": -410.9932,
+          "robust_frac": 0.5
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|rsi_reversion|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 502,
+        "mean_ret_r": 0.74419503240074,
+        "z": 1.1685913286589276,
+        "sign_rate": 0.549800796812749,
+        "passed": false,
+        "reason": "n=502 z=1.17 mean_ret_r=0.7442 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 503,
+        "sharpe": 0.031896,
+        "dsr": 0.13543760041269548,
+        "passed": false,
+        "reason": "n=503 sharpe=0.032 dsr=0.135 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0878 < 1.2",
+          "drawdown -332.2273R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.3716,
+          "profit_factor": 1.0878,
+          "mar": 0.9407,
+          "max_dd_r": -332.2273,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|rsi_reversion|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1368,
+        "mean_ret_r": -0.12061938947964529,
+        "z": -0.4932093721232874,
+        "sign_rate": 0.5226608187134503,
+        "passed": false,
+        "reason": "n=1368 z=-0.49 mean_ret_r=-0.1206 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1369,
+        "sharpe": -0.049981,
+        "dsr": 6.939146107720617e-07,
+        "passed": false,
+        "reason": "n=1369 sharpe=-0.050 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.3159 < 0.05",
+          "profit factor 0.9004 < 1.2",
+          "drawdown -1652.6354R exceeds 30.0R tol",
+          "robust in 34% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.3159,
+          "profit_factor": 0.9004,
+          "mar": 0.8648,
+          "max_dd_r": -1652.6354,
+          "robust_frac": 0.3421
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1428,
+        "mean_ret_r": 0.01159968433222966,
+        "z": 0.04576325806739967,
+        "sign_rate": 0.469187675070028,
+        "passed": false,
+        "reason": "n=1428 z=0.05 mean_ret_r=0.0116 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1429,
+        "sharpe": -0.046208,
+        "dsr": 5.1387064820551664e-06,
+        "passed": false,
+        "reason": "n=1429 sharpe=-0.046 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2409 < 0.05",
+          "profit factor 0.897 < 1.2",
+          "drawdown -1354.8552R exceeds 30.0R tol",
+          "robust in 36% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2409,
+          "profit_factor": 0.897,
+          "mar": 0.8368,
+          "max_dd_r": -1354.8552,
+          "robust_frac": 0.3553
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|donchian_break|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 646,
+        "mean_ret_r": 1.5381441585996,
+        "z": 2.5782223832031517,
+        "sign_rate": 0.5139318885448917,
+        "passed": true,
+        "reason": "n=646 z=2.58 mean_ret_r=1.5381"
+      },
+      "stage2": {
+        "n": 646,
+        "sharpe": 0.022035,
+        "dsr": 0.0612642309933355,
+        "passed": false,
+        "reason": "n=646 sharpe=0.022 dsr=0.061 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0628 < 1.2",
+          "drawdown -224.6555R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1596,
+          "profit_factor": 1.0628,
+          "mar": 0.7724,
+          "max_dd_r": -224.6555,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|rsi_reversion|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1365,
+        "mean_ret_r": 0.004422607722441304,
+        "z": 0.01816145621533184,
+        "sign_rate": 0.5208791208791209,
+        "passed": false,
+        "reason": "n=1365 z=0.02 mean_ret_r=0.0044 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1366,
+        "sharpe": -0.036018,
+        "dsr": 9.973830491116775e-06,
+        "passed": false,
+        "reason": "n=1366 sharpe=-0.036 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2862 < 0.05",
+          "profit factor 0.9081 < 1.2",
+          "drawdown -1696.7383R exceeds 30.0R tol",
+          "robust in 36% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2862,
+          "profit_factor": 0.9081,
+          "mar": 0.764,
+          "max_dd_r": -1696.7383,
+          "robust_frac": 0.3553
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1425,
+        "mean_ret_r": 0.1425110639782377,
+        "z": 0.5451189392443844,
+        "sign_rate": 0.4624561403508772,
+        "passed": false,
+        "reason": "n=1425 z=0.55 mean_ret_r=0.1425 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1426,
+        "sharpe": -0.033092,
+        "dsr": 2.5960683834314047e-05,
+        "passed": false,
+        "reason": "n=1426 sharpe=-0.033 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2129 < 0.05",
+          "profit factor 0.9098 < 1.2",
+          "drawdown -1385.1851R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2129,
+          "profit_factor": 0.9098,
+          "mar": 0.7219,
+          "max_dd_r": -1385.1851,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|ma_reclaim|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 492,
+        "mean_ret_r": 1.0496613997080149,
+        "z": 1.5039775699297007,
+        "sign_rate": 0.5264227642276422,
+        "passed": false,
+        "reason": "n=492 z=1.50 mean_ret_r=1.0497 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 493,
+        "sharpe": 0.046671,
+        "dsr": 0.2307822054124382,
+        "passed": false,
+        "reason": "n=493 sharpe=0.047 dsr=0.231 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0911 < 1.2",
+          "drawdown -513.8812R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.4444,
+          "profit_factor": 1.0911,
+          "mar": 0.7126,
+          "max_dd_r": -513.8812,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 806,
+        "mean_ret_r": 0.38698332225598875,
+        "z": 0.7136129825059127,
+        "sign_rate": 0.4975186104218362,
+        "passed": false,
+        "reason": "n=806 z=0.71 mean_ret_r=0.3870 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 807,
+        "sharpe": -0.045315,
+        "dsr": 0.0005580847432400393,
+        "passed": false,
+        "reason": "n=807 sharpe=-0.045 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.3769 < 0.05",
+          "profit factor 0.8573 < 1.2",
+          "drawdown -1435.5764R exceeds 30.0R tol",
+          "robust in 41% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.3769,
+          "profit_factor": 0.8573,
+          "mar": 0.703,
+          "max_dd_r": -1435.5764,
+          "robust_frac": 0.4079
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 844,
+        "mean_ret_r": 0.6024784578219629,
+        "z": 1.934392111241716,
+        "sign_rate": 0.46919431279620855,
+        "passed": false,
+        "reason": "n=844 z=1.93 mean_ret_r=0.6025 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 844,
+        "sharpe": -0.03628,
+        "dsr": 0.0006820596231446041,
+        "passed": false,
+        "reason": "n=844 sharpe=-0.036 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2421 < 0.05",
+          "profit factor 0.8938 < 1.2",
+          "drawdown -949.6518R exceeds 30.0R tol",
+          "robust in 34% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2421,
+          "profit_factor": 0.8938,
+          "mar": 0.6934,
+          "max_dd_r": -949.6518,
+          "robust_frac": 0.3421
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|ma_reclaim|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 844,
+        "mean_ret_r": 0.6024784578219629,
+        "z": 1.934392111241716,
+        "sign_rate": 0.46919431279620855,
+        "passed": false,
+        "reason": "n=844 z=1.93 mean_ret_r=0.6025 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 844,
+        "sharpe": 0.030326,
+        "dsr": 0.07092276742502429,
+        "passed": false,
+        "reason": "n=844 sharpe=0.030 dsr=0.071 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0514 < 1.2",
+          "drawdown -613.1509R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1477,
+          "profit_factor": 1.0514,
+          "mar": 0.655,
+          "max_dd_r": -613.1509,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|donchian_break|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1039,
+        "mean_ret_r": 0.006453800168976627,
+        "z": 0.02229848846372468,
+        "sign_rate": 0.43214629451395575,
+        "passed": false,
+        "reason": "n=1039 z=0.02 mean_ret_r=0.0065 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1039,
+        "sharpe": -0.03235,
+        "dsr": 0.00018341982625508235,
+        "passed": false,
+        "reason": "n=1039 sharpe=-0.032 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2452 < 0.05",
+          "profit factor 0.9264 < 1.2",
+          "drawdown -1361.1023R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2452,
+          "profit_factor": 0.9264,
+          "mar": 0.6266,
+          "max_dd_r": -1361.1023,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|donchian_break|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 974,
+        "mean_ret_r": 0.4811615034646578,
+        "z": 1.555487994543561,
+        "sign_rate": 0.4589322381930185,
+        "passed": false,
+        "reason": "n=974 z=1.56 mean_ret_r=0.4812 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 974,
+        "sharpe": 0.036381,
+        "dsr": 0.07479736980461948,
+        "passed": false,
+        "reason": "n=974 sharpe=0.036 dsr=0.075 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0484 < 1.2",
+          "drawdown -288.1237R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1059,
+          "profit_factor": 1.0484,
+          "mar": 0.588,
+          "max_dd_r": -288.1237,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|ma_reclaim|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1428,
+        "mean_ret_r": 0.01159968433222966,
+        "z": 0.04576325806739967,
+        "sign_rate": 0.469187675070028,
+        "passed": false,
+        "reason": "n=1428 z=0.05 mean_ret_r=0.0116 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1429,
+        "sharpe": -0.036733,
+        "dsr": 5.680137098784677e-06,
+        "passed": false,
+        "reason": "n=1429 sharpe=-0.037 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2513 < 0.05",
+          "profit factor 0.9249 < 1.2",
+          "drawdown -2047.4699R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2513,
+          "profit_factor": 0.9249,
+          "mar": 0.5775,
+          "max_dd_r": -2047.4699,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|donchian_break|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 577,
+        "mean_ret_r": 0.919073903061112,
+        "z": 2.308904354930535,
+        "sign_rate": 0.4748700173310225,
+        "passed": true,
+        "reason": "n=577 z=2.31 mean_ret_r=0.9191"
+      },
+      "stage2": {
+        "n": 577,
+        "sharpe": 0.06612,
+        "dsr": 0.36244202094849476,
+        "passed": false,
+        "reason": "n=577 sharpe=0.066 dsr=0.362 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0894 < 1.2",
+          "drawdown -474.6722R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.2763,
+          "profit_factor": 1.0894,
+          "mar": 0.56,
+          "max_dd_r": -474.6722,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 553,
+        "mean_ret_r": 1.0284014033850648,
+        "z": 1.5384131243858825,
+        "sign_rate": 0.5099457504520796,
+        "passed": false,
+        "reason": "n=553 z=1.54 mean_ret_r=1.0284 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 553,
+        "sharpe": 0.033849,
+        "dsr": 0.11774978113627638,
+        "passed": false,
+        "reason": "n=553 sharpe=0.034 dsr=0.118 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0594 < 1.2",
+          "drawdown -494.8293R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1515,
+          "profit_factor": 1.0594,
+          "mar": 0.5521,
+          "max_dd_r": -494.8293,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1365,
+        "mean_ret_r": 0.004422607722441304,
+        "z": 0.01816145621533184,
+        "sign_rate": 0.5208791208791209,
+        "passed": false,
+        "reason": "n=1365 z=0.02 mean_ret_r=0.0044 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1366,
+        "sharpe": -0.022351,
+        "dsr": 0.00012132894544769623,
+        "passed": false,
+        "reason": "n=1366 sharpe=-0.022 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1367 < 0.05",
+          "profit factor 0.9364 < 1.2",
+          "drawdown -1167.8562R exceeds 30.0R tol",
+          "robust in 46% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1367,
+          "profit_factor": 0.9364,
+          "mar": 0.5303,
+          "max_dd_r": -1167.8562,
+          "robust_frac": 0.4605
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1416,
+        "mean_ret_r": 0.8220923133272624,
+        "z": 3.1177986860850804,
+        "sign_rate": 0.5035310734463276,
+        "passed": true,
+        "reason": "n=1416 z=3.12 mean_ret_r=0.8221"
+      },
+      "stage2": {
+        "n": 1417,
+        "sharpe": 0.016251,
+        "dsr": 0.0064761003782009,
+        "passed": false,
+        "reason": "n=1417 sharpe=0.016 dsr=0.006 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0407 < 1.2",
+          "drawdown -423.0445R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0931,
+          "profit_factor": 1.0407,
+          "mar": 0.5156,
+          "max_dd_r": -423.0445,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|ma_reclaim|horizon_hold@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 796,
+        "mean_ret_r": 0.46136535954519253,
+        "z": 0.8573918768479233,
+        "sign_rate": 0.5138190954773869,
+        "passed": false,
+        "reason": "n=796 z=0.86 mean_ret_r=0.4614 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 797,
+        "sharpe": 0.00825,
+        "dsr": 0.021259217228908445,
+        "passed": false,
+        "reason": "n=797 sharpe=0.008 dsr=0.021 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.2422 < 0.05",
+          "profit factor 0.9509 < 1.2",
+          "MAR 0.4717708105974759 < 0.5",
+          "drawdown -668.914R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.2422,
+          "profit_factor": 0.9509,
+          "mar": 0.4718,
+          "max_dd_r": -668.914,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|ma_reclaim|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1425,
+        "mean_ret_r": 0.1425110639782377,
+        "z": 0.5451189392443844,
+        "sign_rate": 0.4624561403508772,
+        "passed": false,
+        "reason": "n=1425 z=0.55 mean_ret_r=0.1425 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1426,
+        "sharpe": -0.022426,
+        "dsr": 5.8791334881735935e-05,
+        "passed": false,
+        "reason": "n=1426 sharpe=-0.022 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1739 < 0.05",
+          "profit factor 0.9483 < 1.2",
+          "MAR 0.46838537445194556 < 0.5",
+          "drawdown -1744.3066R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1739,
+          "profit_factor": 0.9483,
+          "mar": 0.4684,
+          "max_dd_r": -1744.3066,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|ma_reclaim|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1426,
+        "mean_ret_r": 0.49189533072234587,
+        "z": 1.8810235581754713,
+        "sign_rate": 0.5098176718092566,
+        "passed": false,
+        "reason": "n=1426 z=1.88 mean_ret_r=0.4919 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1427,
+        "sharpe": 0.012742,
+        "dsr": 0.005231221797411145,
+        "passed": false,
+        "reason": "n=1427 sharpe=0.013 dsr=0.005 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0342 < 1.2",
+          "MAR 0.43562577122843266 < 0.5",
+          "drawdown -578.5413R exceeds 30.0R tol",
+          "robust in 55% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.1094,
+          "profit_factor": 1.0342,
+          "mar": 0.4356,
+          "max_dd_r": -578.5413,
+          "robust_frac": 0.5526
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|donchian_break|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1090,
+        "mean_ret_r": 0.09351988647914507,
+        "z": 0.33522970132805796,
+        "sign_rate": 0.43761467889908257,
+        "passed": false,
+        "reason": "n=1090 z=0.34 mean_ret_r=0.0935 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1090,
+        "sharpe": -0.022325,
+        "dsr": 0.00041517488114162227,
+        "passed": false,
+        "reason": "n=1090 sharpe=-0.022 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1343 < 0.05",
+          "profit factor 0.9581 < 1.2",
+          "MAR 0.4253611024034887 < 0.5",
+          "drawdown -1153.5232R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1343,
+          "profit_factor": 0.9581,
+          "mar": 0.4254,
+          "max_dd_r": -1153.5232,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 894,
+        "mean_ret_r": 0.4305786253465408,
+        "z": 1.4664392982128183,
+        "sign_rate": 0.5279642058165548,
+        "passed": false,
+        "reason": "n=894 z=1.47 mean_ret_r=0.4306 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 895,
+        "sharpe": 0.027541,
+        "dsr": 0.049803147061326936,
+        "passed": false,
+        "reason": "n=895 sharpe=0.028 dsr=0.050 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0331 < 1.2",
+          "MAR 0.41620627183954145 < 0.5",
+          "drawdown -481.3803R exceeds 30.0R tol",
+          "robust in 47% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0682,
+          "profit_factor": 1.0331,
+          "mar": 0.4162,
+          "max_dd_r": -481.3803,
+          "robust_frac": 0.4737
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|rsi_reversion|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 811,
+        "mean_ret_r": 0.20887277220199899,
+        "z": 0.6861676186633991,
+        "sign_rate": 0.5413070283600493,
+        "passed": false,
+        "reason": "n=811 z=0.69 mean_ret_r=0.2089 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 812,
+        "sharpe": -0.008771,
+        "dsr": 0.005617950711501618,
+        "passed": false,
+        "reason": "n=812 sharpe=-0.009 dsr=0.006 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1438 < 0.05",
+          "profit factor 0.9532 < 1.2",
+          "MAR 0.40237408318239465 < 0.5",
+          "drawdown -486.1245R exceeds 30.0R tol",
+          "robust in 49% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1438,
+          "profit_factor": 0.9532,
+          "mar": 0.4024,
+          "max_dd_r": -486.1245,
+          "robust_frac": 0.4868
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|donchian_break|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1039,
+        "mean_ret_r": 0.006453800168976627,
+        "z": 0.02229848846372468,
+        "sign_rate": 0.43214629451395575,
+        "passed": false,
+        "reason": "n=1039 z=0.02 mean_ret_r=0.0065 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1039,
+        "sharpe": 0.004462,
+        "dsr": 0.006996378519062207,
+        "passed": false,
+        "reason": "n=1039 sharpe=0.004 dsr=0.007 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0248 < 1.2",
+          "MAR 0.331507409268851 < 0.5",
+          "drawdown -591.5361R exceeds 30.0R tol",
+          "robust in 51% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0564,
+          "profit_factor": 1.0248,
+          "mar": 0.3315,
+          "max_dd_r": -591.5361,
+          "robust_frac": 0.5132
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1368,
+        "mean_ret_r": -0.12061938947964529,
+        "z": -0.4932093721232874,
+        "sign_rate": 0.5226608187134503,
+        "passed": false,
+        "reason": "n=1368 z=-0.49 mean_ret_r=-0.1206 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1369,
+        "sharpe": -0.00962,
+        "dsr": 0.0005218480072177178,
+        "passed": false,
+        "reason": "n=1369 sharpe=-0.010 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0644 < 0.05",
+          "profit factor 0.9699 < 1.2",
+          "MAR 0.32964660239692384 < 0.5",
+          "drawdown -883.8996R exceeds 30.0R tol",
+          "robust in 46% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0644,
+          "profit_factor": 0.9699,
+          "mar": 0.3296,
+          "max_dd_r": -883.8996,
+          "robust_frac": 0.4605
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|ma_reclaim|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 802,
+        "mean_ret_r": 0.4607844877001786,
+        "z": 0.8652143235957465,
+        "sign_rate": 0.5024937655860349,
+        "passed": false,
+        "reason": "n=802 z=0.87 mean_ret_r=0.4608 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 803,
+        "sharpe": 0.006928,
+        "dsr": 0.018832464187082454,
+        "passed": false,
+        "reason": "n=803 sharpe=0.007 dsr=0.019 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1527 < 0.05",
+          "profit factor 0.9694 < 1.2",
+          "MAR 0.3283914133528388 < 0.5",
+          "drawdown -1246.0137R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1527,
+          "profit_factor": 0.9694,
+          "mar": 0.3284,
+          "max_dd_r": -1246.0137,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|ma_reclaim|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 849,
+        "mean_ret_r": 0.3066378187161438,
+        "z": 0.8895182630232364,
+        "sign_rate": 0.4840989399293286,
+        "passed": false,
+        "reason": "n=849 z=0.89 mean_ret_r=0.3066 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 850,
+        "sharpe": -0.001755,
+        "dsr": 0.008474853519922443,
+        "passed": false,
+        "reason": "n=850 sharpe=-0.002 dsr=0.008 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.1808 < 0.05",
+          "profit factor 0.9468 < 1.2",
+          "MAR 0.32655594673712246 < 0.5",
+          "drawdown -773.3266R exceeds 30.0R tol",
+          "robust in 49% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.1808,
+          "profit_factor": 0.9468,
+          "mar": 0.3266,
+          "max_dd_r": -773.3266,
+          "robust_frac": 0.4868
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|donchian_break|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 679,
+        "mean_ret_r": 0.7461845172450617,
+        "z": 1.4373376549389614,
+        "sign_rate": 0.4786450662739323,
+        "passed": false,
+        "reason": "n=679 z=1.44 mean_ret_r=0.7462 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 679,
+        "sharpe": 0.003717,
+        "dsr": 0.022498659393157205,
+        "passed": false,
+        "reason": "n=679 sharpe=0.004 dsr=0.022 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0589 < 0.05",
+          "profit factor 0.977 < 1.2",
+          "MAR 0.2827853421385893 < 0.5",
+          "drawdown -470.628R exceeds 30.0R tol",
+          "robust in 50% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0589,
+          "profit_factor": 0.977,
+          "mar": 0.2828,
+          "max_dd_r": -470.628,
+          "robust_frac": 0.5
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|rsi_reversion|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1333,
+        "mean_ret_r": 0.41492897609206436,
+        "z": 1.6521961115383887,
+        "sign_rate": 0.5408852213053263,
+        "passed": false,
+        "reason": "n=1333 z=1.65 mean_ret_r=0.4149 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1334,
+        "sharpe": 0.009019,
+        "dsr": 0.004616736760705842,
+        "passed": false,
+        "reason": "n=1334 sharpe=0.009 dsr=0.005 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0499 < 0.05",
+          "profit factor 0.9839 < 1.2",
+          "MAR 0.24952104941833836 < 0.5",
+          "drawdown -448.6371R exceeds 30.0R tol",
+          "robust in 54% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0499,
+          "profit_factor": 0.9839,
+          "mar": 0.2495,
+          "max_dd_r": -448.6371,
+          "robust_frac": 0.5395
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|donchian_break|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 635,
+        "mean_ret_r": 1.0174596087113303,
+        "z": 1.765805662689601,
+        "sign_rate": 0.5133858267716536,
+        "passed": false,
+        "reason": "n=635 z=1.77 mean_ret_r=1.0175 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 635,
+        "sharpe": -0.019416,
+        "dsr": 0.00769489008027241,
+        "passed": false,
+        "reason": "n=635 sharpe=-0.019 dsr=0.008 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0669 < 0.05",
+          "profit factor 0.9736 < 1.2",
+          "MAR 0.2460764524804974 < 0.5",
+          "drawdown -285.5133R exceeds 30.0R tol",
+          "robust in 41% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0669,
+          "profit_factor": 0.9736,
+          "mar": 0.2461,
+          "max_dd_r": -285.5133,
+          "robust_frac": 0.4079
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|donchian_break|horizon_wide_stop@1d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1090,
+        "mean_ret_r": 0.09351988647914507,
+        "z": 0.33522970132805796,
+        "sign_rate": 0.43761467889908257,
+        "passed": false,
+        "reason": "n=1090 z=0.34 mean_ret_r=0.0935 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1090,
+        "sharpe": 0.001241,
+        "dsr": 0.0045118141109236065,
+        "passed": false,
+        "reason": "n=1090 sharpe=0.001 dsr=0.005 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.0332 < 0.05",
+          "profit factor 1.0147 < 1.2",
+          "MAR 0.23995380747031195 < 0.5",
+          "drawdown -505.3631R exceeds 30.0R tol",
+          "robust in 49% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0332,
+          "profit_factor": 1.0147,
+          "mar": 0.24,
+          "max_dd_r": -505.3631,
+          "robust_frac": 0.4868
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1426,
+        "mean_ret_r": 0.49189533072234587,
+        "z": 1.8810235581754713,
+        "sign_rate": 0.5098176718092566,
+        "passed": false,
+        "reason": "n=1426 z=1.88 mean_ret_r=0.4919 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1427,
+        "sharpe": -0.006594,
+        "dsr": 0.0006036892625491119,
+        "passed": false,
+        "reason": "n=1427 sharpe=-0.007 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0495 < 0.05",
+          "profit factor 0.9784 < 1.2",
+          "MAR 0.23888055521738938 < 0.5",
+          "drawdown -477.2473R exceeds 30.0R tol",
+          "robust in 39% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0495,
+          "profit_factor": 0.9784,
+          "mar": 0.2389,
+          "max_dd_r": -477.2473,
+          "robust_frac": 0.3947
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 802,
+        "mean_ret_r": 0.4607844877001786,
+        "z": 0.8652143235957465,
+        "sign_rate": 0.5024937655860349,
+        "passed": false,
+        "reason": "n=802 z=0.87 mean_ret_r=0.4608 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 803,
+        "sharpe": 0.01117,
+        "dsr": 0.022475366134668773,
+        "passed": false,
+        "reason": "n=803 sharpe=0.011 dsr=0.022 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0628 < 0.05",
+          "profit factor 0.9757 < 1.2",
+          "MAR 0.23684703636814314 < 0.5",
+          "drawdown -710.8474R exceeds 30.0R tol",
+          "robust in 49% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0628,
+          "profit_factor": 0.9757,
+          "mar": 0.2368,
+          "max_dd_r": -710.8474,
+          "robust_frac": 0.4868
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|donchian_break|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 398,
+        "mean_ret_r": 1.2095351865856359,
+        "z": 1.8223847019652792,
+        "sign_rate": 0.5276381909547738,
+        "passed": false,
+        "reason": "n=398 z=1.82 mean_ret_r=1.2095 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 398,
+        "sharpe": -0.002145,
+        "dsr": 0.05102495832217724,
+        "passed": false,
+        "reason": "n=398 sharpe=-0.002 dsr=0.051 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0354 < 1.2",
+          "MAR 0.2318895332363664 < 0.5",
+          "drawdown -259.4011R exceeds 30.0R tol",
+          "robust in 33% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0903,
+          "profit_factor": 1.0354,
+          "mar": 0.2319,
+          "max_dd_r": -259.4011,
+          "robust_frac": 0.3289
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|donchian_break|horizon_wide_stop@2d",
+      "htf": "4h",
+      "trigger": "donchian_break",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 507,
+        "mean_ret_r": 1.0382621608711282,
+        "z": 1.7849546368794564,
+        "sign_rate": 0.45956607495069035,
+        "passed": false,
+        "reason": "n=507 z=1.78 mean_ret_r=1.0383 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 507,
+        "sharpe": -0.003761,
+        "dsr": 0.030435622656084405,
+        "passed": false,
+        "reason": "n=507 sharpe=-0.004 dsr=0.030 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0708 < 0.05",
+          "profit factor 0.9713 < 1.2",
+          "MAR 0.19496498613290347 < 0.5",
+          "drawdown -611.7719R exceeds 30.0R tol",
+          "robust in 39% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0708,
+          "profit_factor": 0.9713,
+          "mar": 0.195,
+          "max_dd_r": -611.7719,
+          "robust_frac": 0.3947
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1333,
+        "mean_ret_r": 0.41492897609206436,
+        "z": 1.6521961115383887,
+        "sign_rate": 0.5408852213053263,
+        "passed": false,
+        "reason": "n=1333 z=1.65 mean_ret_r=0.4149 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1334,
+        "sharpe": -0.012555,
+        "dsr": 0.00044747633193414904,
+        "passed": false,
+        "reason": "n=1334 sharpe=-0.013 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0281 < 0.05",
+          "profit factor 0.9868 < 1.2",
+          "MAR 0.1909124605903097 < 0.5",
+          "drawdown -329.6778R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0281,
+          "profit_factor": 0.9868,
+          "mar": 0.1909,
+          "max_dd_r": -329.6778,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|ma_reclaim|horizon_wide_stop@2d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 796,
+        "mean_ret_r": 0.46136535954519253,
+        "z": 0.8573918768479233,
+        "sign_rate": 0.5138190954773869,
+        "passed": false,
+        "reason": "n=796 z=0.86 mean_ret_r=0.4614 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 797,
+        "sharpe": 0.015496,
+        "dsr": 0.029772826270207664,
+        "passed": false,
+        "reason": "n=797 sharpe=0.015 dsr=0.030 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0414 < 0.05",
+          "profit factor 0.984 < 1.2",
+          "MAR 0.16538770121487417 < 0.5",
+          "drawdown -326.3054R exceeds 30.0R tol",
+          "robust in 36% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0414,
+          "profit_factor": 0.984,
+          "mar": 0.1654,
+          "max_dd_r": -326.3054,
+          "robust_frac": 0.3553
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:roc|ma_reclaim|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 806,
+        "mean_ret_r": 0.38698332225598875,
+        "z": 0.7136129825059127,
+        "sign_rate": 0.4975186104218362,
+        "passed": false,
+        "reason": "n=806 z=0.71 mean_ret_r=0.3870 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 807,
+        "sharpe": 0.002875,
+        "dsr": 0.014077532963081008,
+        "passed": false,
+        "reason": "n=807 sharpe=0.003 dsr=0.014 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "profit factor 1.0107 < 1.2",
+          "MAR 0.1354423272649716 < 0.5",
+          "drawdown -1001.4949R exceeds 30.0R tol",
+          "robust in 51% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0507,
+          "profit_factor": 1.0107,
+          "mar": 0.1354,
+          "max_dd_r": -1001.4949,
+          "robust_frac": 0.5132
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|ma_reclaim|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "ma_reclaim",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 849,
+        "mean_ret_r": 0.3066378187161438,
+        "z": 0.8895182630232364,
+        "sign_rate": 0.4840989399293286,
+        "passed": false,
+        "reason": "n=849 z=0.89 mean_ret_r=0.3066 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 850,
+        "sharpe": 0.004935,
+        "dsr": 0.013515038192311257,
+        "passed": false,
+        "reason": "n=850 sharpe=0.005 dsr=0.014 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.029 < 0.05",
+          "profit factor 1.0127 < 1.2",
+          "MAR 0.13235120547100518 < 0.5",
+          "drawdown -305.8597R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.029,
+          "profit_factor": 1.0127,
+          "mar": 0.1324,
+          "max_dd_r": -305.8597,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 1335,
+        "mean_ret_r": 0.27008391319242475,
+        "z": 1.0640997721550187,
+        "sign_rate": 0.5483146067415731,
+        "passed": false,
+        "reason": "n=1335 z=1.06 mean_ret_r=0.2701 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1336,
+        "sharpe": -0.035237,
+        "dsr": 2.905764409938394e-05,
+        "passed": false,
+        "reason": "n=1336 sharpe=-0.035 dsr=0.000 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.021 < 0.05",
+          "profit factor 0.9902 < 1.2",
+          "MAR 0.12784612604279413 < 0.5",
+          "drawdown -360.2221R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.021,
+          "profit_factor": 0.9902,
+          "mar": 0.1278,
+          "max_dd_r": -360.2221,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:trend_strength|rsi_reversion|horizon_wide_stop@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_wide_stop",
+      "stage1": {
+        "n": 811,
+        "mean_ret_r": 0.20887277220199899,
+        "z": 0.6861676186633991,
+        "sign_rate": 0.5413070283600493,
+        "passed": false,
+        "reason": "n=811 z=0.69 mean_ret_r=0.2089 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 812,
+        "sharpe": -0.014127,
+        "dsr": 0.004223833901475571,
+        "passed": false,
+        "reason": "n=812 sharpe=-0.014 dsr=0.004 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.012 < 0.05",
+          "profit factor 1.0058 < 1.2",
+          "MAR 0.07959193258629259 < 0.5",
+          "drawdown -204.3976R exceeds 30.0R tol",
+          "robust in 42% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.012,
+          "profit_factor": 1.0058,
+          "mar": 0.0796,
+          "max_dd_r": -204.3976,
+          "robust_frac": 0.4211
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:trend_strength|rsi_reversion|horizon_hold@1d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 894,
+        "mean_ret_r": 0.4305786253465408,
+        "z": 1.4664392982128183,
+        "sign_rate": 0.5279642058165548,
+        "passed": false,
+        "reason": "n=894 z=1.47 mean_ret_r=0.4306 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 895,
+        "sharpe": 0.014795,
+        "dsr": 0.024832438408516067,
+        "passed": false,
+        "reason": "n=895 sharpe=0.015 dsr=0.025 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy -0.0062 < 0.05",
+          "profit factor 0.9978 < 1.2",
+          "MAR 0.024237669865638363 < 0.5",
+          "drawdown -745.9793R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": -0.0062,
+          "profit_factor": 0.9978,
+          "mar": 0.0242,
+          "max_dd_r": -745.9793,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:price_vs_sma|donchian_break|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 989,
+        "mean_ret_r": 0.5740773027017482,
+        "z": 1.7655934556247617,
+        "sign_rate": 0.4570273003033367,
+        "passed": false,
+        "reason": "n=989 z=1.77 mean_ret_r=0.5741 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 989,
+        "sharpe": 0.025274,
+        "dsr": 0.03837569257193513,
+        "passed": false,
+        "reason": "n=989 sharpe=0.025 dsr=0.038 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.0059 < 0.05",
+          "profit factor 1.0018 < 1.2",
+          "MAR 0.018314449183985924 < 0.5",
+          "drawdown -537.4172R exceeds 30.0R tol",
+          "robust in 45% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0059,
+          "profit_factor": 1.0018,
+          "mar": 0.0183,
+          "max_dd_r": -537.4172,
+          "robust_frac": 0.4474
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "4h:price_vs_sma|rsi_reversion|horizon_hold@2d",
+      "htf": "4h",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 794,
+        "mean_ret_r": -0.0623044336147772,
+        "z": -0.12595029151666734,
+        "sign_rate": 0.5088161209068011,
+        "passed": false,
+        "reason": "n=794 z=-0.13 mean_ret_r=-0.0623 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 795,
+        "sharpe": -0.027866,
+        "dsr": 0.0011638032691178024,
+        "passed": false,
+        "reason": "n=795 sharpe=-0.028 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.0034 < 0.05",
+          "profit factor 1.0008 < 1.2",
+          "MAR 0.00821829800782316 < 0.5",
+          "drawdown -1090.5056R exceeds 30.0R tol",
+          "robust in 53% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0034,
+          "profit_factor": 1.0008,
+          "mar": 0.0082,
+          "max_dd_r": -1090.5056,
+          "robust_frac": 0.5263
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|donchian_break|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "donchian_break",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 974,
+        "mean_ret_r": 0.4811615034646578,
+        "z": 1.555487994543561,
+        "sign_rate": 0.4589322381930185,
+        "passed": false,
+        "reason": "n=974 z=1.56 mean_ret_r=0.4812 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 974,
+        "sharpe": 0.01801,
+        "dsr": 0.024291436181135995,
+        "passed": false,
+        "reason": "n=974 sharpe=0.018 dsr=0.024 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.0019 < 0.05",
+          "profit factor 1.0006 < 1.2",
+          "MAR 0.006824412210266361 < 0.5",
+          "drawdown -456.5961R exceeds 30.0R tol",
+          "robust in 43% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0019,
+          "profit_factor": 1.0006,
+          "mar": 0.0068,
+          "max_dd_r": -456.5961,
+          "robust_frac": 0.4342
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    },
+    {
+      "label": "1d:roc|rsi_reversion|horizon_hold@1d",
+      "htf": "1d",
+      "trigger": "rsi_reversion",
+      "exit": "horizon_hold",
+      "stage1": {
+        "n": 1335,
+        "mean_ret_r": 0.27008391319242475,
+        "z": 1.0640997721550187,
+        "sign_rate": 0.5483146067415731,
+        "passed": false,
+        "reason": "n=1335 z=1.06 mean_ret_r=0.2701 (need n>=30, |z|>=2.0)"
+      },
+      "stage2": {
+        "n": 1336,
+        "sharpe": -0.006999,
+        "dsr": 0.0007183376492717053,
+        "passed": false,
+        "reason": "n=1336 sharpe=-0.007 dsr=0.001 (need n>=30, dsr>=0.95)"
+      },
+      "stage3": {
+        "n_windows": 76,
+        "passed": false,
+        "reasons": [
+          "expectancy 0.0008 < 0.05",
+          "profit factor 1.0003 < 1.2",
+          "MAR 0.0046771916735212455 < 0.5",
+          "drawdown -389.7638R exceeds 30.0R tol",
+          "robust in 53% of windows < 60%"
+        ],
+        "metrics": {
+          "expectancy_r": 0.0008,
+          "profit_factor": 1.0003,
+          "mar": 0.0047,
+          "max_dd_r": -389.7638,
+          "robust_frac": 0.5263
+        }
+      },
+      "econ_pass": false,
+      "verdict": "negative"
+    }
+  ]
+}

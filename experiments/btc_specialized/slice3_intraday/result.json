@@ -1,0 +1,35 @@
+[
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=10",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3846,
+    "val_total_r": -1.8989,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.4615,
+    "val_total_r": -0.1488,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=96:atr_period=14,k_stop=2.0,trail_n=10",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3846,
+    "val_total_r": -1.8989,
+    "seal_pf": null,
+    "seal_exp": null
+  }
+]

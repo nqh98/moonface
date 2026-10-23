@@ -1,0 +1,101 @@
+{
+  "symbol": "BTCUSDT",
+  "exchange": "binanceusdm",
+  "entry": {
+    "family": "donchian_break",
+    "params": {
+      "n": 55
+    }
+  },
+  "exit_rows": [
+    [
+      "horizon_hold",
+      {
+        "n_bars": 12,
+        "atr_period": 14
+      }
+    ],
+    [
+      "horizon_hold",
+      {
+        "n_bars": 24,
+        "atr_period": 14
+      }
+    ],
+    [
+      "horizon_hold",
+      {
+        "n_bars": 48,
+        "atr_period": 14
+      }
+    ],
+    [
+      "atr_trail",
+      {
+        "k_trail": 2.0,
+        "max_bars": 48,
+        "atr_period": 14
+      }
+    ],
+    [
+      "atr_trail",
+      {
+        "k_trail": 3.0,
+        "max_bars": 48,
+        "atr_period": 14
+      }
+    ],
+    [
+      "horizon_wide_stop",
+      {
+        "n_bars": 24,
+        "k_stop": 2.5,
+        "atr_period": 14
+      }
+    ],
+    [
+      "horizon_wide_stop",
+      {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      }
+    ],
+    [
+      "breakeven_horizon",
+      {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      }
+    ],
+    [
+      "fixed_bracket",
+      {
+        "k_stop": 1.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      }
+    ],
+    [
+      "fixed_bracket",
+      {
+        "k_stop": 2.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      }
+    ]
+  ],
+  "calib_start_ms": 1577836800000,
+  "calib_end_ms": 1672531200000,
+  "test_start_ms": 1672531200000,
+  "clock_timeframe": "4h",
+  "bar_size_window_min": 240,
+  "fence_fraction": 0.75,
+  "fraction": 0.1,
+  "grid_size": 10,
+  "min_improve": 0.5,
+  "kill_rule": "KILL unless (>=1 exit dollar-bar MaxDD/net-R ratio improves >=50% vs its clock twin, dollar net-R > 0) AND the dollar-bar ladder clears stage1->stage4",
+  "test_end_ms": 1783315045684,
+  "registered_utc": "2026-07-06T05:17:25.684000+00:00"
+}

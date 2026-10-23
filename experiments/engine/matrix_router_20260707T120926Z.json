@@ -1,0 +1,230 @@
+{
+  "label": "matrix step-A regime router \u2014 read-only floor comparison",
+  "n_candles": 14200,
+  "n_labeled_bars": 13000,
+  "params": {
+    "entropy_freeze": 0.9,
+    "gap_bars": 24,
+    "k": 3,
+    "n": 20,
+    "seed": 11,
+    "slippage_bps": 1.0,
+    "step_bars": 100,
+    "taker_fee": 0.0004,
+    "test_bars": 100,
+    "train_bars": 1000
+  },
+  "sealed_start_ts_ms": 1751328000000,
+  "strategies": {
+    "baseline_1": {
+      "cost_1x": {
+        "full": {
+          "cagr": 0.352674,
+          "es95": -0.12512155,
+          "ev_per_trade": 0.01238829,
+          "mar": 0.4758,
+          "max_dd_duration_days": 1007.33,
+          "max_drawdown": -0.741158,
+          "net_return": 6.055369,
+          "trade_count": 266
+        },
+        "segments": {
+          "sealed": {
+            "cagr": 0.047965,
+            "es95": -0.06679632,
+            "ev_per_trade": 0.00275845,
+            "mar": 0.1338,
+            "max_dd_duration_days": 211.67,
+            "max_drawdown": -0.358566,
+            "net_return": 0.046991,
+            "trade_count": 43
+          },
+          "train": {
+            "cagr": 0.415767,
+            "es95": -0.13243972,
+            "ev_per_trade": 0.01424516,
+            "mar": 0.561,
+            "max_dd_duration_days": 1007.33,
+            "max_drawdown": -0.741158,
+            "net_return": 5.738709,
+            "trade_count": 223
+          }
+        }
+      },
+      "cost_2x": {
+        "full": {
+          "cagr": 0.298304,
+          "es95": -0.12612155,
+          "ev_per_trade": 0.01138829,
+          "mar": 0.3976,
+          "max_dd_duration_days": 1007.33,
+          "max_drawdown": -0.750213,
+          "net_return": 4.411109,
+          "trade_count": 266
+        },
+        "segments": {
+          "sealed": {
+            "cagr": 0.002938,
+            "es95": -0.06779632,
+            "ev_per_trade": 0.00175845,
+            "mar": 0.0079,
+            "max_dd_duration_days": 211.67,
+            "max_drawdown": -0.370942,
+            "net_return": 0.00288,
+            "trade_count": 43
+          },
+          "train": {
+            "cagr": 0.359563,
+            "es95": -0.13343972,
+            "ev_per_trade": 0.01324516,
+            "mar": 0.4793,
+            "max_dd_duration_days": 1007.33,
+            "max_drawdown": -0.750213,
+            "net_return": 4.395571,
+            "trade_count": 223
+          }
+        }
+      }
+    },
+    "baseline_2": {
+      "cost_1x": {
+        "full": {
+          "cagr": 0.46393,
+          "es95": -0.10218062,
+          "ev_per_trade": 0.01496936,
+          "mar": 0.9036,
+          "max_dd_duration_days": 625.83,
+          "max_drawdown": -0.513412,
+          "net_return": 10.76355,
+          "trade_count": 247
+        },
+        "segments": {
+          "sealed": {
+            "cagr": 0.002146,
+            "es95": -0.06679632,
+            "ev_per_trade": 0.00173021,
+            "mar": 0.006,
+            "max_dd_duration_days": 211.67,
+            "max_drawdown": -0.359173,
+            "net_return": 0.002104,
+            "trade_count": 41
+          },
+          "train": {
+            "cagr": 0.566456,
+            "es95": -0.10691824,
+            "ev_per_trade": 0.01760433,
+            "mar": 1.21,
+            "max_dd_duration_days": 586.0,
+            "max_drawdown": -0.46813,
+            "net_return": 10.738855,
+            "trade_count": 206
+          }
+        }
+      },
+      "cost_2x": {
+        "full": {
+          "cagr": 0.409362,
+          "es95": -0.10318062,
+          "ev_per_trade": 0.01396936,
+          "mar": 0.7482,
+          "max_dd_duration_days": 625.83,
+          "max_drawdown": -0.547149,
+          "net_return": 8.200995,
+          "trade_count": 247
+        },
+        "segments": {
+          "sealed": {
+            "cagr": -0.038991,
+            "es95": -0.06779632,
+            "ev_per_trade": 0.00073021,
+            "mar": -0.1049,
+            "max_dd_duration_days": 211.67,
+            "max_drawdown": -0.371539,
+            "net_return": -0.038233,
+            "trade_count": 41
+          },
+          "train": {
+            "cagr": 0.509124,
+            "es95": -0.10791824,
+            "ev_per_trade": 0.01660433,
+            "mar": 1.0663,
+            "max_dd_duration_days": 586.0,
+            "max_drawdown": -0.477459,
+            "net_return": 8.566756,
+            "trade_count": 206
+          }
+        }
+      }
+    },
+    "router": {
+      "cost_1x": {
+        "full": {
+          "cagr": 0.24479,
+          "es95": -0.09756338,
+          "ev_per_trade": 0.00935023,
+          "mar": 0.5602,
+          "max_dd_duration_days": 615.33,
+          "max_drawdown": -0.436984,
+          "net_return": 2.668978,
+          "trade_count": 222
+        },
+        "segments": {
+          "sealed": {
+            "cagr": 0.170292,
+            "es95": -0.072474,
+            "ev_per_trade": 0.00569673,
+            "mar": 0.7335,
+            "max_dd_duration_days": 169.83,
+            "max_drawdown": -0.232156,
+            "net_return": 0.161299,
+            "trade_count": 36
+          },
+          "train": {
+            "cagr": 0.259556,
+            "es95": -0.10258125,
+            "ev_per_trade": 0.01005736,
+            "mar": 0.7164,
+            "max_dd_duration_days": 387.17,
+            "max_drawdown": -0.362323,
+            "net_return": 2.159374,
+            "trade_count": 186
+          }
+        }
+      },
+      "cost_2x": {
+        "full": {
+          "cagr": 0.214602,
+          "es95": -0.09856338,
+          "ev_per_trade": 0.00869144,
+          "mar": 0.465,
+          "max_dd_duration_days": 615.33,
+          "max_drawdown": -0.461535,
+          "net_return": 2.171378,
+          "trade_count": 222
+        },
+        "segments": {
+          "sealed": {
+            "cagr": 0.136757,
+            "es95": -0.073474,
+            "ev_per_trade": 0.00492589,
+            "mar": 0.5631,
+            "max_dd_duration_days": 201.17,
+            "max_drawdown": -0.242856,
+            "net_return": 0.129632,
+            "trade_count": 36
+          },
+          "train": {
+            "cagr": 0.230067,
+            "es95": -0.10358125,
+            "ev_per_trade": 0.00942026,
+            "mar": 0.6119,
+            "max_dd_duration_days": 387.17,
+            "max_drawdown": -0.376001,
+            "net_return": 1.807443,
+            "trade_count": 186
+          }
+        }
+      }
+    }
+  }
+}

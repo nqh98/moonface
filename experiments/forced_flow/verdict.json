@@ -1,0 +1,14 @@
+{
+  "circular_shift_discarded_draws": 0,
+  "circular_shift_p975": 0.014830939890026235,
+  "episode_count": 181,
+  "iid_guard_passed": false,
+  "iid_return_discarded_draws": 0,
+  "label_shuffle_discarded_draws": 0,
+  "label_shuffle_p975": 0.01679641074677551,
+  "observed_spread": 0.010009816266523548,
+  "qualifying_bucket_count": 3,
+  "split_half_first": "POSITIVE",
+  "split_half_second": "POSITIVE",
+  "verdict": "KILL"
+}

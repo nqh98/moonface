@@ -1,0 +1,12 @@
+{
+  "candidates": [
+    {
+      "name": "equity_riskon",
+      "t": 2.5089,
+      "n": 1586,
+      "mean": 0.001779,
+      "sign": 1
+    }
+  ],
+  "n_trials": 6
+}

@@ -1,0 +1,366 @@
+{
+  "bar_size": 1481319433.2436073,
+  "n_dollar_bars": 12680,
+  "n_clock_bars": 7694,
+  "clock_rows": [
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 12,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 181.1512,
+      "max_dd_r": -75.0662,
+      "ratio": 0.41438422709868883
+    },
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 24,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 151.6013,
+      "max_dd_r": -101.8843,
+      "ratio": 0.6720542633869234
+    },
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 80.0411,
+      "max_dd_r": -160.6109,
+      "ratio": 2.006605356498099
+    },
+    {
+      "exit": "atr_trail",
+      "params": {
+        "k_trail": 2.0,
+        "max_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 111.7422,
+      "max_dd_r": -49.3183,
+      "ratio": 0.44135787553851635
+    },
+    {
+      "exit": "atr_trail",
+      "params": {
+        "k_trail": 3.0,
+        "max_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 66.8363,
+      "max_dd_r": -84.9916,
+      "ratio": 1.2716383163041642
+    },
+    {
+      "exit": "horizon_wide_stop",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 2.5,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 167.7884,
+      "max_dd_r": -95.4418,
+      "ratio": 0.5688223977342891
+    },
+    {
+      "exit": "horizon_wide_stop",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 152.0978,
+      "max_dd_r": -108.0001,
+      "ratio": 0.7100700996332623
+    },
+    {
+      "exit": "breakeven_horizon",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 202.878,
+      "max_dd_r": -65.9006,
+      "ratio": 0.32482871479411274
+    },
+    {
+      "exit": "fixed_bracket",
+      "params": {
+        "k_stop": 1.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 25.2491,
+      "max_dd_r": -62.6246,
+      "ratio": 2.4802705839020005
+    },
+    {
+      "exit": "fixed_bracket",
+      "params": {
+        "k_stop": 2.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      },
+      "trades": 373,
+      "net_r": 59.1982,
+      "max_dd_r": -54.2754,
+      "ratio": 0.916842066143903
+    }
+  ],
+  "dollar_rows": [
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 12,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 101.608,
+      "max_dd_r": -83.2827,
+      "ratio": 0.8196470750334619
+    },
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 24,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 209.6797,
+      "max_dd_r": -138.1864,
+      "ratio": 0.6590356624890249
+    },
+    {
+      "exit": "horizon_hold",
+      "params": {
+        "n_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 2.6086,
+      "max_dd_r": -368.1476,
+      "ratio": 141.12842137545044
+    },
+    {
+      "exit": "atr_trail",
+      "params": {
+        "k_trail": 2.0,
+        "max_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 142.1151,
+      "max_dd_r": -69.9522,
+      "ratio": 0.4922221495112061
+    },
+    {
+      "exit": "atr_trail",
+      "params": {
+        "k_trail": 3.0,
+        "max_bars": 48,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 21.3455,
+      "max_dd_r": -248.1102,
+      "ratio": 11.623536576796045
+    },
+    {
+      "exit": "horizon_wide_stop",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 2.5,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 121.3498,
+      "max_dd_r": -124.6083,
+      "ratio": 1.026852125013803
+    },
+    {
+      "exit": "horizon_wide_stop",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 122.6985,
+      "max_dd_r": -152.7503,
+      "ratio": 1.2449239395754637
+    },
+    {
+      "exit": "breakeven_horizon",
+      "params": {
+        "n_bars": 24,
+        "k_stop": 3.0,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 34.0605,
+      "max_dd_r": -143.6339,
+      "ratio": 4.217022650871244
+    },
+    {
+      "exit": "fixed_bracket",
+      "params": {
+        "k_stop": 1.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 45.1605,
+      "max_dd_r": -89.4814,
+      "ratio": 1.9814085317921635
+    },
+    {
+      "exit": "fixed_bracket",
+      "params": {
+        "k_stop": 2.0,
+        "m_tp": 4.0,
+        "atr_period": 14
+      },
+      "trades": 1023,
+      "net_r": 128.2079,
+      "max_dd_r": -115.6623,
+      "ratio": 0.9021464355940625
+    }
+  ],
+  "ladder": {
+    "ladder_pass": false,
+    "passing_exits": [],
+    "best_dsr": null,
+    "best_tail_mar": null
+  },
+  "verdict": {
+    "rows": [
+      {
+        "exit": "horizon_hold",
+        "params": {
+          "n_bars": 12,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.41438422709868883,
+        "dollar_ratio": 0.8196470750334619,
+        "improvement": -0.978
+      },
+      {
+        "exit": "horizon_hold",
+        "params": {
+          "n_bars": 24,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.6720542633869234,
+        "dollar_ratio": 0.6590356624890249,
+        "improvement": 0.0194
+      },
+      {
+        "exit": "horizon_hold",
+        "params": {
+          "n_bars": 48,
+          "atr_period": 14
+        },
+        "clock_ratio": 2.006605356498099,
+        "dollar_ratio": 141.12842137545044,
+        "improvement": -69.3319
+      },
+      {
+        "exit": "atr_trail",
+        "params": {
+          "k_trail": 2.0,
+          "max_bars": 48,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.44135787553851635,
+        "dollar_ratio": 0.4922221495112061,
+        "improvement": -0.1152
+      },
+      {
+        "exit": "atr_trail",
+        "params": {
+          "k_trail": 3.0,
+          "max_bars": 48,
+          "atr_period": 14
+        },
+        "clock_ratio": 1.2716383163041642,
+        "dollar_ratio": 11.623536576796045,
+        "improvement": -8.1406
+      },
+      {
+        "exit": "horizon_wide_stop",
+        "params": {
+          "n_bars": 24,
+          "k_stop": 2.5,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.5688223977342891,
+        "dollar_ratio": 1.026852125013803,
+        "improvement": -0.8052
+      },
+      {
+        "exit": "horizon_wide_stop",
+        "params": {
+          "n_bars": 24,
+          "k_stop": 3.0,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.7100700996332623,
+        "dollar_ratio": 1.2449239395754637,
+        "improvement": -0.7532
+      },
+      {
+        "exit": "breakeven_horizon",
+        "params": {
+          "n_bars": 24,
+          "k_stop": 3.0,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.32482871479411274,
+        "dollar_ratio": 4.217022650871244,
+        "improvement": -11.9823
+      },
+      {
+        "exit": "fixed_bracket",
+        "params": {
+          "k_stop": 1.0,
+          "m_tp": 4.0,
+          "atr_period": 14
+        },
+        "clock_ratio": 2.4802705839020005,
+        "dollar_ratio": 1.9814085317921635,
+        "improvement": 0.2011
+      },
+      {
+        "exit": "fixed_bracket",
+        "params": {
+          "k_stop": 2.0,
+          "m_tp": 4.0,
+          "atr_period": 14
+        },
+        "clock_ratio": 0.916842066143903,
+        "dollar_ratio": 0.9021464355940625,
+        "improvement": 0.016
+      }
+    ],
+    "best_improvement": 0.2011,
+    "improved_exits": [],
+    "ladder_pass": false,
+    "pass": false,
+    "verdict": "kill",
+    "reason": "no_50pct_ratio_gain_or_ladder_fails"
+  }
+}

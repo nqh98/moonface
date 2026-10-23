@@ -1,0 +1,52 @@
+{
+  "interval": "4h",
+  "cells": [
+    "funding_pre",
+    "funding_post",
+    "weekend",
+    "weekday"
+  ],
+  "n_confirm": 16,
+  "min_assets": 8,
+  "min_returns": 30,
+  "min_breadth": 12,
+  "abs_stouffer_gate": 3.0,
+  "discovery": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "window_days": 730,
+  "top_k_candidates": 24,
+  "vol_days": 30,
+  "min_history_days": 365,
+  "end_ms": 1781701564101,
+  "start_ms": 1718629564101,
+  "candidates": [
+    "1000PEPEUSDT",
+    "PEOPLEUSDT",
+    "DOGEUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "1000SHIBUSDT",
+    "1000FLOKIUSDT",
+    "HIGHUSDT",
+    "JASMYUSDT",
+    "LINKUSDT",
+    "FILUSDT",
+    "UNIUSDT",
+    "AVAXUSDT",
+    "ARBUSDT",
+    "NEARUSDT",
+    "ETCUSDT",
+    "GALAUSDT",
+    "TRBUSDT",
+    "ADAUSDT",
+    "MATICUSDT",
+    "OPUSDT",
+    "INJUSDT",
+    "ENSUSDT",
+    "BCHUSDT"
+  ],
+  "registered_utc": "2026-06-17T13:06:04.101000+00:00"
+}

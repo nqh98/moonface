@@ -1,0 +1,13 @@
+{
+  "symbol": "BTCUSDT",
+  "interval": "4h",
+  "start_ms": 1577836800000,
+  "end_ms": 1782300000000,
+  "discovery_slice": [0, 20],
+  "gated_slices": [[20, 40], [40, 60]],
+  "k_gated": 2,
+  "block_len": 8,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "rebalance_days": 30
+}

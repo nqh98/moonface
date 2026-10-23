@@ -1,0 +1,167 @@
+[
+  {
+    "label": "2h:atr_channel_break:k=2.5:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20:ap=20",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "params": {
+      "k": 2.5,
+      "atr_period": 20
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 84,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:atr_channel_break:ap=20:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 2.5
+  },
+  {
+    "label": "2h:atr_channel_break:k=2.5:donchian_trail:mb=168:atr_period=14,k_stop=2.0,trail_n=20:ap=20",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "params": {
+      "k": 2.5,
+      "atr_period": 20
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 168,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:atr_channel_break:ap=20:donchian_trail:mb=168:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 2.5
+  },
+  {
+    "label": "2h:atr_channel_break:k=1.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20:ap=14",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "params": {
+      "k": 1.0,
+      "atr_period": 14
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 84,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:atr_channel_break:ap=14:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 1.0
+  },
+  {
+    "label": "4h:donchian_break:n=20.0:chandelier:mb=120:atr_mult=4.0,atr_period=14",
+    "timeframe": "4h",
+    "family": "donchian_break",
+    "params": {
+      "n": 20
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 120,
+      "atr_period": 14
+    },
+    "h": 30,
+    "group": "4h:donchian_break::chandelier:mb=120:atr_mult=4.0,atr_period=14",
+    "axis": 20.0
+  },
+  {
+    "label": "2h:donchian_break:n=40.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "2h",
+    "family": "donchian_break",
+    "params": {
+      "n": 40
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 84,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:donchian_break::donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 40.0
+  },
+  {
+    "label": "2h:donchian_break:n=55.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "2h",
+    "family": "donchian_break",
+    "params": {
+      "n": 55
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 84,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:donchian_break::donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 55.0
+  },
+  {
+    "label": "4h:ma_cross:slow=100.0:donchian_trail:mb=60:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "4h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 25,
+      "slow": 100
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 60,
+      "atr_period": 14
+    },
+    "h": 30,
+    "group": "4h:ma_cross::donchian_trail:mb=60:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 100.0
+  },
+  {
+    "label": "2h:ma_cross:slow=50.0:chandelier:mb=84:atr_mult=4.0,atr_period=14",
+    "timeframe": "2h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 12,
+      "slow": 50
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 84,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:ma_cross::chandelier:mb=84:atr_mult=4.0,atr_period=14",
+    "axis": 50.0
+  },
+  {
+    "label": "2h:ma_cross:slow=50.0:chandelier:mb=168:atr_mult=4.0,atr_period=14",
+    "timeframe": "2h",
+    "family": "ma_cross",
+    "params": {
+      "fast": 12,
+      "slow": 50
+    },
+    "exit_name": "chandelier",
+    "exit_params": {
+      "atr_mult": 4.0,
+      "max_bars": 168,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "2h:ma_cross::chandelier:mb=168:atr_mult=4.0,atr_period=14",
+    "axis": 50.0
+  }
+]

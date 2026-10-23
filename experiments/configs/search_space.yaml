@@ -1,0 +1,46 @@
+seed: 1337
+stage1_runs: 12
+stage2_runs: 20
+validation_runs: 5
+patience: 60
+parameters:
+  mitigation_lookback:
+    min: 10
+    max: 80
+    step: 5
+  confirmation_window:
+    min: 24
+    max: 96
+    step: 12
+  fib_min:
+    min: 0.5
+    max: 0.7
+    step: 0.01
+  fib_max:
+    min: 0.72
+    max: 0.9
+    step: 0.01
+  min_rr2:
+    min: 1.0
+    max: 3.0
+    step: 0.1
+  min_confluence_score:
+    min: 0.4
+    max: 1.0
+    step: 0.05
+  pinbar_wick_body_ratio:
+    min: 1.5
+    max: 3.5
+    step: 0.1
+  displacement_threshold:
+    min: 0.8
+    max: 2.5
+    step: 0.1
+  poi_tolerance:
+    min: 0.0
+    max: 25.0
+    step: 1.0
+  sweep_lookback:
+    min: 10
+    max: 120
+    step: 5

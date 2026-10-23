@@ -1,0 +1,120 @@
+{
+  "config": {
+    "deploy": "BTCUSDT",
+    "horizons": [
+      6,
+      12
+    ],
+    "n_folds": 5,
+    "regime_window": 180,
+    "n_regimes": 4,
+    "lockbox_fraction": 0.2,
+    "atr_period": 14,
+    "edge_threshold": 0.15,
+    "kelly_scale": 0.02,
+    "max_fraction": 0.02,
+    "taker_bps": 5.0,
+    "slippage_bps": 2.0,
+    "min_fit_events": 10,
+    "drawdown_cap_r": 15.0,
+    "dsr_threshold": 0.95,
+    "pool_symbols": [
+      "1000PEPEUSDT",
+      "PEOPLEUSDT",
+      "DOGEUSDT",
+      "BNBUSDT",
+      "1000SHIBUSDT",
+      "1000FLOKIUSDT",
+      "XRPUSDT",
+      "LINKUSDT",
+      "HIGHUSDT",
+      "NEARUSDT",
+      "JASMYUSDT",
+      "TRBUSDT",
+      "FILUSDT",
+      "ARBUSDT",
+      "AVAXUSDT",
+      "ETCUSDT"
+    ]
+  },
+  "rung1": [
+    {
+      "status": "ok",
+      "n_events": 1701,
+      "n_trades": 465,
+      "risk_adjusted": {
+        "trade_count": 465,
+        "net_return": -0.091199,
+        "max_drawdown": -0.334973,
+        "mar": -0.2723,
+        "sharpe": -0.009716,
+        "dsr": 6.238618032800014e-05
+      },
+      "fixed_cap": {
+        "trade_count": 465,
+        "total_r": -22.326935,
+        "max_drawdown_r": -64.016304,
+        "within_cap": false
+      },
+      "h": 6,
+      "n_signals": 16,
+      "n_trial_srs": 15
+    },
+    {
+      "status": "ok",
+      "n_events": 1702,
+      "n_trades": 513,
+      "risk_adjusted": {
+        "trade_count": 513,
+        "net_return": -0.047013,
+        "max_drawdown": -0.478424,
+        "mar": -0.0983,
+        "sharpe": 0.005933,
+        "dsr": 2.3129477446703905e-05
+      },
+      "fixed_cap": {
+        "trade_count": 513,
+        "total_r": -25.721903,
+        "max_drawdown_r": -126.209882,
+        "within_cap": false
+      },
+      "h": 12,
+      "n_signals": 16,
+      "n_trial_srs": 15
+    }
+  ],
+  "rung0_floor": {
+    "6": {
+      "best_total_r": 9.314527,
+      "best_dsr": 3.790596103669941e-08,
+      "best_family": "atr_channel_break",
+      "best_params": {
+        "k": 1.5,
+        "atr_period": 14
+      }
+    },
+    "12": {
+      "best_total_r": 24.033973,
+      "best_dsr": 1.0833859886982822e-07,
+      "best_family": "atr_channel_break",
+      "best_params": {
+        "k": 2.0,
+        "atr_period": 14
+      }
+    }
+  },
+  "verdict": [
+    {
+      "h": 6,
+      "beats_rung0": false,
+      "clears_gate": false,
+      "note": "ensemble does not beat the rung-0 floor"
+    },
+    {
+      "h": 12,
+      "beats_rung0": false,
+      "clears_gate": false,
+      "note": "ensemble does not beat the rung-0 floor"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "verdict": "TRANSFERS (sign holds + recent-positive on every non-BTC asset)",
+  "rows": [
+    {
+      "symbol": "BTCUSDT",
+      "full": {
+        "n": 973,
+        "longs": 520,
+        "shorts": 453,
+        "pf": 1.2388,
+        "expectancy_r": 0.5811,
+        "win_rate": 0.2693,
+        "total_r": 565.4044,
+        "max_dd_r": -124.8,
+        "mar": 4.5305,
+        "positive": true
+      },
+      "recent": {
+        "n": 317,
+        "longs": 164,
+        "shorts": 153,
+        "pf": 1.1401,
+        "expectancy_r": 0.357,
+        "win_rate": 0.2429,
+        "total_r": 113.1681,
+        "max_dd_r": -113.65,
+        "mar": 0.9958,
+        "positive": true
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "full": {
+        "n": 966,
+        "longs": 512,
+        "shorts": 454,
+        "pf": 1.0117,
+        "expectancy_r": 0.0279,
+        "win_rate": 0.2526,
+        "total_r": 26.9808,
+        "max_dd_r": -185.88,
+        "mar": 0.1452,
+        "positive": true
+      },
+      "recent": {
+        "n": 316,
+        "longs": 138,
+        "shorts": 178,
+        "pf": 1.0826,
+        "expectancy_r": 0.2046,
+        "win_rate": 0.2373,
+        "total_r": 64.6462,
+        "max_dd_r": -89.31,
+        "mar": 0.7238,
+        "positive": true
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "full": {
+        "n": 874,
+        "longs": 439,
+        "shorts": 435,
+        "pf": 1.1336,
+        "expectancy_r": 0.3089,
+        "win_rate": 0.2609,
+        "total_r": 269.97,
+        "max_dd_r": -156.09,
+        "mar": 1.7296,
+        "positive": true
+      },
+      "recent": {
+        "n": 316,
+        "longs": 139,
+        "shorts": 177,
+        "pf": 1.0946,
+        "expectancy_r": 0.2248,
+        "win_rate": 0.2532,
+        "total_r": 71.0427,
+        "max_dd_r": -79.75,
+        "mar": 0.8908,
+        "positive": true
+      }
+    }
+  ]
+}

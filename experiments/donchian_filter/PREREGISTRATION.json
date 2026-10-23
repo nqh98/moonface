@@ -1,0 +1,38 @@
+{
+  "adx_period": 14,
+  "core_frozen": "replace(_BASE, entry_n=40, trail_n=20) exit=trail",
+  "floors": {
+    "activity": 0.5,
+    "holdout_min_trades": 10,
+    "neutral_tol_r": 5.0,
+    "trend_capture": 0.9
+  },
+  "holdout_labels": [
+    "IMPROVES",
+    "NEUTRAL",
+    "DESTROYS_INACTIVE"
+  ],
+  "lane": "donchian_adx_filter",
+  "mechanism": "enter only if ADX(14) >= threshold (subset of base trades)",
+  "n_trials": 3,
+  "selection": "train-only: qualify = net_r>=0.90*base AND maxDD strictly better AND robust_frac>=base AND trades>=0.50*base; pick least-negative train maxDD",
+  "thresholds": [
+    18,
+    20,
+    25
+  ],
+  "windows": {
+    "sealed": [
+      1740787200000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1698796800000
+    ],
+    "validate": [
+      1698796800000,
+      1740787200000
+    ]
+  }
+}

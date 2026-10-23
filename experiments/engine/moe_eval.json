@@ -1,0 +1,64 @@
+{
+  "fitted": {
+    "matrix": {
+      "CHOP": {
+        "REVERSION": 0.0234
+      },
+      "STRESS": {
+        "REVERSION": 0.4505
+      },
+      "TREND": {
+        "BREAKOUT": 0.1908
+      }
+    },
+    "p_eff": 3
+  },
+  "gate0": {
+    "passed_negative": true,
+    "runs": {
+      "iid_shuffle": {
+        "allowed": 197,
+        "budget_ok": true,
+        "dsr": 0.3267,
+        "n": 2,
+        "p_eff": 3,
+        "validation_ci_positive": false
+      },
+      "phase_randomize": {
+        "allowed": 199,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 46,
+        "p_eff": 5,
+        "validation_ci_positive": false
+      },
+      "sign_flip": {
+        "allowed": 199,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 0,
+        "p_eff": 3,
+        "validation_ci_positive": false
+      }
+    }
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": null,
+    "max_dd_r": 0.0,
+    "n": 0,
+    "net_r": 0,
+    "net_r_3x": 0,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "moe_hash": "9c25d22a40b7283cc150ec9dbbe10d699cf24d57dc164c6c058c60a59a15d7c7",
+  "power": {
+    "allowed": 199,
+    "n_train": 9983,
+    "p_eff": 3,
+    "passed": true
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

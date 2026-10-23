@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "dsr_pass": false,
+  "dsr": 0.0,
+  "econ_passed": false,
+  "metrics": {
+    "expectancy_r": 1.2752,
+    "profit_factor": 2.1022,
+    "mar": 3.3428,
+    "max_dd_r": -30.1378,
+    "robust_frac": 0.75
+  },
+  "reasons": ["drawdown -30.1378R exceeds 30.0R tol"],
+  "n_trials": 6
+}

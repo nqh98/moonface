@@ -1,0 +1,63 @@
+{
+  "asof": "2026-06-28T09:43:34.972765+00:00",
+  "combination": "net_vote sign(sum), ties FLAT; entries_from_state h=48",
+  "lane": "btc_breadth_ensemble",
+  "member_keys": [
+    "breadth_thrust",
+    "net_new_highs",
+    "breadth_momentum"
+  ],
+  "members": [
+    {
+      "builder": "breadth_thrust",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_thrust",
+      "params": {
+        "base_period": 50,
+        "high_band": 0.6,
+        "low_band": 0.4,
+        "window": 6
+      }
+    },
+    {
+      "builder": "net_new_highs",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "net_new_highs",
+      "params": {
+        "long_thr": 0.3,
+        "n": 20,
+        "short_thr": -0.3
+      }
+    },
+    {
+      "builder": "breadth_momentum",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_momentum",
+      "params": {
+        "base_period": 50,
+        "n": 10,
+        "thr": 0.1
+      }
+    }
+  ],
+  "status": "registered",
+  "t0": 1782300000000
+}

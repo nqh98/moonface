@@ -1,0 +1,30 @@
+{
+  "status": "closed_negative",
+  "generated_utc": "2026-06-17T06:44:50.052094+00:00",
+  "universe_symbols": 714,
+  "funding_symbols": 92,
+  "constructions": [
+    {
+      "name": "bab_60",
+      "lookback_days": 60,
+      "screen_days": 612,
+      "screen_mean": 0.00163836,
+      "stage1_pass": true,
+      "holdout_mar": -0.4813,
+      "holdout_drawdown": -0.449643,
+      "stage2_pass": false,
+      "research_days": 875,
+      "research_net": 0.913766,
+      "research_mar": 1.9251,
+      "research_sharpe": 0.040036,
+      "research_skew": 1.16088,
+      "research_kurtosis": 19.504297,
+      "tail_days": 214,
+      "tail_net": -0.652804,
+      "tail_mar": -0.9429,
+      "tail_drawdown": -0.692358,
+      "stage4_pass": false,
+      "dsr": null
+    }
+  ]
+}

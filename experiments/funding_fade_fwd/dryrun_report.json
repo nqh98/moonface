@@ -1,0 +1,31 @@
+{
+  "archived": {
+    "oos_expectancy_r": 1.1284,
+    "oos_net_r": 76.7285,
+    "oos_trades": 68,
+    "research_expectancy_r": 0.2549,
+    "research_max_dd_r": -32.0,
+    "research_net_r": 64.7507,
+    "research_trades": 254
+  },
+  "baseline_amendment1": {
+    "oos_expectancy_r": 1.1374,
+    "oos_net_r": 77.3435,
+    "oos_trades": 68,
+    "research_expectancy_r": 0.2549,
+    "research_max_dd_r": -32.0,
+    "research_net_r": 64.7507,
+    "research_trades": 254
+  },
+  "generated": "2026-07-14T02:44:00.442884+00:00",
+  "regenerated": {
+    "oos_expectancy_r": 1.1374,
+    "oos_net_r": 77.3435,
+    "oos_trades": 68,
+    "research_expectancy_r": 0.2549,
+    "research_max_dd_r": -32.0,
+    "research_net_r": 64.7507,
+    "research_trades": 254
+  },
+  "reproduced": true
+}

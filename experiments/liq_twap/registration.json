@@ -1,0 +1,6 @@
+{
+  "start_ms": 1598918400000,
+  "end_ms": 1785301200000,
+  "interval": "1h",
+  "metrics_field": "sum_open_interest"
+}

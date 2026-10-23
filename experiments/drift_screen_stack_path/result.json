@@ -1,0 +1,268 @@
+{
+  "registration": {
+    "lane": "drift_screen_stack_path",
+    "timeframe": "4h",
+    "h": 24,
+    "atr_period": 14,
+    "floor": 0.1319,
+    "min_events": 10,
+    "min_assets": 8,
+    "universe": [
+      "1000PEPEUSDT",
+      "PEOPLEUSDT",
+      "DOGEUSDT",
+      "BNBUSDT",
+      "1000SHIBUSDT",
+      "1000FLOKIUSDT",
+      "XRPUSDT",
+      "LINKUSDT",
+      "HIGHUSDT",
+      "NEARUSDT",
+      "JASMYUSDT",
+      "TRBUSDT",
+      "FILUSDT",
+      "ARBUSDT",
+      "AVAXUSDT",
+      "ETCUSDT"
+    ],
+    "discovery_excluded": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "params": {
+      "lookback_bars": 20,
+      "penalty_factor": 1.0,
+      "stack_threshold": 1,
+      "slope_threshold": 0.01,
+      "long_only": false,
+      "atr_period": 14,
+      "k_stop": 2.0
+    },
+    "curve_horizons": [
+      6,
+      12,
+      24,
+      48
+    ],
+    "inherited_from": "experiments/drift_screen/registration.json",
+    "inherited_registered_utc": "2026-06-16T02:25:37.286384+00:00",
+    "kill_rule": "mechanism_does_not_exist => stack_path closed at stage 0; no parameter rescue, no v2, no re-run",
+    "expected_outcome": "NEGATIVE. drift_screen already returned mechanism_does_not_exist for 5 trend/breakout signals on this exact universe/h/floor, and the microscope lane found forward-R does not stratify by regime over 1838 events.",
+    "params_provenance": "UNKNOWN \u2014 strategy + test arrived untracked",
+    "identity_hash": "b5c4f5fe9700cc657461832a0f245be59e2a2b4023444d2c8e76cab27d2d1bb2",
+    "registered_utc": "2026-07-16T03:59:42.597176+00:00"
+  },
+  "primary": {
+    "signal": "stack_path",
+    "params": {
+      "lookback_bars": 20,
+      "penalty_factor": 1.0,
+      "stack_threshold": 1,
+      "slope_threshold": 0.01,
+      "long_only": false,
+      "atr_period": 14,
+      "k_stop": 2.0
+    },
+    "h": 24,
+    "assets": [
+      {
+        "sym": "1000FLOKIUSDT",
+        "n": 174,
+        "mean_ret_r": -0.1762140022870277,
+        "mean_abs_mae_r": 2.757128634050363,
+        "mean_mfe_r": 2.8730405501189034,
+        "sign_rate": 0.4827586206896552,
+        "t": -0.5855253466716217
+      },
+      {
+        "sym": "1000PEPEUSDT",
+        "n": 175,
+        "mean_ret_r": -0.0188386634428831,
+        "mean_abs_mae_r": 2.8296023102294314,
+        "mean_mfe_r": 3.0084055939839804,
+        "sign_rate": 0.4685714285714286,
+        "t": -0.059238632956452326
+      },
+      {
+        "sym": "1000SHIBUSDT",
+        "n": 173,
+        "mean_ret_r": -0.09436651639697274,
+        "mean_abs_mae_r": 2.7117297361379817,
+        "mean_mfe_r": 2.9892250934893676,
+        "sign_rate": 0.47398843930635837,
+        "t": -0.36955960530345444
+      },
+      {
+        "sym": "ARBUSDT",
+        "n": 174,
+        "mean_ret_r": -0.24901056066255065,
+        "mean_abs_mae_r": 2.8546860553874995,
+        "mean_mfe_r": 2.9575148215215035,
+        "sign_rate": 0.4827586206896552,
+        "t": -0.8521512797247537
+      },
+      {
+        "sym": "AVAXUSDT",
+        "n": 173,
+        "mean_ret_r": -0.09748784820192877,
+        "mean_abs_mae_r": 2.784053692041854,
+        "mean_mfe_r": 3.0444798633121968,
+        "sign_rate": 0.4913294797687861,
+        "t": -0.3420242047957609
+      },
+      {
+        "sym": "BNBUSDT",
+        "n": 174,
+        "mean_ret_r": 0.12318278317538409,
+        "mean_abs_mae_r": 2.6801954736383267,
+        "mean_mfe_r": 3.1791287448471053,
+        "sign_rate": 0.5114942528735632,
+        "t": 0.44429439705458706
+      },
+      {
+        "sym": "DOGEUSDT",
+        "n": 173,
+        "mean_ret_r": -0.12402250808539127,
+        "mean_abs_mae_r": 2.903800452428202,
+        "mean_mfe_r": 3.1862779993153008,
+        "sign_rate": 0.47398843930635837,
+        "t": -0.3838106877827967
+      },
+      {
+        "sym": "ETCUSDT",
+        "n": 174,
+        "mean_ret_r": -0.09712243672818602,
+        "mean_abs_mae_r": 2.741763075364852,
+        "mean_mfe_r": 2.9597890393848734,
+        "sign_rate": 0.45977011494252873,
+        "t": -0.3752086826962985
+      },
+      {
+        "sym": "FILUSDT",
+        "n": 174,
+        "mean_ret_r": 0.12102891523208256,
+        "mean_abs_mae_r": 2.7401285944105056,
+        "mean_mfe_r": 2.9128795784918773,
+        "sign_rate": 0.5057471264367817,
+        "t": 0.44586904794243576
+      },
+      {
+        "sym": "HIGHUSDT",
+        "n": 175,
+        "mean_ret_r": -0.1488301372345221,
+        "mean_abs_mae_r": 2.9863123559568416,
+        "mean_mfe_r": 3.115930192846689,
+        "sign_rate": 0.4742857142857143,
+        "t": -0.4296770962820726
+      },
+      {
+        "sym": "JASMYUSDT",
+        "n": 174,
+        "mean_ret_r": 0.19305208276409377,
+        "mean_abs_mae_r": 2.4903332853508653,
+        "mean_mfe_r": 3.0170533088346567,
+        "sign_rate": 0.5172413793103449,
+        "t": 0.770485849579865
+      },
+      {
+        "sym": "LINKUSDT",
+        "n": 174,
+        "mean_ret_r": 0.012834806152925354,
+        "mean_abs_mae_r": 2.837781590268549,
+        "mean_mfe_r": 2.8942102926336286,
+        "sign_rate": 0.46551724137931033,
+        "t": 0.04812386720956012
+      },
+      {
+        "sym": "NEARUSDT",
+        "n": 174,
+        "mean_ret_r": -0.20411757424436583,
+        "mean_abs_mae_r": 2.8255434746075414,
+        "mean_mfe_r": 2.8854561406300845,
+        "sign_rate": 0.4885057471264368,
+        "t": -0.7116460945954184
+      },
+      {
+        "sym": "PEOPLEUSDT",
+        "n": 175,
+        "mean_ret_r": -0.2844936830038865,
+        "mean_abs_mae_r": 2.7963897858610713,
+        "mean_mfe_r": 2.883484374955397,
+        "sign_rate": 0.4057142857142857,
+        "t": -1.1102963578625664
+      },
+      {
+        "sym": "TRBUSDT",
+        "n": 175,
+        "mean_ret_r": -0.04456132107824108,
+        "mean_abs_mae_r": 2.8724659115752393,
+        "mean_mfe_r": 3.0861169708641594,
+        "sign_rate": 0.4057142857142857,
+        "t": -0.1550630262882559
+      },
+      {
+        "sym": "XRPUSDT",
+        "n": 174,
+        "mean_ret_r": 0.10068650831629992,
+        "mean_abs_mae_r": 2.796501331975074,
+        "mean_mfe_r": 3.370285517702558,
+        "sign_rate": 0.41379310344827586,
+        "t": 0.32461426127226467
+      }
+    ],
+    "verdict": {
+      "m_assets": 16,
+      "p_sign": 0.9615936279296875,
+      "stouffer_z": -0.8352033979751847,
+      "pooled_ret_r": -0.06176750973282313,
+      "pooled_abs_mae_r": 2.7880259849552624,
+      "ratio": -0.022154567448844732,
+      "reason": "drift gate not cleared (p=0.9616, Z=-0.84, pooled_ret_r=-0.0618)",
+      "k_positive": 5,
+      "verdict": "mechanism_does_not_exist"
+    }
+  },
+  "curve_descriptive": [
+    {
+      "h": 6,
+      "m_assets": 16,
+      "pooled_ret_r": 0.03141234593068844,
+      "pooled_abs_mae_r": 1.2750362629922218,
+      "ratio": 0.02463643336462507,
+      "p_sign": 0.1050567626953125,
+      "stouffer_z": 1.4700054120976347,
+      "n_events": 9835
+    },
+    {
+      "h": 12,
+      "m_assets": 16,
+      "pooled_ret_r": 0.007729260609987644,
+      "pooled_abs_mae_r": 1.8693165030163255,
+      "ratio": 0.004134805741839717,
+      "p_sign": 0.4018096923828125,
+      "stouffer_z": 0.22247482795723292,
+      "n_events": 5362
+    },
+    {
+      "h": 24,
+      "m_assets": 16,
+      "pooled_ret_r": -0.06176750973282313,
+      "pooled_abs_mae_r": 2.7880259849552624,
+      "ratio": -0.022154567448844732,
+      "p_sign": 0.9615936279296875,
+      "stouffer_z": -0.8352033979751847,
+      "n_events": 2785
+    },
+    {
+      "h": 48,
+      "m_assets": 16,
+      "pooled_ret_r": -0.23963619226174201,
+      "pooled_abs_mae_r": 4.37765791804611,
+      "ratio": -0.05474073048830169,
+      "p_sign": 0.9615936279296875,
+      "stouffer_z": -1.6646278475286531,
+      "n_events": 1412
+    }
+  ]
+}

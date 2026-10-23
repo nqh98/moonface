@@ -1,0 +1,9 @@
+{
+  "styles": [
+    {"name": "mtf_long",
+     "strategy": "promotion/mtf_long/strategy.json",
+     "policy": "promotion/mtf_long/participation.json",
+     "baseline": "promotion/mtf_long/baseline.json",
+     "engine": "promotion/mtf_long/engine.json"}
+  ]
+}

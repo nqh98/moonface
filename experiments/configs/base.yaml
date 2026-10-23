@@ -1,0 +1,14 @@
+exchange: binance
+symbol: BTC/USDT
+start: 2026-05-06
+end: 2026-06-06
+fee_rate: 0.001
+slippage: 0.0
+cache_dir: .backtest_cache
+warmup: 60
+future_bars: 48
+minimum_trades: 1
+allowed_drawdown: 100.0
+split: train
+min_confluence_score: 0.575
+n_periods: 1

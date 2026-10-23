@@ -1,0 +1,241 @@
+{
+  "ablation": {
+    "net_fixed_horizon_exit": {
+      "expectancy_r": 0.0947,
+      "mar": 1.401,
+      "max_dd_r": -15.0728,
+      "n": 223,
+      "profit_factor": 1.1927,
+      "total_r": 21.1163
+    },
+    "stop_only": {
+      "expectancy_r": 27.4875,
+      "mar": 21.9529,
+      "max_dd_r": -7.5127,
+      "n": 6,
+      "profit_factor": 22.9529,
+      "total_r": 164.9253
+    },
+    "trail": {
+      "expectancy_r": 0.6559,
+      "mar": 6.1072,
+      "max_dd_r": -14.176,
+      "n": 132,
+      "profit_factor": 2.1076,
+      "total_r": 86.575
+    }
+  },
+  "cost": {
+    "base": {
+      "econ_pass": true,
+      "expectancy_r": 0.6559,
+      "mar": 6.1072,
+      "max_dd_r": -14.176,
+      "n": 132,
+      "profit_factor": 2.1076,
+      "total_r": 86.575
+    },
+    "moderate": {
+      "alive": true,
+      "expectancy_r": 0.626,
+      "mar": 4.8848,
+      "max_dd_r": -16.7868,
+      "n": 131,
+      "profit_factor": 1.954,
+      "total_r": 82.0
+    },
+    "severe": {
+      "expectancy_r": 0.4937,
+      "mar": 3.0736,
+      "max_dd_r": -21.0431,
+      "n": 131,
+      "profit_factor": 1.6648,
+      "total_r": 64.6775
+    }
+  },
+  "dist": {
+    "exp_drop_top1": 0.4419,
+    "exp_drop_top5": -0.0053,
+    "hold_hist": {
+      "<12": 21,
+      "<24": 29,
+      "<3": 8,
+      "<48": 38,
+      "<6": 10,
+      ">=48": 26
+    },
+    "mae_hist": {
+      "<0.25": 18,
+      "<0.5": 19,
+      "<0.75": 19,
+      "<1.0": 11,
+      ">=1.0": 65
+    },
+    "n": 132,
+    "payoff_ratio": 3.8117,
+    "r_hist": {
+      "<-1.0": 58,
+      "<0.0": 27,
+      "<1.0": 19,
+      "<2.0": 8,
+      "<5.0": 11,
+      ">=5.0": 9
+    },
+    "td_extreme": false,
+    "top1_contribution": 0.3313,
+    "win_rate": 0.3561
+  },
+  "gross": {
+    "mean_ret_r": 0.520339239490943,
+    "n": 224,
+    "passed": true,
+    "sign_rate": 0.5,
+    "z": 2.3987625013950487
+  },
+  "plateau": {
+    "center": {
+      "expectancy_r": 0.6559,
+      "label": "entry_n=40,trail_n=20,k_stop=2.0,atr_period=14",
+      "mar": 6.1072,
+      "max_dd_r": -14.176,
+      "n": 132,
+      "profit_factor": 2.1076,
+      "total_r": 86.575
+    },
+    "neighbors": [
+      {
+        "expectancy_r": 0.4534,
+        "label": "entry_n=30,trail_n=20,k_stop=2.0,atr_period=14",
+        "mar": 3.605,
+        "max_dd_r": -20.1217,
+        "n": 160,
+        "profit_factor": 1.712,
+        "total_r": 72.5393
+      },
+      {
+        "expectancy_r": 0.6328,
+        "label": "entry_n=55,trail_n=20,k_stop=2.0,atr_period=14",
+        "mar": 5.8952,
+        "max_dd_r": -12.4515,
+        "n": 116,
+        "profit_factor": 2.0541,
+        "total_r": 73.4046
+      },
+      {
+        "expectancy_r": 0.3386,
+        "label": "entry_n=40,trail_n=10,k_stop=2.0,atr_period=14",
+        "mar": 6.1855,
+        "max_dd_r": -9.3594,
+        "n": 171,
+        "profit_factor": 1.6619,
+        "total_r": 57.8928
+      },
+      {
+        "expectancy_r": 0.8779,
+        "label": "entry_n=40,trail_n=30,k_stop=2.0,atr_period=14",
+        "mar": 7.2263,
+        "max_dd_r": -14.2146,
+        "n": 117,
+        "profit_factor": 2.2857,
+        "total_r": 102.7188
+      },
+      {
+        "expectancy_r": 0.8685,
+        "label": "entry_n=40,trail_n=20,k_stop=1.5,atr_period=14",
+        "mar": 7.14,
+        "max_dd_r": -17.1507,
+        "n": 141,
+        "profit_factor": 2.2547,
+        "total_r": 122.4557
+      },
+      {
+        "expectancy_r": 0.5579,
+        "label": "entry_n=40,trail_n=20,k_stop=2.5,atr_period=14",
+        "mar": 7.708,
+        "max_dd_r": -9.1916,
+        "n": 127,
+        "profit_factor": 2.0801,
+        "total_r": 70.8484
+      },
+      {
+        "expectancy_r": 0.6942,
+        "label": "entry_n=40,trail_n=20,k_stop=2.0,atr_period=20",
+        "mar": 6.552,
+        "max_dd_r": -13.9865,
+        "n": 132,
+        "profit_factor": 2.1966,
+        "total_r": 91.6393
+      }
+    ]
+  },
+  "regime": {
+    "regime_sufficient": true,
+    "rg_flag": false,
+    "trend": {
+      "bear": {
+        "expectancy_r": 0.65,
+        "mar": 3.1666,
+        "max_dd_r": -6.5681,
+        "n": 32,
+        "profit_factor": 2.0317,
+        "total_r": 20.7988
+      },
+      "bull": {
+        "expectancy_r": 0.6765,
+        "mar": 5.9226,
+        "max_dd_r": -11.0796,
+        "n": 97,
+        "profit_factor": 2.1525,
+        "total_r": 65.6197
+      },
+      "warmup": {
+        "expectancy_r": 0.0522,
+        "mar": 0.1467,
+        "max_dd_r": -1.067,
+        "n": 3,
+        "profit_factor": 1.1467,
+        "total_r": 0.1565
+      }
+    },
+    "vol": {
+      "high": {
+        "expectancy_r": 0.0146,
+        "mar": 0.0731,
+        "max_dd_r": -3.2028,
+        "n": 16,
+        "profit_factor": 1.0276,
+        "total_r": 0.2342
+      },
+      "low": {
+        "expectancy_r": 0.9945,
+        "mar": 6.817,
+        "max_dd_r": -10.9412,
+        "n": 75,
+        "profit_factor": 2.5617,
+        "total_r": 74.5862
+      },
+      "mid": {
+        "expectancy_r": 0.2867,
+        "mar": 1.8994,
+        "max_dd_r": -6.1886,
+        "n": 41,
+        "profit_factor": 1.5366,
+        "total_r": 11.7546
+      }
+    }
+  },
+  "verdict": "INCONCLUSIVE / PAPER-SUSPENDED",
+  "wf": {
+    "aggregate": {
+      "expectancy_r": 0.4442,
+      "mar": 4.6755,
+      "max_dd_r": -7.7908,
+      "n": 82,
+      "profit_factor": 1.7543,
+      "total_r": 36.4262
+    },
+    "n_windows": 4,
+    "robust_frac": 0.5,
+    "wf_pass": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "failures": [],
+  "checks": {
+    "symbols": [
+      "BTCUSDT"
+    ],
+    "history_days": 180,
+    "cadence_ms": 300000,
+    "coverage_ratio": 1.0,
+    "monotonic_timestamps": true,
+    "duplicate_timestamp_ratio": 0.0,
+    "fields": [
+      "ts_ms",
+      "symbol",
+      "buy_count",
+      "sell_count",
+      "last_price"
+    ]
+  }
+}

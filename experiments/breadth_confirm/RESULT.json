@@ -1,0 +1,78 @@
+{
+  "asof": "2026-06-28T13:50:05.889399+00:00",
+  "block_len": 20,
+  "bonferroni_alpha": 0.025,
+  "btc_bars": 14178,
+  "btc_sha": "b3b004cb58258369",
+  "discovery": {
+    "sealed_exp": 0.2588,
+    "sealed_n": 32,
+    "validate_exp": 0.5323,
+    "validate_n": 34
+  },
+  "discovery_xcheck_ok": true,
+  "lane": "btc_breadth_confirm",
+  "rows": [
+    {
+      "boot_lo": -0.23086620149928683,
+      "cost": false,
+      "p_le_zero": 0.40547,
+      "pooled": {
+        "expectancy_r": 0.0353,
+        "max_drawdown_r": -33.6285,
+        "profit_factor": 1.0447,
+        "total_r": 8.4998,
+        "trade_count": 241
+      },
+      "practical": false,
+      "same_sign": true,
+      "sealed_exp": 0.0331,
+      "significant": false,
+      "slice": [
+        20,
+        40
+      ],
+      "status": "mechanism_unconfirmed",
+      "validate_exp": 0.0374
+    },
+    {
+      "boot_lo": -0.3242886267530353,
+      "cost": false,
+      "p_le_zero": 0.84242,
+      "pooled": {
+        "expectancy_r": -0.1101,
+        "max_drawdown_r": -47.716,
+        "profit_factor": 0.8652,
+        "total_r": -27.6293,
+        "trade_count": 251
+      },
+      "practical": false,
+      "same_sign": true,
+      "sealed_exp": -0.1319,
+      "significant": false,
+      "slice": [
+        40,
+        60
+      ],
+      "status": "mechanism_unconfirmed",
+      "validate_exp": -0.0891
+    }
+  ],
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "verdict": "mechanism_unconfirmed",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "asof": "2026-06-27T15:21:48.245835+00:00",
+  "btc_bars": 14178,
+  "btc_sha": "b3b004cb58258369",
+  "cells": [
+    "pct_above_ma:20",
+    "pct_above_ma:50",
+    "pct_above_ma:100",
+    "breadth_momentum:6",
+    "breadth_momentum:12",
+    "breadth_momentum:24",
+    "breadth_thrust:3",
+    "breadth_thrust:6",
+    "breadth_thrust:12"
+  ],
+  "constants": {
+    "MIN_BARS": 300,
+    "MIN_HISTORY_DAYS": 365,
+    "REBALANCE_DAYS": 30,
+    "TOP_N": 20,
+    "VOL_DAYS": 30
+  },
+  "gate": "train practical bar + 2x/3x cost + outlier + island + DSR>=0.95 -> freeze; validate/sealed practical bar, same expectancy sign, 2x/3x cost on sealed, ECON_BAR",
+  "lane": "btc_breadth_thrust_timing",
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

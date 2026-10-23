@@ -1,0 +1,28 @@
+{
+  "family": "donchian_break",
+  "params": {"n": 40, "long_only": true},
+  "exit": {"name": "donchian_trail",
+           "params": {"atr_period": 14, "k_stop": 2.0, "trail_n": 20}},
+  "fraction": 0.01,
+  "status": "paper",
+  "asset": {"exchange": "binance", "symbol": "BTC/USDT:USDT", "timeframe": "4h"},
+  "provenance": {
+    "domain": "deployable_swing_donchian",
+    "slice": "Slice-2 (robustness-only, paper PASS — NOT live)",
+    "spec": "docs/research-log/specs/2026-06-18-deployable-swing-donchian-design.md",
+    "plan": "docs/research-log/plans/2026-06-18-deployable-swing-donchian.md",
+    "report": "experiments/deployable/DONCHIAN_SLICE2_RESULT_2026-05-18.md",
+    "backtest_engine": "tools/swing_donchian.py (trend_sim.simulate_donchian)",
+    "entry_n_trail_n": "40/20 (clean-run mode)",
+    "economic_bar_locked": "PF>=1.2 / exp>=0.05R / MAR>=0.5 / MaxDD<=30R@f=0.01 / robust>=0.60",
+    "max_drawdown_p95_note": "0.30 = locked economic-bar MaxDD budget (30R @ f=0.01) as an equity fraction; NOT a re-derived p95",
+    "faithfulness_note": "donchian_trail exit reproduces trend_sim._run_position (ATR initial stop + prior-trail_n channel trail); same moonface.risk.atr as the backtest. The live watch alert is stateless and emits entry + initial k_stop*ATR invalidation only; the trail is realized by the forward gate and by execution.",
+    "revalidation": {
+      "result": "experiments/deployable/DONCHIAN_REVALIDATION_RESULT.md",
+      "verdict": "INCONCLUSIVE / PAPER-SUSPENDED (2026-06-20; sole miss N=4 robust_frac 0.5<0.60, quantization)",
+      "slice3_registration": "experiments/deployable/DONCHIAN_SLICE3_FORWARD_REGISTRATION.md",
+      "downgrade_rule": "DOWNGRADE on forward gate.drawdown_within_p95==False at any --report (early kill), or at horizon (>=20 trades & >=12 weeks) with gate.passed==False; REAFFIRM on gate.passed==True. Frozen 2026-06-20, no post-hoc tuning."
+    }
+  },
+  "max_drawdown_p95": 0.30
+}

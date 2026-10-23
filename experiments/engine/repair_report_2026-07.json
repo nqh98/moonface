@@ -1,0 +1,210 @@
+{
+  "data": {
+    "candles": 56800,
+    "fingerprint_sha256": "fedf68d49ad3ac17682cd09a1bd5f4cdd410f468ecb87dfe6949aafdcc9518df",
+    "first_scored_ts_ms": 1599436800000,
+    "last_ts_ms": 1782313200000,
+    "lookback_bars": 6000,
+    "scored_bars": 50800,
+    "warmup": 6000
+  },
+  "engine_hash": "b4924f8eadd603db8dc8a7c63a35971f56ac0b46a81c07674f45555686ec85b5",
+  "fitted": {
+    "c1_tier_merge": {
+      "entry_threshold": 60,
+      "kept_edges": [
+        60
+      ]
+    },
+    "c2_side_vol": {
+      "LONG:high": 0,
+      "LONG:normal": 0,
+      "SHORT:high": 20,
+      "SHORT:normal": 20
+    },
+    "c3_isotonic": [
+      [
+        10,
+        0.129111
+      ],
+      [
+        20,
+        0.129111
+      ],
+      [
+        30,
+        0.129111
+      ],
+      [
+        40,
+        0.129111
+      ],
+      [
+        50,
+        0.129111
+      ],
+      [
+        60,
+        0.234344
+      ],
+      [
+        70,
+        0.234344
+      ]
+    ]
+  },
+  "frozen_analysis_constants": {
+    "block_bars": 168,
+    "bootstrap_draws": 1000,
+    "bootstrap_seed": 20260704,
+    "cell_floor": 30,
+    "ci_hi_q": 0.9916666666666667,
+    "ci_lo_q": 0.008333333333333333,
+    "family_alpha": 0.05,
+    "mono_bucket_floor": 30,
+    "n_candidates": 3,
+    "offset_grid": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "panel_floor": 200,
+    "purge_ms": 604800000,
+    "sealed_start_ts_ms": 1748736000000,
+    "train_end_ts_ms": 1688169600000
+  },
+  "gate1": {
+    "c1_tier_merge": {
+      "delta_ci": [
+        -0.0995,
+        0.0303
+      ],
+      "delta_rho": -0.0357,
+      "monotonicity": {
+        "buckets": [
+          {
+            "hi": 0.0,
+            "lo": null,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": 0.0,
+            "lo": 0.0,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": 0.0,
+            "lo": 0.0,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": null,
+            "lo": 0.0,
+            "mean_net_r": -0.2556,
+            "n": 14729
+          }
+        ],
+        "monotone": true
+      },
+      "n": 14729,
+      "passed": false
+    },
+    "c2_side_vol": {
+      "delta_ci": [
+        -0.0203,
+        0.0503
+      ],
+      "delta_rho": 0.0163,
+      "monotonicity": {
+        "buckets": [
+          {
+            "hi": 10.0,
+            "lo": null,
+            "mean_net_r": -0.5513,
+            "n": 2856
+          },
+          {
+            "hi": 10.0,
+            "lo": 10.0,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": 30.0,
+            "lo": 10.0,
+            "mean_net_r": -0.2451,
+            "n": 6249
+          },
+          {
+            "hi": null,
+            "lo": 30.0,
+            "mean_net_r": -0.1172,
+            "n": 5624
+          }
+        ],
+        "monotone": true
+      },
+      "n": 14729,
+      "passed": false
+    },
+    "c3_isotonic": {
+      "delta_ci": [
+        -0.0995,
+        0.0303
+      ],
+      "delta_rho": -0.0357,
+      "monotonicity": {
+        "buckets": [
+          {
+            "hi": 0.129111,
+            "lo": null,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": 0.129111,
+            "lo": 0.129111,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": 0.129111,
+            "lo": 0.129111,
+            "mean_net_r": null,
+            "n": 0
+          },
+          {
+            "hi": null,
+            "lo": 0.129111,
+            "mean_net_r": -0.2556,
+            "n": 14729
+          }
+        ],
+        "monotone": true
+      },
+      "n": 14729,
+      "passed": false
+    }
+  },
+  "gate2": null,
+  "gate3": null,
+  "label": "trend-score repair \u2014 pre-registered; read-only; no live constant changes; promotion is a human decision",
+  "panel_counts": {
+    "events": 44977,
+    "incomplete": 31,
+    "skipped_extreme_vol": 380
+  },
+  "segments": {
+    "dropped": 350,
+    "sealed": 8021,
+    "train": 21877,
+    "validation": 14729
+  },
+  "survivor": null,
+  "verdict": "CLOSED_NEGATIVE_GATE1"
+}

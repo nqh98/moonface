@@ -1,0 +1,32 @@
+{
+  "asof": "2026-06-28T11:36:56.067752+00:00",
+  "diagnostics": {
+    "distinctness_corr_vs_momentum": 0.11,
+    "full_portfolio_beta": 0.0027,
+    "left_tail_corr_to_btc": 0.0023
+  },
+  "fence_idx": 1893,
+  "lane": "btc_drift_basket",
+  "stages": {
+    "dsr": 0.016603,
+    "holdout_drawdown": -0.47758,
+    "holdout_mar": -0.8545,
+    "research_days": 1893,
+    "research_kurtosis": 15.209793,
+    "research_mar": -0.9709,
+    "research_net": -0.638203,
+    "research_sharpe": -0.050512,
+    "research_skew": 1.096347,
+    "screen_days": 1325,
+    "screen_mean": -0.00032802,
+    "stage1_pass": false,
+    "stage2_pass": false,
+    "stage3_pass": false,
+    "stage4_pass": true,
+    "tail_days": 474,
+    "tail_drawdown": -0.298119,
+    "tail_mar": 1.9689,
+    "tail_net": 0.58698,
+    "verdict": "closed_negative"
+  }
+}

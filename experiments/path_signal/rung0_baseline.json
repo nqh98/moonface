@@ -1,0 +1,836 @@
+{
+  "config": {
+    "deploy": "BTCUSDT",
+    "horizons": [
+      6,
+      12
+    ],
+    "n_folds": 5,
+    "lockbox_fraction": 0.2,
+    "atr_period": 14,
+    "n_trials": 32,
+    "edge_threshold": 0.15,
+    "kelly_scale": 0.02,
+    "max_fraction": 0.02,
+    "taker_bps": 5.0,
+    "slippage_bps": 2.0,
+    "min_fit_events": 10,
+    "drawdown_cap_r": 15.0,
+    "pool_symbols": [
+      "1000PEPEUSDT",
+      "PEOPLEUSDT",
+      "DOGEUSDT",
+      "BNBUSDT",
+      "1000SHIBUSDT",
+      "1000FLOKIUSDT",
+      "XRPUSDT",
+      "LINKUSDT",
+      "HIGHUSDT",
+      "NEARUSDT",
+      "JASMYUSDT",
+      "TRBUSDT",
+      "FILUSDT",
+      "ARBUSDT",
+      "AVAXUSDT",
+      "ETCUSDT"
+    ]
+  },
+  "rows": [
+    {
+      "family": "atr_channel_break",
+      "params": {
+        "k": 2.0,
+        "atr_period": 14
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 76,
+      "n_trades": 44,
+      "used_folds": 4,
+      "risk_adjusted": {
+        "trade_count": 44,
+        "net_return": 0.026459,
+        "max_drawdown": -0.028886,
+        "mar": 0.916,
+        "sharpe": 0.104079,
+        "dsr": 8.028661069303666e-11
+      },
+      "fixed_cap": {
+        "trade_count": 44,
+        "total_r": 24.033973,
+        "max_drawdown_r": -14.294884,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "donchian_break",
+      "params": {
+        "n": 55
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 234,
+      "n_trades": 148,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 148,
+        "net_return": 0.114053,
+        "max_drawdown": -0.267752,
+        "mar": 0.426,
+        "sharpe": 0.049437,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 148,
+        "total_r": 14.94016,
+        "max_drawdown_r": -52.884228,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "atr_channel_break",
+      "params": {
+        "k": 1.5,
+        "atr_period": 14
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 190,
+      "n_trades": 133,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 133,
+        "net_return": 0.050082,
+        "max_drawdown": -0.059745,
+        "mar": 0.8383,
+        "sharpe": 0.058682,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 133,
+        "total_r": 9.314527,
+        "max_drawdown_r": -19.252362,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "oi_build_momentum",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 287,
+      "n_trades": 79,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 79,
+        "net_return": -0.015206,
+        "max_drawdown": -0.035642,
+        "mar": -0.4266,
+        "sharpe": -0.091816,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 79,
+        "total_r": 4.08375,
+        "max_drawdown_r": -22.545874,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "roc_sign",
+      "params": {
+        "period": 24
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 447,
+      "n_trades": 52,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 52,
+        "net_return": 0.001616,
+        "max_drawdown": -0.00839,
+        "mar": 0.1926,
+        "sharpe": 0.022698,
+        "dsr": 1.2462253451417382e-13
+      },
+      "fixed_cap": {
+        "trade_count": 52,
+        "total_r": 3.324909,
+        "max_drawdown_r": -16.792438,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "ma_cross",
+      "params": {
+        "fast": 50,
+        "slow": 200
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 28,
+      "n_trades": 1,
+      "used_folds": 3,
+      "risk_adjusted": {
+        "trade_count": 1,
+        "net_return": 0.008971,
+        "max_drawdown": 0.0,
+        "mar": Infinity,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 1,
+        "total_r": 3.125912,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "ma_cross",
+      "params": {
+        "fast": 50,
+        "slow": 200
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 28,
+      "n_trades": 1,
+      "used_folds": 3,
+      "risk_adjusted": {
+        "trade_count": 1,
+        "net_return": 0.000128,
+        "max_drawdown": 0.0,
+        "mar": Infinity,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 1,
+        "total_r": 0.203175,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "roc_sign",
+      "params": {
+        "period": 24
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 447,
+      "n_trades": 0,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 0,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "mar": 0.0,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 0,
+        "total_r": 0,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 579,
+      "n_trades": 0,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 0,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "mar": 0.0,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 0,
+        "total_r": 0,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "funding_flip",
+      "params": {
+        "debounce": 6
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 191,
+      "n_trades": 0,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 0,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "mar": 0.0,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 0,
+        "total_r": 0,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "oi_flush_reversal",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 221,
+      "n_trades": 0,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 0,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "mar": 0.0,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 0,
+        "total_r": 0,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 2.0
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 244,
+      "n_trades": 0,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 0,
+        "net_return": 0.0,
+        "max_drawdown": 0.0,
+        "mar": 0.0,
+        "sharpe": 0.0,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 0,
+        "total_r": 0,
+        "max_drawdown_r": 0.0,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "price_vs_ma",
+      "params": {
+        "period": 100
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 196,
+      "n_trades": 26,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 26,
+        "net_return": -0.003959,
+        "max_drawdown": -0.029582,
+        "mar": -0.1338,
+        "sharpe": -0.007371,
+        "dsr": 6.22025153051986e-08
+      },
+      "fixed_cap": {
+        "trade_count": 26,
+        "total_r": -0.747356,
+        "max_drawdown_r": -9.691135,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "donchian_break",
+      "params": {
+        "n": 100
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 170,
+      "n_trades": 80,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 80,
+        "net_return": 0.016713,
+        "max_drawdown": -0.132288,
+        "mar": 0.1263,
+        "sharpe": 0.022248,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 80,
+        "total_r": -1.076461,
+        "max_drawdown_r": -34.856584,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "atr_channel_break",
+      "params": {
+        "k": 2.0,
+        "atr_period": 14
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 76,
+      "n_trades": 24,
+      "used_folds": 4,
+      "risk_adjusted": {
+        "trade_count": 24,
+        "net_return": -0.006697,
+        "max_drawdown": -0.041908,
+        "mar": -0.1598,
+        "sharpe": -0.031278,
+        "dsr": 3.790596103669941e-08
+      },
+      "fixed_cap": {
+        "trade_count": 24,
+        "total_r": -2.348109,
+        "max_drawdown_r": -13.312982,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "price_vs_ma",
+      "params": {
+        "period": 100
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 196,
+      "n_trades": 26,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 26,
+        "net_return": -0.004975,
+        "max_drawdown": -0.008862,
+        "mar": -0.5614,
+        "sharpe": -0.085317,
+        "dsr": 2.7234736688086514e-09
+      },
+      "fixed_cap": {
+        "trade_count": 26,
+        "total_r": -4.552167,
+        "max_drawdown_r": -8.176959,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 579,
+      "n_trades": 77,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 77,
+        "net_return": -0.006109,
+        "max_drawdown": -0.036017,
+        "mar": -0.1696,
+        "sharpe": -0.024951,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 77,
+        "total_r": -5.431136,
+        "max_drawdown_r": -34.360348,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "atr_channel_break",
+      "params": {
+        "k": 1.5,
+        "atr_period": 14
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 190,
+      "n_trades": 24,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 24,
+        "net_return": -0.000319,
+        "max_drawdown": -0.001578,
+        "mar": -0.2021,
+        "sharpe": -0.065171,
+        "dsr": 1.0833859886982822e-07
+      },
+      "fixed_cap": {
+        "trade_count": 24,
+        "total_r": -5.897747,
+        "max_drawdown_r": -29.234108,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "oi_build_momentum",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 287,
+      "n_trades": 75,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 75,
+        "net_return": -0.007463,
+        "max_drawdown": -0.036601,
+        "mar": -0.2039,
+        "sharpe": -0.03484,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 75,
+        "total_r": -6.474969,
+        "max_drawdown_r": -31.019347,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "donchian_break",
+      "params": {
+        "n": 55
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 234,
+      "n_trades": 58,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 58,
+        "net_return": -0.04706,
+        "max_drawdown": -0.102064,
+        "mar": -0.4611,
+        "sharpe": -0.130078,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 58,
+        "total_r": -6.670934,
+        "max_drawdown_r": -34.143011,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "funding_fade",
+      "params": {
+        "window": 60,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 235,
+      "n_trades": 18,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 18,
+        "net_return": -0.028088,
+        "max_drawdown": -0.046859,
+        "mar": -0.5994,
+        "sharpe": -0.178534,
+        "dsr": 2.780441549221635e-08
+      },
+      "fixed_cap": {
+        "trade_count": 18,
+        "total_r": -7.071434,
+        "max_drawdown_r": -12.051953,
+        "within_cap": true
+      }
+    },
+    {
+      "family": "funding_flip",
+      "params": {
+        "debounce": 6
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 191,
+      "n_trades": 29,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 29,
+        "net_return": -0.011882,
+        "max_drawdown": -0.020639,
+        "mar": -0.5757,
+        "sharpe": -0.147705,
+        "dsr": 2.126659959245103e-11
+      },
+      "fixed_cap": {
+        "trade_count": 29,
+        "total_r": -9.294832,
+        "max_drawdown_r": -16.121002,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 2.0
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 244,
+      "n_trades": 46,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 46,
+        "net_return": -0.002885,
+        "max_drawdown": -0.004406,
+        "mar": -0.6548,
+        "sharpe": -0.148642,
+        "dsr": 1.1102230246251565e-16
+      },
+      "fixed_cap": {
+        "trade_count": 46,
+        "total_r": -12.598726,
+        "max_drawdown_r": -19.268906,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "donchian_break",
+      "params": {
+        "n": 100
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 170,
+      "n_trades": 26,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 26,
+        "net_return": -0.001516,
+        "max_drawdown": -0.003637,
+        "mar": -0.417,
+        "sharpe": -0.192004,
+        "dsr": 8.1109019500758e-10
+      },
+      "fixed_cap": {
+        "trade_count": 26,
+        "total_r": -14.305991,
+        "max_drawdown_r": -34.366727,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "funding_fade",
+      "params": {
+        "window": 60,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 235,
+      "n_trades": 18,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 18,
+        "net_return": -0.026362,
+        "max_drawdown": -0.040569,
+        "mar": -0.6498,
+        "sharpe": -0.289113,
+        "dsr": 1.6209155628832406e-08
+      },
+      "fixed_cap": {
+        "trade_count": 18,
+        "total_r": -16.103966,
+        "max_drawdown_r": -25.084337,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "oi_flush_reversal",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 221,
+      "n_trades": 50,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 50,
+        "net_return": -0.016298,
+        "max_drawdown": -0.02332,
+        "mar": -0.6989,
+        "sharpe": -0.24276,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 50,
+        "total_r": -17.441315,
+        "max_drawdown_r": -19.335757,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "taker_flow_momentum",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 328,
+      "n_trades": 47,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 47,
+        "net_return": -0.002521,
+        "max_drawdown": -0.002784,
+        "mar": -0.9055,
+        "sharpe": -0.266275,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 47,
+        "total_r": -26.555202,
+        "max_drawdown_r": -29.335178,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "taker_flow_momentum",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 328,
+      "n_trades": 47,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 47,
+        "net_return": -0.065048,
+        "max_drawdown": -0.083935,
+        "mar": -0.775,
+        "sharpe": -0.213805,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 47,
+        "total_r": -36.020856,
+        "max_drawdown_r": -47.276133,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "toptrader_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 6,
+      "status": "ok",
+      "n_events": 1100,
+      "n_trades": 175,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 175,
+        "net_return": -0.099676,
+        "max_drawdown": -0.139275,
+        "mar": -0.7157,
+        "sharpe": -0.14576,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 175,
+        "total_r": -43.335864,
+        "max_drawdown_r": -62.250244,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "toptrader_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 12,
+      "status": "ok",
+      "n_events": 1100,
+      "n_trades": 175,
+      "used_folds": 5,
+      "risk_adjusted": {
+        "trade_count": 175,
+        "net_return": -0.155464,
+        "max_drawdown": -0.235697,
+        "mar": -0.6596,
+        "sharpe": -0.164207,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 175,
+        "total_r": -73.371016,
+        "max_drawdown_r": -117.978016,
+        "within_cap": false
+      }
+    },
+    {
+      "family": "funding_confirm",
+      "params": {
+        "persist": 6,
+        "lvl": 0.0003
+      },
+      "h": 6,
+      "status": "too_few_events",
+      "n_events": 8,
+      "used_folds": 0
+    },
+    {
+      "family": "funding_confirm",
+      "params": {
+        "persist": 6,
+        "lvl": 0.0003
+      },
+      "h": 12,
+      "status": "too_few_events",
+      "n_events": 8,
+      "used_folds": 0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+numpy>=1.26
+scipy>=1.11
+ripser>=0.6.4
+pytest>=8.0

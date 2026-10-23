@@ -1,0 +1,54 @@
+{
+  "lane": "drift_screen_stack_path",
+  "timeframe": "4h",
+  "h": 24,
+  "atr_period": 14,
+  "floor": 0.1319,
+  "min_events": 10,
+  "min_assets": 8,
+  "universe": [
+    "1000PEPEUSDT",
+    "PEOPLEUSDT",
+    "DOGEUSDT",
+    "BNBUSDT",
+    "1000SHIBUSDT",
+    "1000FLOKIUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "HIGHUSDT",
+    "NEARUSDT",
+    "JASMYUSDT",
+    "TRBUSDT",
+    "FILUSDT",
+    "ARBUSDT",
+    "AVAXUSDT",
+    "ETCUSDT"
+  ],
+  "discovery_excluded": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "params": {
+    "lookback_bars": 20,
+    "penalty_factor": 1.0,
+    "stack_threshold": 1,
+    "slope_threshold": 0.01,
+    "long_only": false,
+    "atr_period": 14,
+    "k_stop": 2.0
+  },
+  "curve_horizons": [
+    6,
+    12,
+    24,
+    48
+  ],
+  "inherited_from": "experiments/drift_screen/registration.json",
+  "inherited_registered_utc": "2026-06-16T02:25:37.286384+00:00",
+  "kill_rule": "mechanism_does_not_exist => stack_path closed at stage 0; no parameter rescue, no v2, no re-run",
+  "expected_outcome": "NEGATIVE. drift_screen already returned mechanism_does_not_exist for 5 trend/breakout signals on this exact universe/h/floor, and the microscope lane found forward-R does not stratify by regime over 1838 events.",
+  "params_provenance": "UNKNOWN \u2014 strategy + test arrived untracked",
+  "identity_hash": "b5c4f5fe9700cc657461832a0f245be59e2a2b4023444d2c8e76cab27d2d1bb2",
+  "registered_utc": "2026-07-16T03:59:42.597176+00:00"
+}

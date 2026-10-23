@@ -1,0 +1,78 @@
+{
+  "asof": "2026-06-28T09:42:29.963893+00:00",
+  "block_len": 8,
+  "block_len_derivation": "h / bars_per_day = 48 / 6 = 8 (derived, not tuned)",
+  "bonferroni_level": 0.016666666666666666,
+  "btc_bars": 14178,
+  "btc_sha": "b3b004cb58258369",
+  "gate": "train explore on the frozen grid, then validate once; per signal judge pooled validate+sealed records with the block bootstrap (block_len=8) at alpha/K=0.0167 plus same-sign + practical + 2x/3x cost; forward_candidate if OOS-positive but not significant",
+  "k_signals": 3,
+  "lane": "btc_breadth_internal_hf",
+  "lane_description": "Lane 2: high-frequency overlapping breadth signals judged with the moving-block bootstrap (block_len derived from h/bars_per_day).",
+  "specs": [
+    {
+      "builder": "breadth_oscillator",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_oscillator",
+      "params": {
+        "base_period": 50,
+        "window": 60,
+        "z_in": 1.0
+      }
+    },
+    {
+      "builder": "breadth_momentum",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_momentum",
+      "params": {
+        "base_period": 50,
+        "n": 10,
+        "thr": 0.1
+      }
+    },
+    {
+      "builder": "breadth_accel",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_accel",
+      "params": {
+        "base_period": 50,
+        "n": 5,
+        "thr": 0.05
+      }
+    }
+  ],
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

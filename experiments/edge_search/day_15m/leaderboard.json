@@ -1,0 +1,67 @@
+[
+  {
+    "label": "ma_cross_20_50",
+    "family": "ma_cross",
+    "is_retest": false,
+    "n1": 658,
+    "z": 0.4793898905426812,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "donchian_break_n40",
+    "family": "donchian_break",
+    "is_retest": false,
+    "n1": 459,
+    "z": 0.10740461533539528,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "atr_channel_break_k1",
+    "family": "atr_channel_break",
+    "is_retest": false,
+    "n1": 1529,
+    "z": 0.06026061439265675,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "reversion_in_range_30",
+    "family": "reversion_in_range",
+    "is_retest": false,
+    "n1": 1539,
+    "z": 0.5651549944625687,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "seasonality_hour",
+    "family": "seasonality",
+    "is_retest": false,
+    "n1": 335,
+    "z": 0.2172961375477567,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "family": "mtf_long",
+  "params": {"cell": "broaden_best", "long_only": true},
+  "exit": {"name": "horizon_hold", "params": {"n_bars": 192, "atr_period": 14}},
+  "fraction": 0.0034,
+  "status": "paper",
+  "asset": {"exchange": "binance", "symbol": "BTC/USDT:USDT", "timeframe": "15m"},
+  "provenance": {
+    "domain": "mtf_regime_quality_long_only",
+    "cell": "4h:trend_strength|rsi_reversion|horizon_hold@2d (LONG side only)",
+    "why_this_signal": "The one component of the MTF basket that survived the market-neutral BTC-beta hedge; decomposition showed its edge is carried entirely by the LONG book.",
+    "report": "experiments/mtf/LONG_ONLY.md",
+    "characterization": "experiments/mtf/CHARACTERIZE.md",
+    "neutral_falsification": "experiments/mtf/NEUTRAL.md",
+    "registration": "experiments/mtf/LONG_ONLY_FORWARD_REGISTRATION.md",
+    "backtest_engine": "tools/mtf_long_only.py (trade_stream(broaden_best_cell()) filtered to LONG)",
+    "in_sample_full": "n=391, PF 1.573, exp +1.942R, totalR +759, single-path DD -87.5R, MAR 8.67, 6/7 years positive",
+    "in_sample_recent": "entries>=2024-06: n=121, PF 1.439, exp +1.689R, MAR 2.61",
+    "fraction_note": "0.0034 = REFERENCE sizing only, for R/performance tracking (maps the -87.5R in-sample DD to ~30% equity). This is a signal-only paper bot; NO order is ever placed and this fraction is NOT execution sizing.",
+    "max_drawdown_p95_note": "0.30 = the in-sample single-path DD (-87.5R) at the reference f=0.0034 as an equity fraction; NOT a re-derived Monte-Carlo p95.",
+    "nonoverlap_note": "The stateless per-candle watch emits every qualifying bar; the registered cell applies 2-day non-overlap spacing. Authoritative REAFFIRM/DOWNGRADE resolution re-runs tools/mtf_long_only.py over the forward window (entries>=1782000000000), which applies the frozen non-overlap + exit + cost.",
+    "downgrade_rule": "Post-hoc side filter, resolved forward at n>=40 LONG trades AND >=6 months. REAFFIRM iff forward LONG PF>=1.20 AND expectancy_r>0 AND total_r>0; DOWNGRADE (close lineage, no rescue) otherwise. Stricter PF bar (1.20 vs 1.10 for pre-registered L/S cells) guards the selection. Frozen 2026-07-01, no post-hoc tuning.",
+    "not_all_weather_note": "LONG-only was NEGATIVE in the severe 2022 bear (-33.6R while BTC -64%; the short book was that year's hero). It carries partial long beta; a full-cycle bear can overwhelm the timing edge.",
+    "economic_bar": "clears 4/5 ECON gates in-sample (PF 1.57 / exp 1.94R / MAR 8.67 / robust 0.857); only the 30R fixed-f DD cap fails (sizing convention). No academic (DSR) gate cleared. PAPER ONLY."
+  },
+  "max_drawdown_p95": 0.30
+}

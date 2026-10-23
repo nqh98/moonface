@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moonface"
+version = "0.1.0"
+description = "Pre-registered research lab for crypto perpetual-futures trading signals, with validation gates and a ledger of negative results."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "huynq", email = "huynguyen.08.08.98@gmail.com" }]
+keywords = ["crypto", "trading", "backtesting", "quant", "research", "bitcoin", "deflated-sharpe"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "ccxt>=4.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nqh98/moonface"
+Issues = "https://github.com/nqh98/moonface/issues"
+
+[project.scripts]
+moonface-feed = "moonface.feed.cli:main"
+
+[project.entry-points."moonface.strategies"]
+donchian_break = "moonface.strategies.impls.donchian:DonchianStrategy"
+stack_path = "moonface.strategies.impls.stack_path:StackPathStrategy"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-timeout>=2.3.0",
+    "pytest-xdist>=3.6.0",
+    "ruff>=0.6.0",
+]
+# numpy backs only the optional rung-2 distributional-forest ML path
+# (moonface.research.pathsig.forest / rung2); the core library does not need it.
+pathsig = [
+    "numpy>=1.24",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# Pinned so a newer ruff's wider defaults don't change what CI enforces.
+select = ["E4", "E7", "E9", "F"]
+# E402: lane scripts put sys.path setup before imports. E741: `l` = low price.
+ignore = ["E402", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: over 1s wall clock; excluded from the fast loop via -m 'not slow'",
+]
+# A hang detector, not a budget. The slowest single test measured 70s.
+timeout = 300

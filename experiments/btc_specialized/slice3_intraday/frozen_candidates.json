@@ -1,0 +1,62 @@
+[
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=10",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "params": {
+      "squeeze_n": 64,
+      "atr_period": 14,
+      "k": 1.5
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 10,
+      "max_bars": 48,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "15m:vol_compression_breakout::donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=10",
+    "axis": 64.0
+  },
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "params": {
+      "squeeze_n": 64,
+      "atr_period": 14,
+      "k": 1.5
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 20,
+      "max_bars": 48,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "15m:vol_compression_breakout::donchian_trail:mb=48:atr_period=14,k_stop=2.0,trail_n=20",
+    "axis": 64.0
+  },
+  {
+    "label": "15m:vol_compression_breakout:squeeze_n=64.0:donchian_trail:mb=96:atr_period=14,k_stop=2.0,trail_n=10",
+    "timeframe": "15m",
+    "family": "vol_compression_breakout",
+    "params": {
+      "squeeze_n": 64,
+      "atr_period": 14,
+      "k": 1.5
+    },
+    "exit_name": "donchian_trail",
+    "exit_params": {
+      "k_stop": 2.0,
+      "trail_n": 10,
+      "max_bars": 96,
+      "atr_period": 14
+    },
+    "h": 96,
+    "group": "15m:vol_compression_breakout::donchian_trail:mb=96:atr_period=14,k_stop=2.0,trail_n=10",
+    "axis": 64.0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "symbol": "BTCUSDT",
+  "interval": "4h",
+  "start_ms": 1577836800000,
+  "end_ms": 1782300000000,
+  "assets": ["ETHUSDT", "SOLUSDT"],
+  "top_n": 20,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "rebalance_days": 30,
+  "k": 4,
+  "anchor_expected": {
+    "net_new_highs": {"val_exp": 0.5323, "seal_exp": 0.2588, "val_n": 34, "seal_n": 32},
+    "breadth_momentum": {"val_exp": 0.1652, "seal_exp": 0.1424, "val_n": 327, "seal_n": 326}
+  }
+}

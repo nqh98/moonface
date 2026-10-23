@@ -1,0 +1,23 @@
+{
+  "status": "ready",
+  "provider": "ExampleVendor",
+  "data_class": "aggressor_trades",
+  "failures": [],
+  "checks": {
+    "symbols": [
+      "BTCUSDT"
+    ],
+    "history_days": 365,
+    "cadence_ms": 1000,
+    "coverage_ratio": 0.98,
+    "monotonic_timestamps": true,
+    "duplicate_timestamp_ratio": 0.002,
+    "fields": [
+      "price",
+      "side",
+      "size",
+      "symbol",
+      "ts_ms"
+    ]
+  }
+}

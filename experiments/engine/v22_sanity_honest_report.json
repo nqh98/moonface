@@ -1,0 +1,107 @@
+{
+  "action_counts": {
+    "EXIT": 130,
+    "HOLD": 2830,
+    "OPEN": 130,
+    "WAIT": 53462
+  },
+  "cost_sensitivity": {
+    "cost_fraction_base": 0.001,
+    "net_r_1x": 40.1378,
+    "net_r_2x": 24.3234,
+    "net_r_3x": 8.5091,
+    "net_r_5x": -23.1196
+  },
+  "data": {
+    "candles": 56952,
+    "end_utc": "2026-06-30T23:00:00+00:00",
+    "exchange": "binance",
+    "start_utc": "2020-01-01T00:00:00+00:00",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h"
+  },
+  "decision_counts": {
+    "LONG": 2960,
+    "WAIT": 53592
+  },
+  "engine_version": "b4924f8eadd603db8dc8a7c63a35971f56ac0b46a81c07674f45555686ec85b5",
+  "equity": {
+    "mar": 1.8148,
+    "max_drawdown": -0.103328,
+    "net_return": 0.187518
+  },
+  "label": "engine paper \u2014 disciplined heuristic, no validated-edge claim",
+  "outlier_dependence": {
+    "best1_share_of_gross_profit": 0.0862,
+    "best_trade_r": 14.7721,
+    "median_trade_r": -0.8112,
+    "net_r": 40.1378,
+    "net_r_ex_best1": 25.3657,
+    "net_r_ex_best3": 6.0454,
+    "net_r_ex_best5": -9.9816,
+    "top3_share_of_gross_profit": 0.199,
+    "worst_trade_r": -2.2738
+  },
+  "recency": {
+    "first_half": {
+      "expectancy_r": 0.3263,
+      "max_drawdown_r": -21.706,
+      "net_r": 19.253,
+      "profit_factor": 1.2975,
+      "trades": 59,
+      "win_rate": 0.3559
+    },
+    "full": {
+      "expectancy_r": 0.3088,
+      "max_drawdown_r": -21.706,
+      "net_r": 40.1378,
+      "profit_factor": 1.306,
+      "trades": 130,
+      "win_rate": 0.3846
+    },
+    "last_365d": {
+      "expectancy_r": 0.7734,
+      "max_drawdown_r": -4.1142,
+      "net_r": 8.5071,
+      "profit_factor": 1.9546,
+      "trades": 11,
+      "win_rate": 0.3636
+    },
+    "second_half": {
+      "expectancy_r": 0.2942,
+      "max_drawdown_r": -15.0621,
+      "net_r": 20.8848,
+      "profit_factor": 1.3142,
+      "trades": 71,
+      "win_rate": 0.4085
+    }
+  },
+  "rolling_window_bars": 6000,
+  "scorecard": {
+    "closed_trades": 130,
+    "equity_max_drawdown": -0.103328,
+    "equity_net_return": 0.187518,
+    "expectancy_r": 0.3088,
+    "mar": 1.8148,
+    "max_drawdown_r": -21.706,
+    "net_r": 40.1378,
+    "pause_reason": null,
+    "pct_in_position": 0.0523,
+    "pct_wait": 0.9454,
+    "profit_factor": 1.306,
+    "realized_drawdown_r": -21.706,
+    "signals": 56552,
+    "state": "active",
+    "win_rate": 0.3846,
+    "windowed_drawdown_r": 0.0
+  },
+  "signal_frequency": {
+    "avg_bars_per_trade": 22.77,
+    "bar_evals": 56552,
+    "bars_in_position": 2960,
+    "closed_trades": 130,
+    "pct_time_in_position": 0.0523,
+    "trades_per_year": 19.996,
+    "years": 6.501
+  }
+}

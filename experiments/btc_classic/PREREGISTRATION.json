@@ -1,0 +1,117 @@
+{
+  "asof": "2026-06-28T19:15:44.781011+00:00",
+  "bonferroni_level": 0.008333333333333333,
+  "btc_bars": 14199,
+  "btc_sha": "d3163358136570f1",
+  "gate": "OOS pooled-bootstrap one-sided lower bound > 0 at alpha/K = 0.05/6 (~0.00833), plus same-sign across validate+sealed, practical (PF>=1.15, exp>0, |maxDD|<=30R), and 2x/3x cost. forward_candidate if OOS-positive in sign but not significant; else negative.",
+  "k_signals": 6,
+  "lane": "btc_classic_from_scratch",
+  "lane_description": "Frozen K=6 classical BTC directional family, judged from scratch on fresh OOS evidence by the power-honest harness. Inherits no prior verdict.",
+  "specs": [
+    {
+      "builder": "ma_cross",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "trend",
+      "kind": "price",
+      "params": {
+        "fast": 20,
+        "slow": 100
+      }
+    },
+    {
+      "builder": "donchian_break",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "breakout",
+      "kind": "price",
+      "params": {
+        "n": 55
+      }
+    },
+    {
+      "builder": "roc_sign",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "momentum",
+      "kind": "price",
+      "params": {
+        "period": 24
+      }
+    },
+    {
+      "builder": "atr_channel_break",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "channel",
+      "kind": "price",
+      "params": {
+        "atr_period": 14,
+        "k": 1.5
+      }
+    },
+    {
+      "builder": "reversion_in_range",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "meanrev",
+      "kind": "price",
+      "params": {
+        "high": 70,
+        "low": 30,
+        "period": 14
+      }
+    },
+    {
+      "builder": "funding_fade",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "key": "funding_fade",
+      "kind": "funding",
+      "params": {
+        "window": 180,
+        "z_thr": 2.0
+      }
+    }
+  ],
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

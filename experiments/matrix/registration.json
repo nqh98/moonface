@@ -1,0 +1,7 @@
+{
+  "interval": "4h",
+  "start_ms": 1577836800000,
+  "end_ms": 1782316800000,
+  "baseline_val_dd": -11.6455,
+  "baseline_sealed_dd": -4.1142
+}

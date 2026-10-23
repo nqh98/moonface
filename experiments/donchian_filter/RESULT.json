@@ -1,0 +1,20 @@
+{
+  "sealed_base": {
+    "expectancy_r": -0.3413,
+    "mar": 0.6943,
+    "max_dd_r": -14.749,
+    "n": 30,
+    "net_r": -10.2402,
+    "profit_factor": 0.478
+  },
+  "sealed_gated": {
+    "expectancy_r": -0.5761,
+    "mar": 0.8893,
+    "max_dd_r": -11.0136,
+    "n": 17,
+    "net_r": -9.7944,
+    "profit_factor": 0.2513
+  },
+  "threshold": 20,
+  "verdict": "IMPROVES"
+}

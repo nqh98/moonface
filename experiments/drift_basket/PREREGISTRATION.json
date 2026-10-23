@@ -1,0 +1,30 @@
+{
+  "asof": "2026-06-28T11:27:16.835188+00:00",
+  "cost_accounting_note": "Funding cost is charged unscaled by leverage in basket.simulate_basket (equity drag should be lev*fund, not fund), understating costs by up to MAX_LEVERAGE=5x. Biases optimistic. Turnover costs are lev-scaled. A closed_negative verdict is conservative-credible; a paper_candidate upset must be re-checked with lev-scaled funding.",
+  "kill_rule": "closed_negative => structural diversification does not defeat the wall; no v2, no parameter rescue.",
+  "lane": "btc_drift_basket",
+  "lane_description": "Single frozen beta-neutral, vol-targeted, risk-parity basket of donchian-breakout drift legs across a survivorship-clean perp universe; judged once through the standard ladder. Tests whether structural diversification defeats the directional drawdown wall.",
+  "n_trials": 1,
+  "params": {
+    "beta_window": 30,
+    "donchian_n": 20,
+    "fee": 0.0005,
+    "hold_bars": 12,
+    "min_history_days": 180,
+    "top_n": 30,
+    "vol_days": 30,
+    "vol_target_annual": 0.2,
+    "vol_window": 30
+  },
+  "timeframe": "4h",
+  "windows": {
+    "lockbox": [
+      1741407360000,
+      1782300000000
+    ],
+    "research": [
+      1577836800000,
+      1741407360000
+    ]
+  }
+}

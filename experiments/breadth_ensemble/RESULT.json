@@ -1,0 +1,22 @@
+{
+  "asof": "2026-06-28T09:43:47.389345+00:00",
+  "boot_lo": -0.5297976803546741,
+  "btc_sha": "b3b004cb58258369",
+  "caveat": "selection-biased (in-sample-of-components); cannot promote.",
+  "lane": "btc_breadth_ensemble",
+  "member_keys": [
+    "breadth_thrust",
+    "net_new_highs",
+    "breadth_momentum"
+  ],
+  "p_le_zero": 0.37702,
+  "pooled": {
+    "expectancy_r": 0.1102,
+    "max_drawdown_r": -13.6844,
+    "profit_factor": 1.1329,
+    "total_r": 5.62,
+    "trade_count": 51
+  },
+  "status": "diagnostic_only",
+  "t0": 1782300000000
+}

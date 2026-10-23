@@ -1,0 +1,91 @@
+{
+  "entries": [
+    {
+      "entry": "donchian_break",
+      "entry_params": {
+        "n": 100
+      },
+      "report": {
+        "chosen_f": 0.0,
+        "dd_cap": 0.2,
+        "percentile": 95,
+        "reject_reason": "no drawdown-capped fraction yields positive growth",
+        "research": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 197,
+          "terminal": 1.0
+        },
+        "research_mc_drawdown_pct": 0.0,
+        "tail": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 48,
+          "terminal": 1.0
+        },
+        "tail_mc_drawdown_pct": 0.0
+      }
+    },
+    {
+      "entry": "atr_channel_break",
+      "entry_params": {
+        "atr_period": 14,
+        "k": 1.5
+      },
+      "report": {
+        "chosen_f": 0.0,
+        "dd_cap": 0.2,
+        "percentile": 95,
+        "reject_reason": "no drawdown-capped fraction yields positive growth",
+        "research": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 265,
+          "terminal": 1.0
+        },
+        "research_mc_drawdown_pct": 0.0,
+        "tail": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 47,
+          "terminal": 1.0
+        },
+        "tail_mc_drawdown_pct": 0.0
+      }
+    },
+    {
+      "entry": "donchian_break",
+      "entry_params": {
+        "n": 55
+      },
+      "report": {
+        "chosen_f": 0.0,
+        "dd_cap": 0.2,
+        "percentile": 95,
+        "reject_reason": "no drawdown-capped fraction yields positive growth",
+        "research": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 277,
+          "terminal": 1.0
+        },
+        "research_mc_drawdown_pct": 0.0,
+        "tail": {
+          "cagr": 0.0,
+          "max_drawdown_pct": 0.0,
+          "n_trades": 58,
+          "terminal": 1.0
+        },
+        "tail_mc_drawdown_pct": 0.0
+      }
+    }
+  ],
+  "exit": {
+    "name": "horizon_hold",
+    "params": {
+      "atr_period": 14,
+      "n_bars": 24
+    }
+  },
+  "timeframe": "4h"
+}

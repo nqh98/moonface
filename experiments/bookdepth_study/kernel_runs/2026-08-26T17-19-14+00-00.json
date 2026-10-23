@@ -1,0 +1,19 @@
+{
+  "lane": "bookdepth_study",
+  "run_id": "2026-08-26T17-19-14+00-00",
+  "matched": false,
+  "mismatches": {
+    "stouffer_z": [
+      0.24128997293712467,
+      0.23700557939391406
+    ],
+    "pooled_mean": [
+      2.3685105335414993e-05,
+      2.3112710885381714e-05
+    ]
+  },
+  "compared_against": "experiments/bookdepth_study/verdict.json",
+  "registration_hash": "db5968122ee4fd8c1f19eb67336dc9f177a345578005235f3305cef8b7f781b6",
+  "data_fingerprint": "068adaaaf76884872acab3ce094d17d962a18b8ee0a6f94c0dbeec60fc1cfbe6",
+  "code_hash": "f0ccb23578d6675e8160ce1956853b3c63221a31f3eadd9b9107ed9fa148bb1b"
+}

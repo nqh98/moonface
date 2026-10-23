@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-06-17T15:12:39.429279+00:00",
+  "provider": "ExampleVendor",
+  "data_class": "aggressor_trades",
+  "purpose": "data readiness only",
+  "forbidden_actions": [
+    "signal tests",
+    "return tests",
+    "strategy backtests",
+    "parameter search"
+  ]
+}

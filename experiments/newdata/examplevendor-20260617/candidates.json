@@ -1,0 +1,43 @@
+{
+  "data_classes": [
+    "l2_orderbook",
+    "aggressor_trades",
+    "account_positioning"
+  ],
+  "required_fields": {
+    "l2_orderbook": [
+      "ts_ms",
+      "symbol",
+      "bid_prices",
+      "bid_sizes",
+      "ask_prices",
+      "ask_sizes"
+    ],
+    "aggressor_trades": [
+      "ts_ms",
+      "symbol",
+      "side",
+      "price",
+      "size"
+    ],
+    "account_positioning": [
+      "ts_ms",
+      "symbol",
+      "long_ratio",
+      "short_ratio"
+    ]
+  },
+  "gate": {
+    "min_history_days": 180,
+    "min_coverage_ratio": 0.95,
+    "max_duplicate_timestamp_ratio": 0.01,
+    "required_symbol": "BTCUSDT"
+  },
+  "excluded": [
+    "ohlcv",
+    "funding",
+    "basis",
+    "open_interest",
+    "calendar"
+  ]
+}

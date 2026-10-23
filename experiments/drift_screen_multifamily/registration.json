@@ -1,0 +1,116 @@
+{
+  "timeframe": "4h",
+  "atr_period": 14,
+  "min_events": 10,
+  "min_assets": 8,
+  "universe": [
+    "1000PEPEUSDT",
+    "PEOPLEUSDT",
+    "DOGEUSDT",
+    "BNBUSDT",
+    "1000SHIBUSDT",
+    "1000FLOKIUSDT",
+    "XRPUSDT",
+    "LINKUSDT",
+    "HIGHUSDT",
+    "NEARUSDT",
+    "JASMYUSDT",
+    "TRBUSDT",
+    "FILUSDT",
+    "ARBUSDT",
+    "AVAXUSDT",
+    "ETCUSDT"
+  ],
+  "discovery": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "families": [
+    {
+      "family": "funding_fade",
+      "params": {
+        "window": 60,
+        "z_thr": 1.5
+      },
+      "h": 6
+    },
+    {
+      "family": "funding_confirm",
+      "params": {
+        "persist": 6,
+        "lvl": 0.0003
+      },
+      "h": 6
+    },
+    {
+      "family": "funding_flip",
+      "params": {
+        "debounce": 6
+      },
+      "h": 6
+    },
+    {
+      "family": "oi_build_momentum",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 6
+    },
+    {
+      "family": "oi_flush_reversal",
+      "params": {
+        "window": 180,
+        "lookback": 6,
+        "z_thr": 1.5
+      },
+      "h": 6
+    },
+    {
+      "family": "toptrader_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 6
+    },
+    {
+      "family": "taker_flow_momentum",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 6
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 1.5
+      },
+      "h": 3
+    },
+    {
+      "family": "ob_imbalance_follow",
+      "params": {
+        "window": 180,
+        "z_thr": 2.0
+      },
+      "h": 3
+    }
+  ],
+  "curve_horizons": [
+    3,
+    6,
+    12,
+    18,
+    24
+  ],
+  "floors": {
+    "3": 0.1319,
+    "6": 0.1319
+  },
+  "registered_utc": "2026-06-16T09:17:45.623871+00:00"
+}

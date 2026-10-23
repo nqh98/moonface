@@ -1,0 +1,20 @@
+{
+  "top_n": 20,
+  "decile": 10,
+  "lookback_days": 60,
+  "rebalance_days": 1,
+  "fee": 0.0005,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "n_trials": 1,
+  "constructions": [
+    {
+      "name": "resrev_1",
+      "lookback_days": 60
+    }
+  ],
+  "start_ms": 1687073580610,
+  "end_ms": 1781681580610,
+  "fence_ts": 1762759980610,
+  "registered_utc": "2026-06-17T07:33:00.610000+00:00"
+}

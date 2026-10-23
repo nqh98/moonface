@@ -1,0 +1,93 @@
+{
+  "asof": "2026-06-28T07:25:37.481464+00:00",
+  "bonferroni_level": 0.0125,
+  "btc_bars": 14178,
+  "btc_sha": "b3b004cb58258369",
+  "gate": "train explore on the frozen grid, then validate once with pooled validate+sealed records judged by pooled practical + cost + bootstrap significance",
+  "k_signals": 4,
+  "lane": "btc_breadth_internal_v2",
+  "lane_description": "Frozen internal breadth research lane with train/explore then one-shot validate over the holdout.",
+  "specs": [
+    {
+      "builder": "breadth_thrust",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_thrust",
+      "params": {
+        "base_period": 50,
+        "high_band": 0.6,
+        "low_band": 0.4,
+        "window": 6
+      }
+    },
+    {
+      "builder": "net_new_highs",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "net_new_highs",
+      "params": {
+        "long_thr": 0.3,
+        "n": 20,
+        "short_thr": -0.3
+      }
+    },
+    {
+      "builder": "breadth_divergence",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_divergence",
+      "params": {
+        "base_period": 50,
+        "n": 20
+      }
+    },
+    {
+      "builder": "dispersion_regime",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "dispersion_regime",
+      "params": {
+        "d": 10,
+        "m_ma": 20,
+        "p": 0.7,
+        "window": 180
+      }
+    }
+  ],
+  "symbol": "BTCUSDT",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

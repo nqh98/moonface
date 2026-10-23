@@ -1,0 +1,30 @@
+{
+  "top_n": 20,
+  "quintile": 5,
+  "rebalance_days": 7,
+  "fee": 0.0005,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "n_trials": 3,
+  "constructions": [
+    {
+      "name": "mom_7",
+      "kind": "momentum",
+      "days": 7
+    },
+    {
+      "name": "mom_30",
+      "kind": "momentum",
+      "days": 30
+    },
+    {
+      "name": "carry_7",
+      "kind": "carry",
+      "days": 7
+    }
+  ],
+  "start_ms": 1686635234325,
+  "end_ms": 1781243234325,
+  "fence_ts": 1762321634325,
+  "registered_utc": "2026-06-12T05:47:14.325000+00:00"
+}

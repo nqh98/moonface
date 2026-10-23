@@ -1,0 +1,56 @@
+[
+  {
+    "label": "4h:donchian_break:n=100:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "donchian_break",
+    "params": {
+      "n": 100
+    },
+    "exit_name": "atr_trail",
+    "exit_params": {
+      "k_trail": 2.0,
+      "max_bars": 120,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "4h:donchian_break:atr_trail:atr_period=14,k_trail=2.0",
+    "axis": 100.0
+  },
+  {
+    "label": "4h:atr_channel_break:k=2.0:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "atr_channel_break",
+    "params": {
+      "atr_period": 14,
+      "k": 2.0
+    },
+    "exit_name": "atr_trail",
+    "exit_params": {
+      "k_trail": 2.0,
+      "max_bars": 120,
+      "atr_period": 14
+    },
+    "h": 48,
+    "group": "4h:atr_channel_break:atr_trail:atr_period=14,k_trail=2.0",
+    "axis": 2.0
+  },
+  {
+    "label": "4h:vol_expansion:mult=3.0:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "vol_expansion",
+    "params": {
+      "atr_period": 14,
+      "lookback": 24,
+      "mult": 3.0
+    },
+    "exit_name": "atr_trail",
+    "exit_params": {
+      "k_trail": 2.0,
+      "max_bars": 120,
+      "atr_period": 14
+    },
+    "h": 24,
+    "group": "4h:vol_expansion:atr_trail:atr_period=14,k_trail=2.0",
+    "axis": 3.0
+  }
+]

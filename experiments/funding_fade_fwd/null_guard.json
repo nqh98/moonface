@@ -1,0 +1,16 @@
+{
+  "circularity_note": "condition (iii) caps null passes by construction; run validates machinery only",
+  "criterion": "forward_success (Amendment 2, all three conditions) on OOS-tail stream",
+  "fail_fraction": 0.96,
+  "generated": "2026-07-14T03:38:48.767605+00:00",
+  "guard_ok": true,
+  "null_net_r": {
+    "max": 103.2756,
+    "median": 24.5035,
+    "min": -35.6
+  },
+  "null_p95_threshold": 64.3114,
+  "null_passes": 8,
+  "runs": 200,
+  "seeds": "0..199"
+}

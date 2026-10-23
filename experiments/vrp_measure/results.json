@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "commit": "5effcbe52e48410ce6526a84d39faeff44bc9e4f",
+    "notes": [
+      "Realized variance is measured on Binance BTC/USDT spot 1h closes. Twelve bars inside this window are not Binance data: they are Coinbase BTC/USD candles spliced in by carry_measure under the human-approved 2026-07-16 resolution of a real exchange-side gap (2021-04-20, 2021-04-25, 2021-08-13, 2021-09-29, 2023-03-24). Each splice boundary creates an artificial cross-exchange price step, so log returns straddling a boundary are excluded from the sum of squares and each window divides by its actual usable return count. Returns interior to a spliced run are kept. Nothing is interpolated (SPEC section 3.3)."
+    ],
+    "inputs_sha256": {
+      "dvol": {
+        "path": "cache/exogenous/dvol_BTC_43200_full.csv",
+        "sha256": "2b6ef133b30b8fb7298dce012fe83f7c390afcd515915229d21e666a2936089a"
+      },
+      "spot": {
+        "path": ".backtest_cache/BTC_USDT_1h.csv",
+        "sha256": "ca8f20222017a0fb8f2314c0a94c4c59bb61369c1dda2cea89924b555d4b859f"
+      }
+    }
+  },
+  "results": {
+    "window": {
+      "start_ms": 1616544000000,
+      "end_ms": 1780228800000,
+      "start_utc": "2021-03-24 00:00",
+      "end_utc": "2026-05-31 12:00",
+      "n_dvol_bars": 3790,
+      "n_returns": 46188,
+      "n_excluded_returns": 10
+    },
+    "mean_spread": 0.09490372112112912,
+    "median_spread": 0.07853032029088997,
+    "frac_positive": 0.7451187335092349,
+    "bootstrap_ci": [
+      0.05313433640297819,
+      0.13732339416605435
+    ],
+    "disjoint_n": 64,
+    "disjoint_mean": 0.1262376677888768,
+    "disjoint_ci": [
+      0.06287717904403893,
+      0.18959815653371465
+    ],
+    "year_buckets": {
+      "2021": {
+        "mean": 0.23947119729037286,
+        "n": 566
+      },
+      "2022": {
+        "mean": 0.15220182145661337,
+        "n": 730
+      },
+      "2023": {
+        "mean": 0.06454645957793208,
+        "n": 730
+      },
+      "2024": {
+        "mean": 0.06709461776729787,
+        "n": 732
+      },
+      "2025": {
+        "mean": 0.025615530167063555,
+        "n": 730
+      },
+      "2026": {
+        "mean": -0.006272970199034091,
+        "n": 302
+      }
+    },
+    "tail_windows": [
+      {
+        "t": 1620820800000,
+        "date_utc": "2021-05-12 12:00",
+        "rv_var": 1.747740295326994,
+        "spread": -1.0530180453269942
+      },
+      {
+        "t": 1620777600000,
+        "date_utc": "2021-05-12 00:00",
+        "rv_var": 1.7447242064202884,
+        "spread": -1.0004729164202883
+      },
+      {
+        "t": 1620734400000,
+        "date_utc": "2021-05-11 12:00",
+        "rv_var": 1.7376888527166952,
+        "spread": -0.9760835627166953
+      },
+      {
+        "t": 1620691200000,
+        "date_utc": "2021-05-11 00:00",
+        "rv_var": 1.7344090425323697,
+        "spread": -0.9197222825323695
+      },
+      {
+        "t": 1620648000000,
+        "date_utc": "2021-05-10 12:00",
+        "rv_var": 1.7183497880274334,
+        "spread": -0.9132024980274335
+      }
+    ],
+    "vol_point_mean": 8.110808133516796,
+    "null_gaussian": {
+      "n_seeds": 500,
+      "mean": 0.004400158595929776,
+      "p2_5": -0.0013866675537477207,
+      "p50": 0.004534627457526336,
+      "p97_5": 0.01000404291716266
+    },
+    "null_student_t": {
+      "n_seeds": 500,
+      "mean": 0.004319196390450967,
+      "p2_5": -0.01929224778478589,
+      "p50": 0.0054905898399652065,
+      "p97_5": 0.02019249378793972
+    },
+    "bias_corrected_spread": 0.09050356252519934,
+    "threshold": {
+      "null_clears": true,
+      "interval_clears": true,
+      "stability_clears": true,
+      "buckets_positive": 5,
+      "continue_recommended": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "quintile": 5,
+  "amihud_days": 30,
+  "lookback_days": 60,
+  "rebalance_days": 7,
+  "fee_illiquid": 0.0025,
+  "fee_liquid": 0.0005,
+  "min_history_days": 365,
+  "vol_days": 30,
+  "min_median_dollar_vol": 1000000.0,
+  "n_trials": 1,
+  "constructions": [
+    {
+      "name": "liqprem_1",
+      "amihud_days": 30
+    }
+  ],
+  "start_ms": 1690651625589,
+  "end_ms": 1785259625589,
+  "fence_ts": 1766338025589,
+  "registered_utc": "2026-07-28T17:27:05.589000+00:00"
+}

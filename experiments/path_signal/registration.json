@@ -1,0 +1,29 @@
+{
+  "timeframe": "4h",
+  "horizons": [
+    6,
+    12
+  ],
+  "atr_period": 14,
+  "deploy_asset": "BTCUSDT",
+  "dsr_threshold": 0.95,
+  "lockbox_fraction": 0.2,
+  "features": [
+    "ret_1",
+    "ret_6",
+    "ret_24",
+    "rvol_24",
+    "atr_frac",
+    "ma100_dist",
+    "donchian_pos_55",
+    "htf_d1_ret_1",
+    "htf_d1_rvol_14",
+    "htf_w1_ret_1",
+    "funding_level",
+    "funding_slope_8",
+    "oi_z",
+    "taker_z",
+    "xs_ret_rank",
+    "xs_funding_rank"
+  ]
+}

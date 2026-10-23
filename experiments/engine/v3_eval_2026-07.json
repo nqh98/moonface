@@ -1,0 +1,89 @@
+{
+  "baseline_v22": {
+    "sealed": {
+      "cost_stress": {
+        "cost_fraction_base": 0.001,
+        "net_r_1x": 14.1915,
+        "net_r_2x": 11.9392,
+        "net_r_3x": 9.6869,
+        "net_r_5x": 5.1824
+      },
+      "max_dd_r": -4.1142,
+      "n": 12,
+      "net_r": 14.1915
+    },
+    "validation": {
+      "cost_stress": {
+        "cost_fraction_base": 0.001,
+        "net_r_1x": 10.9926,
+        "net_r_2x": 5.563,
+        "net_r_3x": 0.1334,
+        "net_r_5x": -10.7258
+      },
+      "max_dd_r": -11.6455,
+      "n": 44,
+      "net_r": 10.9926
+    }
+  },
+  "data": {
+    "btc_candles": 56800,
+    "btc_fingerprint": "fedf68d49ad3ac17682cd09a1bd5f4cdd410f468ecb87dfe6949aafdcc9518df",
+    "eth_candles": 56800,
+    "sol_candles": 50625
+  },
+  "engine_hash_v3": "dccc879a51939ea02394f26ef944276b642089a88cbbab0803a478ece4e02893",
+  "fitted": {
+    "effective_trials": 12,
+    "matrix": {
+      "RANGING/HIGH": null,
+      "RANGING/NORMAL": "REVERSION",
+      "RANGING/QUIET": null,
+      "TRENDING_DOWN/HIGH": "BREAKOUT",
+      "TRENDING_DOWN/NORMAL": null,
+      "TRENDING_DOWN/QUIET": null,
+      "TRENDING_UP/HIGH": "BREAKOUT",
+      "TRENDING_UP/NORMAL": "BREAKOUT",
+      "TRENDING_UP/QUIET": "PULLBACK"
+    },
+    "q_floors": {
+      "BREAKOUT": 0.46797396796886376,
+      "PULLBACK": 1.0,
+      "REVERSION": 0.3857147670507129
+    }
+  },
+  "frozen_constants": {
+    "bracket": {
+      "atr_period": 14,
+      "k_stop": 2.0,
+      "k_trail": 3.0,
+      "max_bars": 96
+    },
+    "ci_lo_q": 0.0020833333333333333,
+    "effective_trials": 12,
+    "panel_floor": 200,
+    "purge_ms": 604800000,
+    "sealed_start_ts_ms": 1751328000000,
+    "span_end_ts_ms": 1782316800000,
+    "span_start_ts_ms": 1577836800000,
+    "train_end_ts_ms": 1704067200000
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": [
+      -0.386,
+      0.5901
+    ],
+    "max_dd_r": -48.3584,
+    "n": 301,
+    "net_r": 22.4434,
+    "net_r_3x": -62.8774,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "label": "v3 backtest evaluation \u2014 pre-registered; read-only; no capital gating; promotion is a human decision",
+  "segments": {
+    "train": 4453
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

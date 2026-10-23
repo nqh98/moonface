@@ -1,0 +1,114 @@
+{
+  "edges": [],
+  "excursion": {
+    "loser_avg_mfe_r": 0.0,
+    "loser_count": 0,
+    "no_fill_count": 0,
+    "no_fill_would_win": 0,
+    "winner_avg_mae_r": 0.0,
+    "winner_avg_mfe_r": 0.0,
+    "winner_count": 0
+  },
+  "gate_values": [
+    {
+      "failed_count": 0,
+      "name": "premium_discount",
+      "net_r_when_failed": 0,
+      "net_r_when_passed": 0,
+      "passed_count": 0,
+      "win_rate_when_failed": 0.0,
+      "win_rate_when_passed": 0.0
+    },
+    {
+      "failed_count": 0,
+      "name": "poi_mitigation",
+      "net_r_when_failed": 0,
+      "net_r_when_passed": 0,
+      "passed_count": 0,
+      "win_rate_when_failed": 0.0,
+      "win_rate_when_passed": 0.0
+    },
+    {
+      "failed_count": 0,
+      "name": "fib_zone",
+      "net_r_when_failed": 0,
+      "net_r_when_passed": 0,
+      "passed_count": 0,
+      "win_rate_when_failed": 0.0,
+      "win_rate_when_passed": 0.0
+    },
+    {
+      "failed_count": 0,
+      "name": "pinbar",
+      "net_r_when_failed": 0,
+      "net_r_when_passed": 0,
+      "passed_count": 0,
+      "win_rate_when_failed": 0.0,
+      "win_rate_when_passed": 0.0
+    }
+  ],
+  "generated_at": "2026-06-08T17:18:30.680060+00:00",
+  "hypothesis_shortlist": [],
+  "leaks": [],
+  "overall_net_r": 0.0,
+  "overall_win_rate": 0.0,
+  "scoreboard": {
+    "folds": [
+      {
+        "index": 1,
+        "is_tail": false,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      },
+      {
+        "index": 2,
+        "is_tail": false,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      },
+      {
+        "index": 3,
+        "is_tail": false,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      },
+      {
+        "index": 4,
+        "is_tail": false,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      },
+      {
+        "index": 5,
+        "is_tail": false,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      },
+      {
+        "index": 6,
+        "is_tail": true,
+        "oos_net_r": 0.0,
+        "oos_trades": 0,
+        "train_net_r": 0.0,
+        "train_trades": 0
+      }
+    ],
+    "max_drawdown_r": 0.0,
+    "oos_net_r": 0.0,
+    "oos_trade_count": 0,
+    "reject_reason": "too few OOS trades (0 < 30)",
+    "score": -1000000000.0,
+    "valid": false
+  },
+  "setup_count": 0
+}

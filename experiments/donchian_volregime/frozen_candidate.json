@@ -1,0 +1,94 @@
+{
+  "frozen": null,
+  "reason": "no train qualifier",
+  "rows": [
+    {
+      "cell": "atr_pct",
+      "gated": {
+        "expectancy_r": -0.0565,
+        "mar": 0.2903,
+        "max_dd_r": -4.4794,
+        "n": 23,
+        "net_r": -1.3002,
+        "profit_factor": 0.9016
+      },
+      "qualifies": false,
+      "reasons": [
+        "trend capture: gated net_r below 90% of base",
+        "robustness: gated robust_frac below base",
+        "activity: gated trades below 50% of base"
+      ],
+      "robust_frac": 0.5833
+    },
+    {
+      "cell": "hv_pct",
+      "gated": {
+        "expectancy_r": 0.3284,
+        "mar": 2.6902,
+        "max_dd_r": -3.5404,
+        "n": 29,
+        "net_r": 9.5244,
+        "profit_factor": 1.68
+      },
+      "qualifies": false,
+      "reasons": [
+        "trend capture: gated net_r below 90% of base",
+        "activity: gated trades below 50% of base"
+      ],
+      "robust_frac": 0.8333
+    },
+    {
+      "cell": "expansion",
+      "gated": {
+        "expectancy_r": 0.3297,
+        "mar": 2.4388,
+        "max_dd_r": -3.785,
+        "n": 28,
+        "net_r": 9.2309,
+        "profit_factor": 1.7457
+      },
+      "qualifies": false,
+      "reasons": [
+        "trend capture: gated net_r below 90% of base",
+        "activity: gated trades below 50% of base"
+      ],
+      "robust_frac": 0.8333
+    },
+    {
+      "cell": "not_compressed",
+      "gated": {
+        "expectancy_r": -0.4246,
+        "mar": 0.6982,
+        "max_dd_r": -6.6895,
+        "n": 11,
+        "net_r": -4.6703,
+        "profit_factor": 0.519
+      },
+      "qualifies": false,
+      "reasons": [
+        "trend capture: gated net_r below 90% of base",
+        "robustness: gated robust_frac below base",
+        "activity: gated trades below 50% of base"
+      ],
+      "robust_frac": 0.3333
+    },
+    {
+      "cell": "hivol_expansion",
+      "gated": {
+        "expectancy_r": 0.0633,
+        "mar": 0.3574,
+        "max_dd_r": -3.5404,
+        "n": 20,
+        "net_r": 1.2654,
+        "profit_factor": 1.1188
+      },
+      "qualifies": false,
+      "reasons": [
+        "trend capture: gated net_r below 90% of base",
+        "robustness: gated robust_frac below base",
+        "activity: gated trades below 50% of base"
+      ],
+      "robust_frac": 0.6667
+    }
+  ]
+}

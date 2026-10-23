@@ -1,0 +1,202 @@
+{
+  "frozen": null,
+  "reason": "no validate survivor",
+  "validate": {
+    "cells": [
+      {
+        "cell_id": "R1-switch",
+        "practical": {
+          "all_pass": true,
+          "cost_2x_ok": true,
+          "cost_3x_ok": true,
+          "drawdown_ok": true,
+          "enough_trades": true,
+          "net_positive": true,
+          "outlier_ok": true
+        },
+        "regime_id": "R1",
+        "riskoff_action": "switch",
+        "vector": {
+          "cost_stress": {
+            "net_r_1x": 31.2719,
+            "net_r_2x": 28.1866,
+            "net_r_3x": 25.1012
+          },
+          "expectancy_r": 0.7273,
+          "max_drawdown_r": -7.0159,
+          "net_r": 31.2719,
+          "net_r_ex_best1": 23.0766,
+          "profit_factor": 1.8709,
+          "trades": 43,
+          "trailing_365d_net_r": 12.2328
+        },
+        "vs_controls": {
+          "beats_both": false,
+          "beats_net": false,
+          "beats_recent": true
+        }
+      },
+      {
+        "cell_id": "R1-wait",
+        "practical": {
+          "all_pass": true,
+          "cost_2x_ok": true,
+          "cost_3x_ok": true,
+          "drawdown_ok": true,
+          "enough_trades": true,
+          "net_positive": true,
+          "outlier_ok": true
+        },
+        "regime_id": "R1",
+        "riskoff_action": "wait",
+        "vector": {
+          "cost_stress": {
+            "net_r_1x": 26.0173,
+            "net_r_2x": 23.6773,
+            "net_r_3x": 21.3373
+          },
+          "expectancy_r": 0.8393,
+          "max_drawdown_r": -7.4713,
+          "net_r": 26.0173,
+          "net_r_ex_best1": 17.822,
+          "profit_factor": 2.2102,
+          "trades": 31,
+          "trailing_365d_net_r": 4.9154
+        },
+        "vs_controls": {
+          "beats_both": false,
+          "beats_net": false,
+          "beats_recent": false
+        }
+      },
+      {
+        "cell_id": "R3-switch",
+        "practical": {
+          "all_pass": true,
+          "cost_2x_ok": true,
+          "cost_3x_ok": true,
+          "drawdown_ok": true,
+          "enough_trades": true,
+          "net_positive": true,
+          "outlier_ok": true
+        },
+        "regime_id": "R3",
+        "riskoff_action": "switch",
+        "vector": {
+          "cost_stress": {
+            "net_r_1x": 31.2719,
+            "net_r_2x": 28.1866,
+            "net_r_3x": 25.1012
+          },
+          "expectancy_r": 0.7273,
+          "max_drawdown_r": -7.0159,
+          "net_r": 31.2719,
+          "net_r_ex_best1": 23.0766,
+          "profit_factor": 1.8709,
+          "trades": 43,
+          "trailing_365d_net_r": 12.2328
+        },
+        "vs_controls": {
+          "beats_both": false,
+          "beats_net": false,
+          "beats_recent": true
+        }
+      },
+      {
+        "cell_id": "R3-wait",
+        "practical": {
+          "all_pass": true,
+          "cost_2x_ok": true,
+          "cost_3x_ok": true,
+          "drawdown_ok": true,
+          "enough_trades": true,
+          "net_positive": true,
+          "outlier_ok": true
+        },
+        "regime_id": "R3",
+        "riskoff_action": "wait",
+        "vector": {
+          "cost_stress": {
+            "net_r_1x": 26.0173,
+            "net_r_2x": 23.6773,
+            "net_r_3x": 21.3373
+          },
+          "expectancy_r": 0.8393,
+          "max_drawdown_r": -7.4713,
+          "net_r": 26.0173,
+          "net_r_ex_best1": 17.822,
+          "profit_factor": 2.2102,
+          "trades": 31,
+          "trailing_365d_net_r": 4.9154
+        },
+        "vs_controls": {
+          "beats_both": false,
+          "beats_net": false,
+          "beats_recent": false
+        }
+      }
+    ],
+    "mr": {
+      "cost_stress": {
+        "net_r_1x": -6.9516,
+        "net_r_2x": -9.9031,
+        "net_r_3x": -12.8547
+      },
+      "expectancy_r": -0.1829,
+      "max_drawdown_r": -14.4726,
+      "net_r": -6.9516,
+      "net_r_ex_best1": -10.9167,
+      "profit_factor": 0.8712,
+      "trades": 38,
+      "trailing_365d_net_r": -2.083
+    },
+    "swap": {
+      "R1": {
+        "cost_stress": {
+          "net_r_1x": -4.7153,
+          "net_r_2x": -7.5211,
+          "net_r_3x": -10.3268
+        },
+        "expectancy_r": -0.1347,
+        "max_drawdown_r": -14.961,
+        "net_r": -4.7153,
+        "net_r_ex_best1": -13.1666,
+        "profit_factor": 0.8978,
+        "trades": 35,
+        "trailing_365d_net_r": -5.1814
+      },
+      "R3": {
+        "cost_stress": {
+          "net_r_1x": -4.7153,
+          "net_r_2x": -7.5211,
+          "net_r_3x": -10.3268
+        },
+        "expectancy_r": -0.1347,
+        "max_drawdown_r": -14.961,
+        "net_r": -4.7153,
+        "net_r_ex_best1": -13.1666,
+        "profit_factor": 0.8978,
+        "trades": 35,
+        "trailing_365d_net_r": -5.1814
+      }
+    },
+    "swap_pass": {
+      "R1": false,
+      "R3": false
+    },
+    "trend": {
+      "cost_stress": {
+        "net_r_1x": 33.5082,
+        "net_r_2x": 30.5687,
+        "net_r_3x": 27.6291
+      },
+      "expectancy_r": 0.8377,
+      "max_drawdown_r": -8.5496,
+      "net_r": 33.5082,
+      "net_r_ex_best1": 25.0569,
+      "profit_factor": 2.1934,
+      "trades": 40,
+      "trailing_365d_net_r": 9.1345
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "symbol": "BTCUSDT",
+  "interval": "4h",
+  "timeframe": "4h",
+  "start_ms": 1718179200000,
+  "end_ms": 1781251200000,
+  "holdout_bars": 540
+}

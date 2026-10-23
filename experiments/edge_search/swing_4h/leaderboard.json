@@ -1,0 +1,54 @@
+[
+  {
+    "label": "ma_cross_20_50",
+    "family": "ma_cross",
+    "is_retest": true,
+    "n1": 80,
+    "z": 0.7655869373389836,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "donchian_break_n40",
+    "family": "donchian_break",
+    "is_retest": true,
+    "n1": 60,
+    "z": 1.1007864572098305,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "atr_channel_break_k1",
+    "family": "atr_channel_break",
+    "is_retest": true,
+    "n1": 186,
+    "z": 1.3203074477617451,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  },
+  {
+    "label": "reversion_in_range_30",
+    "family": "reversion_in_range",
+    "is_retest": true,
+    "n1": 177,
+    "z": -1.3298403390349078,
+    "dsr": null,
+    "econ_pf": null,
+    "econ_mar": null,
+    "econ_dd": null,
+    "robust_frac": null,
+    "verdict": "negative"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "asof": "2026-06-28T14:21:02.607645+00:00",
+  "assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "bonferroni_level": 0.0125,
+  "btc_anchor_bars": 14178,
+  "btc_anchor_sha": "b3b004cb58258369",
+  "frozen_leads": [
+    {
+      "block": false,
+      "block_len": 1,
+      "builder": "net_new_highs",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "net_new_highs",
+      "params": {
+        "long_thr": 0.3,
+        "n": 20,
+        "short_thr": -0.3
+      }
+    },
+    {
+      "block": true,
+      "block_len": 8,
+      "builder": "breadth_momentum",
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "h": 48,
+      "key": "breadth_momentum",
+      "params": {
+        "base_period": 50,
+        "n": 10,
+        "thr": 0.1
+      }
+    }
+  ],
+  "gate": "per (lead x asset) cell: same-sign + practical + 2x/3x cost + one-sided bootstrap p_le0 < 0.0125; lane confirmed iff >=1 cell is a paper_candidate; BTC anchor reported not gated",
+  "k": 4,
+  "lane": "breadth_xasset_confirm",
+  "lane_description": "Cross-asset transfer confirmation of the two breadth-internal leads (net_new_highs, breadth_momentum) onto ETH/SOL as the traded leg. Breadth state byte-identical (BTC-excluded top-20); BTC discovery anchor-x-checked per signal, never re-gated.",
+  "timeframe": "4h",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

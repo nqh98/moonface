@@ -1,0 +1,35 @@
+[
+  {
+    "label": "4h:donchian_break:n=100:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "donchian_break",
+    "verdict": "rejected",
+    "validate_pf": 1.4068,
+    "validate_exp": 0.3703,
+    "sealed_pf": 0.6389,
+    "sealed_exp": -0.3312,
+    "dsr": null
+  },
+  {
+    "label": "4h:atr_channel_break:k=2.0:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "atr_channel_break",
+    "verdict": "rejected",
+    "validate_pf": 1.4288,
+    "validate_exp": 0.3541,
+    "sealed_pf": 0.8689,
+    "sealed_exp": -0.108,
+    "dsr": null
+  },
+  {
+    "label": "4h:vol_expansion:mult=3.0:atr_trail:atr_period=14,k_trail=2.0",
+    "timeframe": "4h",
+    "family": "vol_expansion",
+    "verdict": "rejected",
+    "validate_pf": 1.9233,
+    "validate_exp": 0.5548,
+    "sealed_pf": 0.5646,
+    "sealed_exp": -0.3193,
+    "dsr": null
+  }
+]

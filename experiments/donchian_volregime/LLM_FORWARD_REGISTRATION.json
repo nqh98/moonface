@@ -1,0 +1,15 @@
+{
+  "decision_rule": "veto|uncertain->WAIT; donchian WAIT or !quant_allow->WAIT; reduce_risk+LONG+quant->LONG@0.5; allow+LONG+quant->LONG@1.0",
+  "enabled": false,
+  "hindsight_note": "no historical backtest; validated forward on paper only",
+  "labels": [
+    "allow",
+    "veto",
+    "reduce_risk",
+    "uncertain"
+  ],
+  "lane": "donchian_volregime_llm_veto",
+  "role": "forward-only permission/veto layer; NEVER decides LONG/SHORT/exit/stop/target",
+  "schema_version": 1,
+  "t0_ms": 1782300000000
+}

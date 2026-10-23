@@ -1,0 +1,23 @@
+{
+  "asset": {
+    "exchange": "binance",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h"
+  },
+  "exit_name": "atr_trail",
+  "exit_params": {
+    "atr_period": 14,
+    "k_trail": 2.0,
+    "max_bars": 120
+  },
+  "family": "vol_expansion",
+  "fraction": 0.01,
+  "h": 24,
+  "params": {
+    "atr_period": 14,
+    "lookback": 24,
+    "mult": 3.0
+  },
+  "status": "paper",
+  "t0_ms": 1782402982653
+}

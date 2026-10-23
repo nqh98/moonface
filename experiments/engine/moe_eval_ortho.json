@@ -1,0 +1,81 @@
+{
+  "experts": [
+    "BREAKOUT",
+    "PULLBACK",
+    "REVERSION",
+    "FUNDING",
+    "OI"
+  ],
+  "fitted": {
+    "matrix": {
+      "CHOP": {
+        "REVERSION": 0.0234
+      },
+      "STRESS": {
+        "OI": 1.0914,
+        "REVERSION": 0.496
+      },
+      "TREND": {
+        "BREAKOUT": 0.1905,
+        "OI": 0.1515
+      }
+    },
+    "p_eff": 5
+  },
+  "gate0": {
+    "passed_negative": true,
+    "runs": {
+      "iid_shuffle": {
+        "allowed": 1207,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 1339,
+        "p_eff": 5,
+        "validation_ci_positive": false
+      },
+      "phase_randomize": {
+        "allowed": 1239,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 1192,
+        "p_eff": 6,
+        "validation_ci_positive": false
+      },
+      "sign_flip": {
+        "allowed": 1196,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 1194,
+        "p_eff": 4,
+        "validation_ci_positive": false
+      }
+    }
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": [
+      -0.3141,
+      0.4737
+    ],
+    "max_dd_r": -51.9082,
+    "n": 364,
+    "net_r": 18.037,
+    "net_r_3x": -94.3253,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "identity_hash": "c4840e61eba4738d21d4aab52385c5b3a88ea5aadd332ce02f6249bd91185e76",
+  "moe_hash": "685a8af85b84377eacc7fd455691e367b3b57a9c5b00f9020f1ea07b837a9a3c",
+  "ortho_constants": {
+    "FUNDING_CAP": 0.01,
+    "OI_LOOKBACK": 24
+  },
+  "power": {
+    "allowed": 1196,
+    "n_train": 59841,
+    "p_eff": 5,
+    "passed": true
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

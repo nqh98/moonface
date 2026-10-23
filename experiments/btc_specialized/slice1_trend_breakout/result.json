@@ -1,0 +1,101 @@
+[
+  {
+    "label": "2h:atr_channel_break:k=2.5:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20:ap=20",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.5385,
+    "val_total_r": 52.5358,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "2h:atr_channel_break:k=2.5:donchian_trail:mb=168:atr_period=14,k_stop=2.0,trail_n=20:ap=20",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.5385,
+    "val_total_r": 42.7158,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "2h:atr_channel_break:k=1.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20:ap=14",
+    "timeframe": "2h",
+    "family": "atr_channel_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.4615,
+    "val_total_r": 28.3651,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "4h:donchian_break:n=20.0:chandelier:mb=120:atr_mult=4.0,atr_period=14",
+    "timeframe": "4h",
+    "family": "donchian_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6154,
+    "val_total_r": 29.9027,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "2h:donchian_break:n=40.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "2h",
+    "family": "donchian_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6923,
+    "val_total_r": 68.7153,
+    "seal_pf": 1.6024,
+    "seal_exp": 0.7087
+  },
+  {
+    "label": "2h:donchian_break:n=55.0:donchian_trail:mb=84:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "2h",
+    "family": "donchian_break",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6154,
+    "val_total_r": 53.8602,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "4h:ma_cross:slow=100.0:donchian_trail:mb=60:atr_period=14,k_stop=2.0,trail_n=20",
+    "timeframe": "4h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.3846,
+    "val_total_r": 15.1537,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "2h:ma_cross:slow=50.0:chandelier:mb=84:atr_mult=4.0,atr_period=14",
+    "timeframe": "2h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6923,
+    "val_total_r": 54.6467,
+    "seal_pf": null,
+    "seal_exp": null
+  },
+  {
+    "label": "2h:ma_cross:slow=50.0:chandelier:mb=168:atr_mult=4.0,atr_period=14",
+    "timeframe": "2h",
+    "family": "ma_cross",
+    "verdict": "rejected",
+    "dsr": null,
+    "val_robust": 0.6923,
+    "val_total_r": 56.9548,
+    "seal_pf": null,
+    "seal_exp": null
+  }
+]

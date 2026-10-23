@@ -1,0 +1,17 @@
+{
+  "frozen": 20,
+  "train_row": {
+    "gated": {
+      "expectancy_r": 1.3267,
+      "mar": 12.3092,
+      "max_dd_r": -5.4967,
+      "n": 51,
+      "net_r": 67.6599,
+      "profit_factor": 3.5043
+    },
+    "qualifies": true,
+    "reasons": [],
+    "robust_frac": 0.9167,
+    "threshold": 20
+  }
+}

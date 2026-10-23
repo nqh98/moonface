@@ -1,0 +1,247 @@
+{
+  "config": {
+    "deploy": "BTCUSDT",
+    "horizons": [
+      6,
+      12
+    ],
+    "n_folds": 5,
+    "lockbox_fraction": 0.2,
+    "atr_period": 14,
+    "n_trees": 200,
+    "structure_grid": [
+      [
+        3,
+        30,
+        4
+      ],
+      [
+        3,
+        30,
+        8
+      ],
+      [
+        3,
+        60,
+        4
+      ],
+      [
+        3,
+        60,
+        8
+      ],
+      [
+        5,
+        30,
+        4
+      ],
+      [
+        5,
+        30,
+        8
+      ],
+      [
+        5,
+        60,
+        4
+      ],
+      [
+        5,
+        60,
+        8
+      ]
+    ],
+    "edge_thresholds": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "seed": 12345,
+    "ruin_q05_r": -3.0,
+    "kelly_scale": 0.02,
+    "max_fraction": 0.02,
+    "taker_bps": 5.0,
+    "slippage_bps": 2.0,
+    "drawdown_cap_r": 15.0,
+    "dsr_threshold": 0.95,
+    "n_trials": 48,
+    "pool_symbols": [
+      "1000PEPEUSDT",
+      "PEOPLEUSDT",
+      "DOGEUSDT",
+      "BNBUSDT",
+      "1000SHIBUSDT",
+      "1000FLOKIUSDT",
+      "XRPUSDT",
+      "LINKUSDT",
+      "HIGHUSDT",
+      "NEARUSDT",
+      "JASMYUSDT",
+      "TRBUSDT",
+      "FILUSDT",
+      "ARBUSDT",
+      "AVAXUSDT",
+      "ETCUSDT"
+    ]
+  },
+  "rung2": [
+    {
+      "status": "ok",
+      "n_events": 2797,
+      "n_trades": 584,
+      "selected": [
+        {
+          "structure": [
+            3,
+            30,
+            4
+          ],
+          "edge_threshold": 0.3
+        },
+        {
+          "structure": [
+            3,
+            60,
+            4
+          ],
+          "edge_threshold": 0.1
+        },
+        {
+          "structure": [
+            5,
+            30,
+            8
+          ],
+          "edge_threshold": 0.1
+        },
+        {
+          "structure": [
+            3,
+            60,
+            8
+          ],
+          "edge_threshold": 0.2
+        },
+        {
+          "structure": [
+            5,
+            30,
+            4
+          ],
+          "edge_threshold": 0.2
+        }
+      ],
+      "risk_adjusted": {
+        "trade_count": 584,
+        "net_return": -0.464093,
+        "max_drawdown": -0.534872,
+        "mar": -0.8677,
+        "sharpe": -0.189979,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 584,
+        "total_r": -220.925646,
+        "max_drawdown_r": -229.162921,
+        "within_cap": false
+      },
+      "h": 6
+    },
+    {
+      "status": "ok",
+      "n_events": 2793,
+      "n_trades": 198,
+      "selected": [
+        {
+          "structure": [
+            5,
+            30,
+            4
+          ],
+          "edge_threshold": 0.1
+        },
+        {
+          "structure": [
+            3,
+            30,
+            4
+          ],
+          "edge_threshold": 0.3
+        },
+        {
+          "structure": [
+            3,
+            30,
+            4
+          ],
+          "edge_threshold": 0.1
+        },
+        {
+          "structure": [
+            3,
+            60,
+            8
+          ],
+          "edge_threshold": 0.3
+        },
+        {
+          "structure": [
+            5,
+            60,
+            8
+          ],
+          "edge_threshold": 0.3
+        }
+      ],
+      "risk_adjusted": {
+        "trade_count": 198,
+        "net_return": 0.080362,
+        "max_drawdown": -0.307866,
+        "mar": 0.261,
+        "sharpe": 0.032629,
+        "dsr": 0.0
+      },
+      "fixed_cap": {
+        "trade_count": 198,
+        "total_r": 35.933608,
+        "max_drawdown_r": -63.603878,
+        "within_cap": false
+      },
+      "h": 12
+    }
+  ],
+  "rung0_floor": {
+    "6": {
+      "best_total_r": 9.314527,
+      "best_family": "atr_channel_break",
+      "best_params": {
+        "k": 1.5,
+        "atr_period": 14
+      }
+    },
+    "12": {
+      "best_total_r": 24.033973,
+      "best_family": "atr_channel_break",
+      "best_params": {
+        "k": 2.0,
+        "atr_period": 14
+      }
+    }
+  },
+  "verdict": [
+    {
+      "h": 6,
+      "beats_rung0": false,
+      "beats_rung1": false,
+      "clears_gate": false,
+      "note": "forest does not beat the rungs below it"
+    },
+    {
+      "h": 12,
+      "beats_rung0": true,
+      "beats_rung1": true,
+      "clears_gate": false,
+      "note": "path model helps but is not deflation-significant"
+    }
+  ]
+}

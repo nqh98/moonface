@@ -1,0 +1,9 @@
+# Large, fully-regenerable descriptive matrix dumps (tens of MB each).
+# The committed report.md + outcomes.csv are the study record; regenerate these
+# from cache/matrix via tools/microscope.py if needed.
+features.csv
+states.csv
+pool.csv
+**/features.csv
+**/states.csv
+**/pool.csv

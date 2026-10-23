@@ -1,0 +1,9 @@
+{
+  "symbol": "BTC/USDT:USDT",
+  "interval": "1h",
+  "start_ms": 1686414361529,
+  "end_ms": 1781022361529,
+  "oos_tail_bars": 4380,
+  "warmup": 60,
+  "future_bars": 48
+}

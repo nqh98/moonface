@@ -1,0 +1,33 @@
+{
+  "end_ms": 1782300000000,
+  "frozen_rows": [
+    {
+      "axis": 100.0,
+      "exit_name": "atr_trail",
+      "exit_params": {
+        "atr_period": 14,
+        "k_trail": 2.0,
+        "max_bars": 120
+      },
+      "filters": [],
+      "group": "4h:core_donchian_break:long=donchian_break:short=donchian_break:atr_trail",
+      "h": 48,
+      "label": "4h:core_donchian_break:n=100:long=donchian_break(n=100):short=donchian_break(n=100):atr_trail:atr_period=14,k_trail=2.0,max_bars=120",
+      "long_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "short_rule": {
+        "family": "donchian_break",
+        "params": {
+          "n": 100
+        }
+      },
+      "timeframe": "4h"
+    }
+  ],
+  "start_ms": 1577836800000,
+  "symbol": "BTCUSDT"
+}

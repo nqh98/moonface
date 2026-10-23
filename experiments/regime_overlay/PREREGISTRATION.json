@@ -1,0 +1,70 @@
+{
+  "base_params": {
+    "atr_period": 14,
+    "entry_n": 40,
+    "exit_mode": "trail",
+    "fee_rate": 0.00045,
+    "fh_bars": 12,
+    "funding_enabled": true,
+    "k_stop": 2.0,
+    "long_only": true,
+    "next_bar_open": false,
+    "slippage": 0.0005,
+    "stop_extra_slip": 0.0,
+    "trail_n": 20
+  },
+  "gate": "practical (DSR reported, not gated)",
+  "grid": [
+    "R1-directional",
+    "R1-derisk",
+    "R1-size",
+    "R2-directional",
+    "R2-derisk",
+    "R2-size",
+    "R3-directional",
+    "R3-derisk",
+    "R3-size",
+    "R4-directional",
+    "R4-derisk",
+    "R4-size"
+  ],
+  "lane": "donchian_macro_regime_overlay",
+  "modes": [
+    "directional",
+    "derisk",
+    "size"
+  ],
+  "n_trials": 12,
+  "regimes": [
+    {
+      "id": "R1",
+      "name": "equity_riskon"
+    },
+    {
+      "id": "R2",
+      "name": "equity_trend"
+    },
+    {
+      "id": "R3",
+      "name": "riskon_calm"
+    },
+    {
+      "id": "R4",
+      "name": "dollar_weak"
+    }
+  ],
+  "windows": {
+    "sealed": [
+      1740787200000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1698796800000
+    ],
+    "validate": [
+      1698796800000,
+      1740787200000
+    ]
+  }
+}

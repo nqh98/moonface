@@ -1,0 +1,129 @@
+{
+  "anchor_ok": true,
+  "anchors": {
+    "breadth_momentum": {
+      "ok": true,
+      "sealed_exp": 0.1424,
+      "sealed_n": 326,
+      "validate_exp": 0.1652,
+      "validate_n": 327
+    },
+    "net_new_highs": {
+      "ok": true,
+      "sealed_exp": 0.2588,
+      "sealed_n": 32,
+      "validate_exp": 0.5323,
+      "validate_n": 34
+    }
+  },
+  "asof": "2026-06-28T14:22:00.047399+00:00",
+  "assets": [
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "bonferroni_alpha": 0.0125,
+  "btc_anchor_sha": "b3b004cb58258369",
+  "lane": "breadth_xasset_confirm",
+  "rows": [
+    {
+      "asset": "ETHUSDT",
+      "boot_lo": -0.12567763304747742,
+      "cost": true,
+      "lead": "net_new_highs",
+      "p_le_zero": 0.0403,
+      "pooled": {
+        "expectancy_r": 0.4737,
+        "max_drawdown_r": -10.5659,
+        "profit_factor": 1.7287,
+        "total_r": 31.2631,
+        "trade_count": 66
+      },
+      "practical": true,
+      "same_sign": true,
+      "sealed_exp": 0.3068,
+      "significant": false,
+      "status": "transfers_unconfirmed",
+      "validate_exp": 0.6308,
+      "verdict": "forward_candidate"
+    },
+    {
+      "asset": "ETHUSDT",
+      "boot_lo": -0.05994990173574588,
+      "cost": true,
+      "lead": "breadth_momentum",
+      "p_le_zero": 0.04486,
+      "pooled": {
+        "expectancy_r": 0.1929,
+        "max_drawdown_r": -43.2126,
+        "profit_factor": 1.2653,
+        "total_r": 125.9729,
+        "trade_count": 653
+      },
+      "practical": false,
+      "same_sign": true,
+      "sealed_exp": 0.2235,
+      "significant": false,
+      "status": "transfers_unconfirmed",
+      "validate_exp": 0.1622,
+      "verdict": "forward_candidate"
+    },
+    {
+      "asset": "SOLUSDT",
+      "boot_lo": -0.1640636830577991,
+      "cost": true,
+      "lead": "net_new_highs",
+      "p_le_zero": 0.05936,
+      "pooled": {
+        "expectancy_r": 0.4071,
+        "max_drawdown_r": -7.38,
+        "profit_factor": 1.6905,
+        "total_r": 24.427,
+        "trade_count": 60
+      },
+      "practical": true,
+      "same_sign": true,
+      "sealed_exp": 0.4325,
+      "significant": false,
+      "status": "transfers_unconfirmed",
+      "validate_exp": 0.3834,
+      "verdict": "forward_candidate"
+    },
+    {
+      "asset": "SOLUSDT",
+      "boot_lo": -0.13132129505604412,
+      "cost": true,
+      "lead": "breadth_momentum",
+      "p_le_zero": 0.184,
+      "pooled": {
+        "expectancy_r": 0.0926,
+        "max_drawdown_r": -43.0746,
+        "profit_factor": 1.1295,
+        "total_r": 54.3599,
+        "trade_count": 587
+      },
+      "practical": false,
+      "same_sign": true,
+      "sealed_exp": 0.1125,
+      "significant": false,
+      "status": "transfers_unconfirmed",
+      "validate_exp": 0.0725,
+      "verdict": "forward_candidate"
+    }
+  ],
+  "timeframe": "4h",
+  "verdict": "mechanism_unconfirmed",
+  "windows": {
+    "sealed": [
+      1741407360000,
+      1782300000000
+    ],
+    "train": [
+      1577836800000,
+      1700514720000
+    ],
+    "validate": [
+      1700514720000,
+      1741407360000
+    ]
+  }
+}

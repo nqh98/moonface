@@ -1,0 +1,56 @@
+{
+  "budgets": [
+    {
+      "budget_r": -40.0,
+      "capital_at_risk_pct": 40.0,
+      "p_ruin_measured": 0.0373,
+      "p_ruin_measured_peak_relative": 0.1245,
+      "p_ruin_zero_edge": 0.2755
+    },
+    {
+      "budget_r": -50.0,
+      "capital_at_risk_pct": 50.0,
+      "p_ruin_measured": 0.0152,
+      "p_ruin_measured_peak_relative": 0.0454,
+      "p_ruin_zero_edge": 0.1698
+    },
+    {
+      "budget_r": -64.0,
+      "capital_at_risk_pct": 64.0,
+      "p_ruin_measured": 0.0038,
+      "p_ruin_measured_peak_relative": 0.0088,
+      "p_ruin_zero_edge": 0.0799
+    }
+  ],
+  "expectancy_ci": {
+    "research_95": [
+      -0.170303937007874,
+      0.6630897637795276
+    ],
+    "tail_95": [
+      0.38235294117647056,
+      1.9664632352941178
+    ]
+  },
+  "generated": "2026-07-14T02:44:24.153147+00:00",
+  "history": {
+    "full_cumulative_min_r": -15.2572,
+    "full_max_dd_r": -32.0,
+    "research_max_dd_r": -32.0,
+    "time_under_water_days": 287.2
+  },
+  "inputs": {
+    "horizon_trades": 108,
+    "months": 12,
+    "research_mu": 0.2549,
+    "research_n": 254,
+    "research_sigma": 2.8622,
+    "tail_n": 68,
+    "trades_per_year": 108.46
+  },
+  "trigger": {
+    "calendar_months": 12,
+    "required_n_power50": 485,
+    "required_n_power80": 990
+  }
+}

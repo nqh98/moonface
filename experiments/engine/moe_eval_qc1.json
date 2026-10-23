@@ -1,0 +1,67 @@
+{
+  "fitted": {
+    "matrix": {
+      "CHOP": {
+        "REVERSION": 0.0234
+      },
+      "STRESS": {
+        "REVERSION": 0.4505
+      },
+      "TREND": {
+        "BREAKOUT": 0.1908
+      }
+    },
+    "p_eff": 3
+  },
+  "gate0": {
+    "passed_negative": true,
+    "runs": {
+      "iid_shuffle": {
+        "allowed": 197,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 455,
+        "p_eff": 3,
+        "validation_ci_positive": false
+      },
+      "phase_randomize": {
+        "allowed": 199,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 279,
+        "p_eff": 5,
+        "validation_ci_positive": false
+      },
+      "sign_flip": {
+        "allowed": 199,
+        "budget_ok": true,
+        "dsr": 0.0,
+        "n": 1525,
+        "p_eff": 3,
+        "validation_ci_positive": false
+      }
+    }
+  },
+  "gate1": {
+    "baseline_max_dd_r": -11.6455,
+    "ci": [
+      -0.4356,
+      0.455
+    ],
+    "max_dd_r": -62.5221,
+    "n": 353,
+    "net_r": 0.3368,
+    "net_r_3x": -110.1049,
+    "passed": false
+  },
+  "gate2": null,
+  "gate3": null,
+  "moe_hash": "685a8af85b84377eacc7fd455691e367b3b57a9c5b00f9020f1ea07b837a9a3c",
+  "power": {
+    "allowed": 199,
+    "n_train": 9983,
+    "p_eff": 3,
+    "passed": true
+  },
+  "verdict": "CLOSED_NEGATIVE_VALIDATION"
+}

@@ -1,0 +1,22 @@
+{
+  "lane": "confluence_v2_2",
+  "engine_version": "2.2",
+  "engine_hash": "b4924f8eadd603db8dc8a7c63a35971f56ac0b46a81c07674f45555686ec85b5",
+  "excluded_modules": ["m4_pullback"],
+  "enable_date_utc": "2026-07-05T09:00:00Z",
+  "journal_path": "journal/signals.jsonl",
+  "asset": {"exchange": "binance", "symbol": "BTC/USDT:USDT", "timeframe": "1h"},
+  "lookback_bars": 6000,
+  "horizon": {
+    "rule": "later of 6 months from enable_date_utc or >=30 completed setups (EXIT rows at the frozen hash)",
+    "date_trigger_utc": "2027-01-05T00:00:00Z",
+    "setup_trigger": 30
+  },
+  "success_bar": [
+    "net R > 0 over all completed setups at the frozen hash",
+    "drawdown within the layered budgets: trailing 15R/90d window never beyond routine pause; the 30R hard latch never tripped",
+    "mandatory ablation report (macro, no_ct, long_only, m4_pullback families), reported not gating"
+  ],
+  "kill_rule": "one cycle; DOWNGRADE -> enabled=false, no re-tune on this hash; any constant change is v2.3 -> new hash -> new registration -> fresh clock",
+  "source": "experiments/engine/CONFLUENCE_V22_FORWARD_REGISTRATION.md"
+}
