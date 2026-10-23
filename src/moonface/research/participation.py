@@ -1,6 +1,6 @@
 """Post-program participation advisor.
 
-The research program closed negative (docs/findings/PROGRAM_CONCLUSION.md): no
+The research program closed negative (experiments/PROGRAM_CONCLUSION.md): no
 OOS-valid edge exists on free BTC data, so this advisor makes NO expectancy
 claim. It implements the evidence-bounded fallback framework instead:
 
@@ -37,7 +37,7 @@ from moonface.core.signal_types import Signal, sentinel_extended, wait
 from moonface.research.entries import generate_entries
 
 # Worst unstopped research drawdown observed across every family and both
-# timeframes (docs/findings/PROGRAM_CONCLUSION.md: -100R to -277R). The sizing
+# timeframes (experiments/PROGRAM_CONCLUSION.md: -100R to -277R). The sizing
 # arithmetic and the kill switch are both anchored to it.
 WORST_OBSERVED_DRAWDOWN_R = 277.0
 

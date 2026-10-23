@@ -170,7 +170,7 @@ toward KILL (stricter counting, higher thresholds).
 
 - Original verdict: `experiments/positioning_exits/20260610T065146Z/` and
   the core program's NEGATIVE conclusion
-  (`docs/findings/PROGRAM_CONCLUSION.md`, "The one lever deliberately not
+  (`experiments/PROGRAM_CONCLUSION.md`, "The one lever deliberately not
   pulled" — this lane is its recorded sole data-motivated successor).
 - `funding_fade_voltarget` (closed negative 2026-07-01) kill rule reads "no
   v2, no fraction grid, no budget relaxation." Human ruling 2026-07-13

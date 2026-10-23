@@ -21,7 +21,7 @@ VALID_RAW = {
     "reconfirm_by": "2026-09-12",
     "asset": {"exchange": "binance", "symbol": "BTC/USDT:USDT",
               "timeframe": "4h"},
-    "provenance": {"basis": "docs/findings/PROGRAM_CONCLUSION.md"},
+    "provenance": {"basis": "experiments/PROGRAM_CONCLUSION.md"},
 }
 
 NOW_FRESH = int(datetime(2026, 6, 12, tzinfo=timezone.utc).timestamp() * 1000)

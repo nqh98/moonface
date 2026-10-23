@@ -151,7 +151,7 @@ class TestIntradayCadence(unittest.TestCase):
     """The collector was daily-only, which structurally cannot test an
     intraday dealer-hedging hypothesis: one snapshot per UTC day gives the
     gamma STATE once a day, never the flow within it. Cadence is now a
-    parameter. See docs/findings/COLLECTOR_AUDIT_2026-07-29.md."""
+    parameter. See experiments/COLLECTOR_AUDIT_2026-07-29.md."""
 
     def _collector(self):
         calls = []

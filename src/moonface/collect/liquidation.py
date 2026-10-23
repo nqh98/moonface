@@ -71,7 +71,7 @@ def rows_from_liquidations(liqs: list, recv_ms: int,
     rather than a per-symbol channel: `<sym>@forceOrder` is too sparse to keep
     the websocket keepalive satisfied, so the socket was dropping on ping-pong
     timeout and reconnecting forever without ever receiving an event (16 days,
-    zero rows — see docs/findings/COLLECTOR_AUDIT_2026-07-29.md). The firehose
+    zero rows — see experiments/COLLECTOR_AUDIT_2026-07-29.md). The firehose
     carries every symbol, so the declared scope is enforced here instead.
 
     Accepts BOTH payload shapes, because they are easy to confuse and getting

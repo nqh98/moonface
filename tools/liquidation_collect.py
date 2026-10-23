@@ -51,7 +51,7 @@ async def _collect(out_dir: Path, flush_every: int) -> int:
                 # keepalive fed: the socket timed out on ping-pong, dropped
                 # 1006 and reconnected forever without receiving a single
                 # event — 16 days, zero rows, no CSV ever created. See
-                # docs/findings/COLLECTOR_AUDIT_2026-07-29.md.
+                # experiments/COLLECTOR_AUDIT_2026-07-29.md.
                 #
                 # Pass None, NOT []. ccxt 4.5.56 builds the right subscription
                 # for an empty list but then crashes in get_market_from_symbols

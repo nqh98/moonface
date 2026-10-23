@@ -1,6 +1,6 @@
 """Baseline composite signal tier (spec 2026-06-15).
 
-The falsification program (docs/findings/PROGRAM_CONCLUSION.md) found no OOS-valid
+The falsification program (experiments/PROGRAM_CONCLUSION.md) found no OOS-valid
 edge on free BTC data, so this tier makes NO expectancy claim. It emits an
 honest, clearly-labelled HEURISTIC LONG/SHORT/WAIT by polling a few indicator
 STATES and reporting how strongly they agree (`confidence`). It executes nothing

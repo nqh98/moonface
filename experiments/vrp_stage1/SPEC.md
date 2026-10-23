@@ -29,7 +29,7 @@ Stage 1's chartered job was **cost-honesty**: does the premium survive bid/ask
 haircuts, and through which vehicle (DVOL futures / replicated variance swap /
 defined-risk options)?
 
-`docs/findings/MANDATE_ASSESSMENT_2026-07.md` then reframed the priority. The
+`experiments/MANDATE_ASSESSMENT_2026-07.md` then reframed the priority. The
 Stage-0 year table decays monotonically — +0.239 (2021) → −0.006 (2026 YTD),
 with **68.6% of all spread-mass falling in 2021–2022**, and the 2025–2026
 sub-period sitting at **0.81× the Student-t p97.5**, i.e. below the honest

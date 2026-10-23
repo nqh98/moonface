@@ -75,4 +75,4 @@ the spec before this run; it is the only verdict, not one of three.
 This closes direction 4 (Topological Data Analysis) from
 `docs/research-log/concepts/crypto_geometric_signal_research_ai_readable.md`, the last of the
 six geometric directions without a prior verdict in this program. See
-`docs/findings/BACKLOG.md` for the full six-direction closure mapping.
+`experiments/BACKLOG.md` for the full six-direction closure mapping.

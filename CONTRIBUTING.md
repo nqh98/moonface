@@ -29,7 +29,8 @@ pytest                           # full suite (includes slow tests)
 3. Show the gate **fails on an iid null** (shuffled/synthetic data) — otherwise it is
    measuring selection, not edge.
 4. Run once. Record outputs and the verdict in `experiments/<lane>/`.
-5. Optionally wire it into `tools/lane_registry.py` so `tools/research.py reproduce <lane>`
+5. Add a row to `experiments/INDEX.md`, pass or fail.
+6. Optionally wire it into `tools/lane_registry.py` so `tools/research.py reproduce <lane>`
    can re-run it.
 
 Do not edit a frozen registration after seeing results. If the design was wrong, open a

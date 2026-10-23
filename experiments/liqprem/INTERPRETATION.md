@@ -74,5 +74,5 @@ The program's only remaining forward paths are the frozen paper threads and the
 maturing new-data collectors (Deribit options readiness ~2027-01, USDⓈ-M
 liquidation ~2027-01-09). Standing stance is unchanged: WAIT, advisor disabled.
 
-See `docs/findings/MANDATE_ASSESSMENT_2026-07.md` for where the surviving
+See `experiments/MANDATE_ASSESSMENT_2026-07.md` for where the surviving
 evidence actually is.

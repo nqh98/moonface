@@ -11,7 +11,7 @@ random entries in that window.
 
 This is an observation, NOT a lane. Unconditional bracket-holding of drift
 is the core program's closed drawdown-wall question
-(`docs/findings/PROGRAM_CONCLUSION.md`, "The single replicated finding":
+(`experiments/PROGRAM_CONCLUSION.md`, "The single replicated finding":
 positive drift exists but no bounded-risk exit harvests it within an
 acceptable drawdown budget — the null paths here inherit the same
 peak-relative drawdown behavior, cf. the analysis table's peak-relative

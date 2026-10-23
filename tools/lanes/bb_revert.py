@@ -69,7 +69,7 @@ def render_report(docs: dict) -> str:
     lines = [
         "# Bollinger Band mean-reversion decomposition — RESEARCH-ONLY", "",
         "> Diagnostic, not a strategy. No edge is claimed; the WAIT stance and",
-        "> `docs/findings/PROGRAM_CONCLUSION.md` are unchanged. Exit-free forward-path",
+        "> `experiments/PROGRAM_CONCLUSION.md` are unchanged. Exit-free forward-path",
         "> scoring (declumped events, 6/12/18/30-bar horizons) with a single-asset",
         "> bootstrap 95% CI on mean_ret_r — not a promotion gate.", "",
     ]

@@ -4,7 +4,7 @@
 - **Status:** CLOSED NEGATIVE (kill rule fired; no v2)
 - **Domain:** `funding_fade_transfer` v1 — frozen 4-spec grid (ETH, SOL × `funding_fade {window:60, z_thr:1.5}` × {fixed_bracket, atr_trail} × fraction 0.01)
 - **Lockbox:** never touched (`lockbox_touched = False`). Every spec was rejected at stage 2 before any tail was evaluated; the one-touch tail is pristine.
-- **Lineage:** successor to the closed profit-maximization program (`docs/findings/PROGRAM_CONCLUSION.md`, "The one lever deliberately not pulled"). Spec: `docs/research-log/specs/2026-06-15-funding-fade-transfer-design.md`.
+- **Lineage:** successor to the closed profit-maximization program (`experiments/PROGRAM_CONCLUSION.md`, "The one lever deliberately not pulled"). Spec: `docs/research-log/specs/2026-06-15-funding-fade-transfer-design.md`.
 
 ## The finding this tested
 

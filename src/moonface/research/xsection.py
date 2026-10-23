@@ -1,7 +1,7 @@
 # src/moonface/research/xsection.py
 """Cross-sectional long-short portfolio over a USDT-perp universe.
 
-Pre-registered construction (docs/findings/BACKLOG.md item 2, frozen before any
+Pre-registered construction (experiments/BACKLOG.md item 2, frozen before any
 universe data was seen): monthly top-N universe by trailing quote volume with
 a listing-age floor, weekly rebalance, equal-weight quintile long-short,
 taker fees on turnover plus actual funding accrual. Judged with the program's

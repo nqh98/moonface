@@ -228,7 +228,7 @@ def render_report(docs: dict) -> str:
     lines = [
         "# SMC failure decomposition — RESEARCH-ONLY", "",
         "> Diagnostic, not a strategy. No edge is claimed; the WAIT stance and",
-        "> `docs/findings/PROGRAM_CONCLUSION.md` are unchanged. Single-asset BTC",
+        "> `experiments/PROGRAM_CONCLUSION.md` are unchanged. Single-asset BTC",
         "> mechanism check (within-BTC sign test + bootstrap 95% CI on mean_ret_r),",
         "> not a promotion gate.", "",
     ]

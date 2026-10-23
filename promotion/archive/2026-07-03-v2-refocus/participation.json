@@ -9,7 +9,7 @@
   "asset": {"exchange": "binance", "symbol": "BTC/USDT:USDT", "timeframe": "4h"},
   "provenance": {
     "framework": "post-program participation advisor (no expectancy claim)",
-    "basis": "docs/findings/PROGRAM_CONCLUSION.md",
+    "basis": "experiments/PROGRAM_CONCLUSION.md",
     "entry_evidence": "experiments/edge/20260609T171708Z/ — H4 donchian_break n=100, the most replicated positive fixed-horizon drift; never gate-validated",
     "sizing": "0.0005/R x worst observed unstopped drawdown 277R = 13.85% <= 15% accepted account drawdown",
     "reconfirm": "quarterly: re-run the validation harness on new data, then commit a new reconfirm_by date"

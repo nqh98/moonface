@@ -11,8 +11,7 @@ tradable edge in BTC/crypto perpetual futures. It ships:
   whether a signal is real: walk-forward OOS, deflated Sharpe ratio, iid and block
   nulls, power checks, and a one-touch sealed holdout ("lockbox").
 - **The ledger** — ~60 hypotheses, each pre-registered before its results were seen,
-  with the verdict and the reason it died, one directory per lane under
-  **[experiments/](experiments/)**.
+  with the verdict and the reason it died. See **[experiments/INDEX.md](experiments/INDEX.md)**.
 
 > [!WARNING]
 > **There is no profitable bot in this repository.** Across the program, 0 of 58
@@ -60,6 +59,7 @@ research path.
 | `src/moonface/feed/` | `moonface-feed`: optional caveat-labeled setup cards to Telegram |
 | `tools/` | CLIs that run lanes, collectors and research utilities |
 | `experiments/<lane>/` | Each lane's frozen pre-registration, results and verdict |
+| `experiments/INDEX.md` | **Findings index** (one row per lane) + program conclusions alongside it |
 | `tests/` | Unit and lane tests (`-m slow` marks the >1 s ones) |
 
 ## Working with lanes

@@ -2,7 +2,7 @@
 
 Pre-registered **before any universe data was seen**. Frozen design; a changed
 design requires a new experiment directory (`register` refuses to overwrite).
-This is reopening cycle 4 (`docs/findings/BACKLOG.md` item 4), the highest
+This is reopening cycle 4 (`experiments/BACKLOG.md` item 4), the highest
 information-gain market-neutral mechanism left: a *mean-reversion* book on the
 idiosyncratic residual, distinct from the dead momentum/carry first-moment sorts
 and from the dead BAB second-moment sort.

@@ -2,7 +2,7 @@
 """Liveness check for every forward-collecting stream in the program.
 
 Written after the third occurrence of the same failure
-(`docs/findings/COLLECTOR_AUDIT_2026-07-29.md`): a collector is shipped or
+(`experiments/COLLECTOR_AUDIT_2026-07-29.md`): a collector is shipped or
 scheduled, everyone believes a clock is running toward a 2027 readiness gate,
 and nothing is actually accruing. It cost 16 days (liquidations), 26 days
 (Deribit chain) and 20 days (the confluence v2.2 forward record) before anyone

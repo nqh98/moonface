@@ -11,7 +11,7 @@ was daily-only until 2026-07-29. One snapshot per UTC day gives the gamma
 daily archive structurally cannot test an intraday dealer-hedging hypothesis —
 and re-deciding the cadence after accrual starts resets the readiness clock.
 Sub-daily data downsamples to daily; the reverse is impossible, so the default
-is hourly. See docs/findings/COLLECTOR_AUDIT_2026-07-29.md.
+is hourly. See experiments/COLLECTOR_AUDIT_2026-07-29.md.
 
 Day-based stats (`days`, `history_days`, `coverage_ratio`) keep their exact
 former meaning because `newdata.assess_manifest` gates on them; bucket stats

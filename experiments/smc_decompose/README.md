@@ -28,6 +28,6 @@ advisor stays falsified; the WAIT stance is unchanged.
   present only in **trending structure** (flat in NEUTRAL).
 
 See `REPORT.md` for the full tables and interpretation. Verdict language is
-consistent with `docs/findings/PROGRAM_CONCLUSION.md`: any sub-slice drift
+consistent with `experiments/PROGRAM_CONCLUSION.md`: any sub-slice drift
 warrants a separately pre-registered, multiplicity-corrected probe — never a
 promotion.

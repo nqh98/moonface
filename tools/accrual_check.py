@@ -3,7 +3,7 @@
 """Is anything actually accruing? One command, non-zero exit when it is not.
 
 Every remaining route to a credible signal depends on data collected between
-now and ~2027 (see docs/findings/MANDATE_ASSESSMENT_2026-07.md addendum). On
+now and ~2027 (see experiments/MANDATE_ASSESSMENT_2026-07.md addendum). On
 2026-07-29 all three streams were found dead or empty, after 16, 20 and 26 days
 of nobody looking. This is the check that would have caught all three the same
 day.

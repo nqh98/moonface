@@ -2,7 +2,7 @@
 # tools/xsection.py
 """Cross-sectional momentum/carry long-short over the USDT-perp universe.
 
-Backlog item 2 (docs/findings/BACKLOG.md). Discipline mirrors the research
+Backlog item 2 (experiments/BACKLOG.md). Discipline mirrors the research
 pipeline: `register` freezes the window, fence, and the three pre-registered
 constructions before any universe data is seen; `run` is one-touch — once a
 verdict exists it refuses to run again. Signal discovery only, no trading."""

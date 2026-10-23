@@ -82,7 +82,7 @@ if __name__ == "__main__":
 class TestRowsFromLiquidations(unittest.TestCase):
     """The collector subscribes to the all-market !forceOrder@arr firehose (a
     per-symbol channel is too sparse to keep the ws keepalive satisfied — see
-    docs/findings/COLLECTOR_AUDIT_2026-07-29.md), so the firehose carries every
+    experiments/COLLECTOR_AUDIT_2026-07-29.md), so the firehose carries every
     symbol and the declared BTCUSDT scope must be enforced here."""
 
     def _liq(self, symbol, side, qty, price, ts):

@@ -69,7 +69,7 @@ the already-dead momentum/carry sort, that falsifies *both* signed first- and
 second-moment cross-sectional risk premia on this universe — a strong negative
 that collapses most of the remaining market-neutral hypothesis space and pushes
 the honest program output back to the WAIT advisor plus a new-data requirement
-(`docs/findings/PROGRAM_CONCLUSION.md`).
+(`experiments/PROGRAM_CONCLUSION.md`).
 
 **Kill rule:** closed_negative ⇒ the low-volatility/BAB family is terminal on
 this universe; no parameter rescue, no lookback grid, no v2.

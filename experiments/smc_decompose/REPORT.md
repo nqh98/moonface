@@ -1,7 +1,7 @@
 # SMC failure decomposition — RESEARCH-ONLY
 
 > Diagnostic, not a strategy. No edge is claimed; the WAIT stance and
-> `docs/findings/PROGRAM_CONCLUSION.md` are unchanged. Single-asset BTC
+> `experiments/PROGRAM_CONCLUSION.md` are unchanged. Single-asset BTC
 > mechanism check (within-BTC sign test + bootstrap 95% CI on mean_ret_r),
 > not a promotion gate.
 
@@ -87,7 +87,7 @@
 (within-BTC) bootstrap 95% CI on `mean_ret_r`. There is **no multiple-testing
 correction** across variants × timeframes × horizons × slices, so this is a
 mechanism check, **not a promotion gate**. The advisor stays falsified on the
-full exit + cost basis used in `docs/findings/PROGRAM_CONCLUSION.md`; the WAIT
+full exit + cost basis used in `experiments/PROGRAM_CONCLUSION.md`; the WAIT
 stance is unchanged. Treat any single "CI excludes zero" below as suggestive,
 not actionable.
 
