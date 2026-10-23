@@ -10,4 +10,4 @@ labels: research
 
 **Gates** (horizon, null, OOS split, pass threshold — fixed before running)
 
-**Related lanes** (see docs/findings/INDEX.md — why is this different?)
+**Related lanes** (see experiments/ — why is this different?)

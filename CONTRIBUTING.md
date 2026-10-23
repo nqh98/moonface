@@ -20,7 +20,7 @@ pytest                           # full suite (includes slow tests)
 
 ## Adding a research lane
 
-1. **Pre-register first.** Write `docs/research-log/specs/YYYY-MM-DD-<lane>-design.md`
+1. **Pre-register first.** Write `experiments/<lane>/PREREGISTRATION.md`
    stating the hypothesis, data, universe, horizon, every configuration you will try,
    and the exact pass/fail gates. Open a PR with only the design, or commit it before
    computing any out-of-sample number.
@@ -29,8 +29,7 @@ pytest                           # full suite (includes slow tests)
 3. Show the gate **fails on an iid null** (shuffled/synthetic data) — otherwise it is
    measuring selection, not edge.
 4. Run once. Record outputs and the verdict in `experiments/<lane>/`.
-5. Add a row to `docs/findings/INDEX.md`, pass or fail.
-6. Optionally wire it into `tools/lane_registry.py` so `tools/research.py reproduce <lane>`
+5. Optionally wire it into `tools/lane_registry.py` so `tools/research.py reproduce <lane>`
    can re-run it.
 
 Do not edit a frozen registration after seeing results. If the design was wrong, open a
